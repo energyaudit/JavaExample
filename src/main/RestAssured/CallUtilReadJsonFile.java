@@ -164,7 +164,7 @@ public class CallUtilReadJsonFile {
     @Test
     public void Call3GetJsonFileValueByName() {
         GetJsonFileValueByName gjv = new GetJsonFileValueByName();
-        ArrayList alst = gjv.inputStr("C:\\QA\\TESTRESULT\\Dump\\testout3.txt", "value");
+        ArrayList alst = gjv.inputStr("/QA/TESTRESULT/Dump/testout3.txt", "value");
 
         CountListFreq clf = new CountListFreq();
         Map outMp = clf.countFrequencies(alst);

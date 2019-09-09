@@ -25,7 +25,7 @@ public class RTime {
 
         try {
            // FileWriter writer = new FileWriter("C:\\QA\\TESTRESULT\\temp.json");
-            FileWriter writer = new FileWriter("/QA/TESTRESULT/temp.json");
+            FileWriter writer = new FileWriter("../TESTRESULT/temp.json");
 
             writer.write(jsonString);
             writer.close();

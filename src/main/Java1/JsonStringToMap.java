@@ -47,7 +47,7 @@ public class JsonStringToMap {
 
             // pretty print
             System.out.println(json1);
-            FileWriter w = new FileWriter("C:\\QA\\TESTRESULT\\temp1.json");
+            FileWriter w = new FileWriter("/QA/TESTRESULT/temp1.json");
             BufferedWriter out = new BufferedWriter(w);
             out.newLine();
             out.write(json1);

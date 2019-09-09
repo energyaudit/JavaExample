@@ -40,7 +40,7 @@ class CompaDifferFormatDate{
             dateStringFrom = new SimpleDateFormat(CheckFormat).format(FromDate);
             DateFormat FromDF1 = new SimpleDateFormat(CheckFormat);
             DF=FromDF1.parse(dateStringFrom);
-            System.out.println("Date is ok = " + dateStringFrom);
+            System.out.println("FromDate format is ok = " + dateStringFrom);
         }
         catch (ParseException e)
         {
@@ -59,7 +59,7 @@ class CompaDifferFormatDate{
             dateStringTo = new SimpleDateFormat(CheckFormat).format(ToDate);
             DateFormat ToDF1 = new SimpleDateFormat(CheckFormat);
             DT=ToDF1.parse(dateStringTo);
-            System.out.println("Date is ok = " + dateStringTo);
+            System.out.println("ToDate format is ok = " + dateStringTo);
         }
         catch (ParseException e)
         {

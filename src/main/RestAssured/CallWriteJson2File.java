@@ -88,7 +88,7 @@ public class CallWriteJson2File {
         String jsonString=resp.asString();
 
        Str2JsonFile sjf=new Str2JsonFile();
-       sjf.inputStr(jsonString,"C:\\QA\\TESTRESULT\\temp.json");
+       sjf.inputStr(jsonString,"/QA/TESTRESULT/temp.json");
         System.out.println("Response time:"+resp.getTime());
         OutPutResult outR = new OutPutResult();
         outR.inputStr("Assert API test data write to jason file success"+jsonString);

@@ -8,11 +8,11 @@ import java.util.*;
 class Input2{
     public static void main(String args[])throws IOException{
 //creating the FileInputStream objects for all the files
-        FileInputStream fin=new FileInputStream("C:\\QA\\TESTRESULT\\TestResult2018FebToApril.txt");
-        FileInputStream fin2=new FileInputStream("C:\\QA\\TESTRESULT\\TestResult2017To201802.txt");
-        FileInputStream fin3=new FileInputStream("C:\\QA\\TESTRESULT\\temp1.txt");
-        FileInputStream fin4=new FileInputStream("C:\\QA\\TESTRESULT\\temp.txt");
-        FileOutputStream fout=new FileOutputStream("C:\\QA\\TESTRESULT\\testout.txt");
+        FileInputStream fin=new FileInputStream("/QA/TESTRESULT/TestResult2018FebToApril.txt");
+        FileInputStream fin2=new FileInputStream("/QA/TESTRESULT/TestResult2017To201802.txt");
+        FileInputStream fin3=new FileInputStream("/QA/TESTRESULT/temp1.txt");
+        FileInputStream fin4=new FileInputStream("../resources/temp.txt");
+        FileOutputStream fout=new FileOutputStream("/QA/TESTRESULT/testout.txt");
 //creating Vector object to all the stream
         Vector v=new Vector();
         v.add(fin);
