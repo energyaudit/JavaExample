@@ -22,10 +22,11 @@ public class RTime {
         System.out.println(data);
         String jsonString=data;
         long RespTime=resp.getTime();
-
+        String workingDir = System.getProperty("user.dir");
+        System.out.println(workingDir);
         try {
-           // FileWriter writer = new FileWriter("C:\\QA\\TESTRESULT\\temp.json");
-            FileWriter writer = new FileWriter("../TESTRESULT/temp.json");
+            //   FileWriter writer = new FileWriter("/QA/TESTRESULT/temp.json");
+             FileWriter writer = new FileWriter("src/main/TESTRESULT/temp.json");
 
             writer.write(jsonString);
             writer.close();

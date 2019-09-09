@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 
 public class Java7TryResource {
     public static void main(String args[]){
-        try(FileInputStream input = new FileInputStream("../TESTRESULT/temp.txt")) {
+        try(FileInputStream input = new FileInputStream("src/main/TESTRESULT/temp.txt")) {
             int data = input.read();
             while(data != -1){
                 System.out.print((char) data);
