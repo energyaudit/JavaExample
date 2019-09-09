@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fe35c1d-4d7f-42c9-ae00-8be53e6f0651" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Javaexample$ReadExcel.ic" NAME="ReadExcel Coverage Results" MODIFIED="1550355123741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Java1.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MultiBrowsers" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jason</find>
+      <find>javax</find>
+      <find>if</find>
+      <find>else</find>
+      <find>while</find>
+      <find>import</find>
+      <find>jackson</find>
+      <find>JSON</find>
+      <find>ReadExcel</find>
+      <find>for</find>
+      <find>json</find>
+      <find>date</find>
+      <find>substring</find>
+      <find>vector</find>
+      <find>txt</find>
+      <find>system</find>
+      <find>API test data BODY success result is</find>
+      <find>square</find>
+      <find>response</find>
+      <find>post</find>
+      <find>header</find>
+      <find>https://jsonplaceholder.typicode.com/</find>
+      <find>org.openqa.selenium</find>
+      <find>gson</find>
+      <find>testng</find>
+      <find>2.2.10</find>
+      <find>com.github.fge</find>
+      <find>Reflection</find>
+      <find>getname</find>
+      <find>openweathermap</find>
+    </findStrings>
+  </component>
+  <component name="GroovyConsoleState">
+    <option name="list">
+      <list>
+        <Entry>
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
+          <option name="moduleName" value="" />
+          <option name="title" value="Javaexamples (Groovy 2.4.6-javadoc)" />
+        </Entry>
+        <Entry>
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_1.groovy" />
+          <option name="moduleName" value="" />
+          <option name="title" value="Javaexamples (Groovy 2.4.6-javadoc)" />
+        </Entry>
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1QbtO5gJ5L42Gu4DBrXI00cwdrp" />
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553713015960" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/projectname" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/RestAssured" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="src.main" />
+      <recent name="" />
+      <recent name="RestAssured" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="src.main.util" />
+      <recent name="util" />
+      <recent name="RestAssured" />
+      <recent name="Java1" />
+      <recent name="Java2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/projectname" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="E:\BILLY\ParaMountCommerce\JavaExample\JavaExample\src\main\resources" />
+      <recent name="E:\BILLY\ParaMountCommerce\JavaExample\JavaExample\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.AscIICode">
+    <configuration name="AscIICode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Java0.AscIICode" />
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.Java0.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Calculation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Java0.Calculation" />
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.Java0.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestArrayCopyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Java0.TestArrayCopyDemo" />
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.Java0.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testarray4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Java0.Testarray4" />
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.Java0.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testarray5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Java0.Testarray5" />
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.Java0.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AscIICode" />
+        <item itemvalue="Application.Testarray4" />
+        <item itemvalue="Application.TestArrayCopyDemo" />
+        <item itemvalue="Application.Calculation" />
+        <item itemvalue="Application.Testarray5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fe35c1d-4d7f-42c9-ae00-8be53e6f0651" name="Default Changelist" comment="" />
+      <created>1547596117954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547596117954</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="CallUtilReadJsonFile_Classpath_FileData - 2019.07.04 at 13h 03m 06s.xml">
+      <configuration name="CallUtilReadJsonFile.Classpath_FileData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CallUtilReadJsonFile_Classpath_FileData - 2019.07.04 at 13h 03m 12s.xml">
+      <configuration name="CallUtilReadJsonFile.Classpath_FileData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CallUtilReadJsonFile_Classpath_FileData - 2019.07.04 at 13h 08m 24s.xml">
+      <configuration name="CallUtilReadJsonFile.Classpath_FileData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CallUtilReadJsonFile_CallUtilReadJsonFile1 - 2019.07.04 at 13h 28m 44s.xml">
+      <configuration name="CallUtilReadJsonFile.CallUtilReadJsonFile1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CallUtilReadJsonFile_CallUtilReadJsonFile1 - 2019.07.04 at 13h 29m 02s.xml">
+      <configuration name="CallUtilReadJsonFile.CallUtilReadJsonFile1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CallUtilReadJsonFile_CallUtilReadJsonFileFromResource - 2019.07.04 at 13h 32m 27s.xml">
+      <configuration name="CallUtilReadJsonFile.CallUtilReadJsonFileFromResource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CallUtilReadJsonFile_CallUtilReadJsonFileFromResource - 2019.07.04 at 13h 33m 31s.xml">
+      <configuration name="CallUtilReadJsonFile.CallUtilReadJsonFileFromResource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CallUtilReadJsonFile_CallUtilReadJsonFileFromResource - 2019.07.04 at 13h 38m 32s.xml">
+      <configuration name="CallUtilReadJsonFile.CallUtilReadJsonFileFromResource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CallUtilReadJsonFile_CallUtilReadJsonFile - 2019.07.04 at 14h 58m 31s.xml">
+      <configuration name="CallUtilReadJsonFile.CallUtilReadJsonFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CallUtilReadJsonFile_CallUtilReadJsonFile1 - 2019.07.04 at 14h 58m 43s.xml">
+      <configuration name="CallUtilReadJsonFile.CallUtilReadJsonFile1" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java0/ThisAsMethodPara.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java2/Database2.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java2/DataBase3.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/RestAssured/ReadJsonFileDirectly.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/RestAssured/ApiTestNGPostBonus.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/RestAssured/ApiTestNGPostBonus.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-3.0.0-alpha-4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Javaexamples</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
