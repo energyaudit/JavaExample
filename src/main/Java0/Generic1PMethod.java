@@ -7,7 +7,7 @@ package src.main.Java0;
 public class Generic1PMethod {
     // generic method printArray
    public static < E > void printArray( E[] inputArray ) {
-       //  protected < E > void printArray(E[] inputArray) {
+       //  protected < E > void printArray(E[] inputArray) {//this will error that is called in static context
         // Display array elements
         for(E element : inputArray) {
             System.out.printf("%s ", element);
