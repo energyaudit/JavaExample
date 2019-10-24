@@ -10,7 +10,9 @@ public class ListDirectoryContent {
 
     public static void main(String[] args) {
         //create file object
-        File file = new File("C://QA//FileIO");
+    //    File file = new File("C://QA//FileIO");
+        File file = new File("src/main/TESTRESULT");
+
       /* To list contents of a directory use,String[] list() method of Java File class.This method returns an array of Strings containing name of files and
      * sub-directories. It reuturns an empty array, if directory is empty,and null if file does not denotes a directory.*/
         String[] files = file.list();

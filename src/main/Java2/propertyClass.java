@@ -41,5 +41,30 @@ public class propertyClass {//Properties class is a subclass of Hashtable
                     ", Property Value: " + prop.getProperty(str));
         }
 
+        Properties gfg = new Properties();
+        Set URL;
+        String str1;
+
+        gfg.put("ide", "ide.geeksforgeeks.org");
+        gfg.put("contribute", "contribute.geeksforgeeks.org");
+        gfg.put("quiz", "quiz.geeksforgeeks.org");
+
+        // checking what's in table
+        URL = gfg.keySet();
+        Iterator itr1 = URL.iterator();
+
+        while(itr1.hasNext())
+        {
+            str1 = (String)itr1.next();
+            System.out.println("The URL for " + str1 +
+                    " is " + gfg.getProperty(str1));
+        }
+
+        System.out.println();
+
+        // looking for URL that not in list
+        str1 = gfg.getProperty("articl", "not found");
+        System.out.println("The URL for article is " + str1);
+
     }
 }
