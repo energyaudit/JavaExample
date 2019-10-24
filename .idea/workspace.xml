@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe35c1d-4d7f-42c9-ae00-8be53e6f0651" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java0/Generic1PMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java0/Generic1PMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/target/classes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/C:/QA/TESTRESULT/temp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/C:/QA/TESTRESULT/temp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/QA/TESTRESULT/temp.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,39 +123,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Testarray1">
-    <configuration name="ForEachLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.Java0.ForEachLoop" />
+  <component name="RunManager" selected="Application.loggerJava">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
       <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.Java0.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Generic1PMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.Java0.Generic1PMethod" />
+    <configuration name="Log4jTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Java2.Log4jTest" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.Java0.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GenericFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.Java0.GenericFunction" />
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.Java0.*" />
+          <option name="PATTERN" value="src.main.Java2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,6 +150,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="src.main.Java0.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loggerJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Java2.loggerJava" />
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.Java2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.loggerJava" />
+        <item itemvalue="Application.Log4jTest" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.Testarray1" />
         <item itemvalue="JUnit.TestCallUti.TestResponseTime" />
-        <item itemvalue="Application.GenericFunction" />
-        <item itemvalue="Application.Generic1PMethod" />
-        <item itemvalue="Application.ForEachLoop" />
       </list>
     </recent_temporary>
   </component>
@@ -222,15 +208,6 @@
       <updated>1547596117954</updated>
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
