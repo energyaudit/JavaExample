@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe35c1d-4d7f-42c9-ae00-8be53e6f0651" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/C:\QA\TESTRESULT\temp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/C:\QA\TESTRESULT\temp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/\QA\TESTRESULT\temp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/C:\QA\TESTRESULT\temp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/C:\QA\TESTRESULT\temp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/\QA\TESTRESULT\temp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/C:\QA\TESTRESULT\temp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/C:\QA\TESTRESULT\temp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/\QA\TESTRESULT\temp.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,21 +86,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/RestAssured" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="src.main" />
       <recent name="" />
       <recent name="RestAssured" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="src.main.util" />
-      <recent name="util" />
-      <recent name="RestAssured" />
-      <recent name="Java1" />
-      <recent name="Java2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/Java3/JavaCompleteBeginner" />
@@ -118,10 +98,22 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/projectname" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="src.main.util" />
+      <recent name="util" />
+      <recent name="RestAssured" />
+      <recent name="Java1" />
+      <recent name="Java2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/TESTRESULT" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/RestAssured" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.AppCasting">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Java3.JavaCompleteBeginner.App" />
+  <component name="RunManager" selected="Application.MultipleException">
+    <configuration name="Exception1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Java3.JavaCompleteBeginner.Exception1" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
@@ -133,8 +125,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppCasting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Java3.JavaCompleteBeginner.AppCasting" />
+    <configuration name="Exception2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Java3.JavaCompleteBeginner.Exception2" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
@@ -146,8 +138,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppEncapsulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Java3.JavaCompleteBeginner.AppEncapsulation" />
+    <configuration name="Exception3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Java3.JavaCompleteBeginner.Exception3" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
@@ -159,8 +151,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppMultimorphism" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Java3.JavaCompleteBeginner.AppMultimorphism" />
+    <configuration name="MultipleException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Java3.JavaCompleteBeginner.MultipleException" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
@@ -172,12 +164,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="substringToCharArraLowerUperTrimValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.Java1.substringToCharArraLowerUperTrimValue" />
+    <configuration name="ReadingFils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Java3.JavaCompleteBeginner.ReadingFils" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.Java1.*" />
+          <option name="PATTERN" value="main.Java3.JavaCompleteBeginner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppCasting" />
-        <item itemvalue="Application.AppEncapsulation" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.AppMultimorphism" />
-        <item itemvalue="Application.substringToCharArraLowerUperTrimValue" />
+        <item itemvalue="Application.MultipleException" />
+        <item itemvalue="Application.Exception3" />
+        <item itemvalue="Application.Exception2" />
+        <item itemvalue="Application.Exception1" />
+        <item itemvalue="Application.ReadingFils" />
       </list>
     </recent_temporary>
   </component>
@@ -234,22 +226,72 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="241" key="GridCell.Tab.0.bottom" timestamp="1575063690658">
+    <state x="2470" y="-1058" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576598783506">
       <screen x="1627" y="-1058" width="1920" height="1058" />
+    </state>
+    <state x="2470" y="-1058" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.22.1440.834/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576598783506" />
+    <state width="1398" height="241" key="GridCell.Tab.0.bottom" timestamp="1576618962832">
+      <screen x="-293" y="-1058" width="1920" height="992" />
     </state>
     <state width="1358" height="241" key="GridCell.Tab.0.bottom/0.22.1440.830/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1575063690658" />
-    <state width="1358" height="241" key="GridCell.Tab.0.center" timestamp="1575063690657">
-      <screen x="1627" y="-1058" width="1920" height="1058" />
+    <state width="1434" height="241" key="GridCell.Tab.0.bottom/0.22.1440.831/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576079833131" />
+    <state width="1434" height="241" key="GridCell.Tab.0.bottom/0.22.1440.832/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576076103505" />
+    <state width="1434" height="241" key="GridCell.Tab.0.bottom/0.22.1440.833/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576075585924" />
+    <state width="1398" height="241" key="GridCell.Tab.0.bottom/0.22.1440.834/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576598807653" />
+    <state width="1398" height="241" key="GridCell.Tab.0.bottom/0.22.1440.835/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576601697446" />
+    <state width="1398" height="241" key="GridCell.Tab.0.bottom/0.22.1440.836/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576613303130" />
+    <state width="1398" height="241" key="GridCell.Tab.0.bottom/0.22.1440.837/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576614259609" />
+    <state width="1398" height="241" key="GridCell.Tab.0.bottom/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1007@1627.-1058.1920.1058" timestamp="1576615454002" />
+    <state width="1398" height="241" key="GridCell.Tab.0.bottom/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.992@-293.-1058.1920.992" timestamp="1576618962832" />
+    <state width="1398" height="241" key="GridCell.Tab.0.center" timestamp="1576618962831">
+      <screen x="-293" y="-1058" width="1920" height="992" />
     </state>
     <state width="1358" height="241" key="GridCell.Tab.0.center/0.22.1440.830/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1575063690657" />
-    <state width="1358" height="241" key="GridCell.Tab.0.left" timestamp="1575063690656">
-      <screen x="1627" y="-1058" width="1920" height="1058" />
+    <state width="1434" height="241" key="GridCell.Tab.0.center/0.22.1440.831/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576079833130" />
+    <state width="1434" height="241" key="GridCell.Tab.0.center/0.22.1440.832/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576076103504" />
+    <state width="1434" height="241" key="GridCell.Tab.0.center/0.22.1440.833/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576075585923" />
+    <state width="1398" height="241" key="GridCell.Tab.0.center/0.22.1440.834/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576598807652" />
+    <state width="1398" height="241" key="GridCell.Tab.0.center/0.22.1440.835/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576601697445" />
+    <state width="1398" height="241" key="GridCell.Tab.0.center/0.22.1440.836/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576613303128" />
+    <state width="1398" height="241" key="GridCell.Tab.0.center/0.22.1440.837/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576614259608" />
+    <state width="1398" height="241" key="GridCell.Tab.0.center/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1007@1627.-1058.1920.1058" timestamp="1576615454001" />
+    <state width="1398" height="241" key="GridCell.Tab.0.center/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.992@-293.-1058.1920.992" timestamp="1576618962831" />
+    <state width="1398" height="241" key="GridCell.Tab.0.left" timestamp="1576618962831">
+      <screen x="-293" y="-1058" width="1920" height="992" />
     </state>
     <state width="1358" height="241" key="GridCell.Tab.0.left/0.22.1440.830/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1575063690656" />
-    <state width="1358" height="241" key="GridCell.Tab.0.right" timestamp="1575063690657">
-      <screen x="1627" y="-1058" width="1920" height="1058" />
+    <state width="1434" height="241" key="GridCell.Tab.0.left/0.22.1440.831/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576079833129" />
+    <state width="1434" height="241" key="GridCell.Tab.0.left/0.22.1440.832/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576076103503" />
+    <state width="1434" height="241" key="GridCell.Tab.0.left/0.22.1440.833/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576075585922" />
+    <state width="1398" height="241" key="GridCell.Tab.0.left/0.22.1440.834/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576598807651" />
+    <state width="1398" height="241" key="GridCell.Tab.0.left/0.22.1440.835/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576601697444" />
+    <state width="1398" height="241" key="GridCell.Tab.0.left/0.22.1440.836/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576613303126" />
+    <state width="1398" height="241" key="GridCell.Tab.0.left/0.22.1440.837/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576614259607" />
+    <state width="1398" height="241" key="GridCell.Tab.0.left/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1007@1627.-1058.1920.1058" timestamp="1576615454000" />
+    <state width="1398" height="241" key="GridCell.Tab.0.left/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.992@-293.-1058.1920.992" timestamp="1576618962831" />
+    <state width="1398" height="241" key="GridCell.Tab.0.right" timestamp="1576618962832">
+      <screen x="-293" y="-1058" width="1920" height="992" />
     </state>
     <state width="1358" height="241" key="GridCell.Tab.0.right/0.22.1440.830/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1575063690657" />
+    <state width="1434" height="241" key="GridCell.Tab.0.right/0.22.1440.831/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576079833131" />
+    <state width="1434" height="241" key="GridCell.Tab.0.right/0.22.1440.832/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576076103504" />
+    <state width="1434" height="241" key="GridCell.Tab.0.right/0.22.1440.833/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576075585923" />
+    <state width="1398" height="241" key="GridCell.Tab.0.right/0.22.1440.834/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576598807653" />
+    <state width="1398" height="241" key="GridCell.Tab.0.right/0.22.1440.835/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576601697445" />
+    <state width="1398" height="241" key="GridCell.Tab.0.right/0.22.1440.836/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576613303129" />
+    <state width="1398" height="241" key="GridCell.Tab.0.right/0.22.1440.837/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576614259609" />
+    <state width="1398" height="241" key="GridCell.Tab.0.right/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1007@1627.-1058.1920.1058" timestamp="1576615454002" />
+    <state width="1398" height="241" key="GridCell.Tab.0.right/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.992@-293.-1058.1920.992" timestamp="1576618962832" />
+    <state x="2063" y="-714" width="816" height="540" key="find.popup" timestamp="1576610651412">
+      <screen x="1627" y="-1058" width="1920" height="1058" />
+    </state>
+    <state x="2063" y="-714" width="816" height="540" key="find.popup/0.22.1440.834/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576598209213" />
+    <state x="2063" y="-714" width="816" height="540" key="find.popup/0.22.1440.835/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576601589253" />
+    <state x="2063" y="-714" width="816" height="540" key="find.popup/0.22.1440.837/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576610651412" />
+    <state x="2136" y="-681" key="search.everywhere.popup" timestamp="1576598934559">
+      <screen x="1627" y="-1058" width="1920" height="1058" />
+    </state>
+    <state x="2136" y="-681" key="search.everywhere.popup/0.22.1440.833/1627.-1058.1920.1058/-293.-1058.1920.1058@1627.-1058.1920.1058" timestamp="1576598934559" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
