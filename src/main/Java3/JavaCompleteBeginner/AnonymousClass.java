@@ -1,7 +1,7 @@
 package main.Java3.JavaCompleteBeginner;
 
 
-class Machine5 {
+class MachineAn {
     public void start() {
         System.out.println("Starting machine ...");
     }
@@ -17,7 +17,7 @@ public class AnonymousClass  {
 
         // This is equivalent to creating a class that "extends"
         // Machine and overrides the start method.
-        Machine5 machine1 = new Machine5() {
+        MachineAn machine1 = new MachineAn() {
             @Override public void start() {
                 System.out.println("Camera snapping ....");
             }

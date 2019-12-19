@@ -6,7 +6,7 @@ import java.io.File;
         import java.util.Scanner;
 
 
-public class ReadingFils {
+public class ReadingFileScanner {
 
     public static void main(String[] args) throws FileNotFoundException {
         //String fileName = "C:/Users/John/Desktop/example.txt";

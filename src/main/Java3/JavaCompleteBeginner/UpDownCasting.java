@@ -1,13 +1,13 @@
 package main.Java3.JavaCompleteBeginner;
 
 
-class Machine {
+class Machine5 {
     public void start() {
         System.out.println("Machine started.");
     }
 }
 
-class Camera extends Machine5 {
+class CameraUc extends Machine5 {
     public void start() {
         System.out.println("Camera started.");
     }
@@ -22,7 +22,7 @@ public class UpDownCasting  {
     public static void main(String[] args) {
 
         Machine5 machine1 = new Machine5();
-        Camera camera1 = new Camera();
+        CameraUc camera1 = new CameraUc();
 
         machine1.start();
         camera1.start();
@@ -34,8 +34,8 @@ public class UpDownCasting  {
         // error: machine2.snap();//type of variable determine what object you can call ,and actual object determine parent or son method to call
 
         // Downcasting
-        Machine5 machine3 = new Camera();
-        Camera camera2 = (Camera)machine3;
+        Machine5 machine3 = new CameraUc();
+        CameraUc camera2 = (CameraUc)machine3;
         camera2.start();
         camera2.snap();
 
