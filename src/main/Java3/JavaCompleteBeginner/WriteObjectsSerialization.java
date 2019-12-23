@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
  
  
  
-public class WriteObjects {
+public class WriteObjectsSerialization {
  
     public static void main(String[] args) {
         System.out.println("Writing objects...");

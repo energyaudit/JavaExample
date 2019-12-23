@@ -7,7 +7,7 @@ import java.io.ObjectInputStream;
  
  
  
-public class ReadObjects {
+public class ReadObjectsSerializaiton {
  
      
     public static void main(String[] args) {
