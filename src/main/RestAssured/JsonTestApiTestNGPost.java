@@ -90,7 +90,7 @@ public class JsonTestApiTestNGPost {
         RTBody rty= new RTBody();
         String jsonString=rty.inputpar(uri);
         Str2JsonFile sjf=new Str2JsonFile();
-        sjf.inputStr(jsonString,"/QA/TESTRESULT/temp4.json");
+        sjf.inputStr(jsonString,"src/main/TESTRESULT/temp.json");
         System.out.println("Response time:"+resp.getTime());
         JsonPath jsonPath=new JsonPath(data);
         String weat=jsonPath.getString("weather[0].main");

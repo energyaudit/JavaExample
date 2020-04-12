@@ -25,3 +25,95 @@ Assert API test body size success SUCCESS
 Test date and time is:04/12/2020 13:17:15
 Assert API test code success SUCCESS
 Test date and time is:04/12/2020 13:17:16
+Assert API test code success SUCCESS
+Test date and time is:04/12/2020 13:19:09
+ API test data analysis result success SUCCESS
+Test date and time is:04/12/2020 13:19:09
+ API test data analysis result success SUCCESS
+Test date and time is:04/12/2020 13:19:09
+Read json file from resource folder success SUCCESS
+Test date and time is:04/12/2020 13:19:09
+ API test data analysis result success SUCCESS
+Test date and time is:04/12/2020 13:19:09
+ API test data analysis result success SUCCESS
+Test date and time is:04/12/2020 13:19:09
+Assert API test code success SUCCESS
+Test date and time is:04/12/2020 13:19:09
+Assert API test code success SUCCESS
+Test date and time is:04/12/2020 13:21:12
+ API test data analysis result success SUCCESS
+Test date and time is:04/12/2020 13:21:12
+ API test data analysis result success SUCCESS
+Test date and time is:04/12/2020 13:21:12
+Read json file from resource folder success SUCCESS
+Test date and time is:04/12/2020 13:21:12
+ API test data analysis result success SUCCESS
+Test date and time is:04/12/2020 13:21:12
+ API test data analysis result success SUCCESS
+Test date and time is:04/12/2020 13:21:12
+Assert API test code success SUCCESS
+Test date and time is:04/12/2020 13:21:12
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":6}2 SUCCESS
+Test date and time is:04/12/2020 13:25:05
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":2}6 SUCCESS
+Test date and time is:04/12/2020 13:25:05
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":2}5 SUCCESS
+Test date and time is:04/12/2020 13:25:06
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":2}3 SUCCESS
+Test date and time is:04/12/2020 13:25:06
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":6}5 SUCCESS
+Test date and time is:04/12/2020 13:25:07
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":5}3 SUCCESS
+Test date and time is:04/12/2020 13:25:07
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":5}2 SUCCESS
+Test date and time is:04/12/2020 13:25:08
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":6}3 SUCCESS
+Test date and time is:04/12/2020 13:25:08
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":1}6 SUCCESS
+Test date and time is:04/12/2020 13:25:09
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":6}1 SUCCESS
+Test date and time is:04/12/2020 13:25:10
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":6}5 SUCCESS
+Test date and time is:04/12/2020 13:25:10
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":1}3 SUCCESS
+Test date and time is:04/12/2020 13:25:11
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":5}6 SUCCESS
+Test date and time is:04/12/2020 13:25:11
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":2}1 SUCCESS
+Test date and time is:04/12/2020 13:25:12
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":2}5 SUCCESS
+Test date and time is:04/12/2020 13:25:12
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":3}2 SUCCESS
+Test date and time is:04/12/2020 13:25:13
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":5}5 SUCCESS
+Test date and time is:04/12/2020 13:25:13
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":1}2 SUCCESS
+Test date and time is:04/12/2020 13:25:14
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":6}2 SUCCESS
+Test date and time is:04/12/2020 13:25:14
+ API test data BODY URI1 success result is:{"dieVersion":3,"value":5}6 SUCCESS
+Test date and time is:04/12/2020 13:25:15
+Assert API test header content success SUCCESS
+Test date and time is:04/12/2020 13:56:34
+ API test data analysis result success SUCCESS
+Test date and time is:04/12/2020 14:12:56
+Assert API test data success SUCCESS
+Test date and time is:04/12/2020 14:15:35
+Assert API test data success SUCCESS
+Test date and time is:04/12/2020 14:18:08
+Assert API test header content success SUCCESS
+Test date and time is:04/12/2020 14:19:25
+ API test Test AUTH success SUCCESS
+Test date and time is:04/12/2020 14:19:26
+ API test data BODY success SUCCESS
+Test date and time is:04/12/2020 14:19:27
+Assert API test body size success SUCCESS
+Test date and time is:04/12/2020 14:19:29
+Assert API get data call getDataJpath success SUCCESS
+Test date and time is:04/12/2020 14:19:30
+ API test Test ShemaVerify success SUCCESS
+Test date and time is:04/12/2020 14:19:31
+ API test data API Response Time success SUCCESS
+Test date and time is:04/12/2020 14:19:40
+Assert API test code success SUCCESS
+Test date and time is:04/12/2020 14:19:41

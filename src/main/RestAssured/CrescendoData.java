@@ -34,6 +34,8 @@ public class CrescendoData  {
             RTBody rty= new RTBody();
             String jsonString=rty.inputpar(puri);
             Str2JsonFile sjf=new Str2JsonFile();
+            System.out.println("Working Directory = " +
+                    System.getProperty("user.dir"));
        //     sjf.inputStr(jsonString,"C:\\QA\\TESTRESULT\\temp.json");
             sjf.inputStr(jsonString,"/QA/TESTRESULT/temp2.json");
 

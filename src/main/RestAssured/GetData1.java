@@ -45,7 +45,7 @@ public class GetData1 {
         String jsonString=rty.inputpar(uri);
         Str2JsonFile sjf=new Str2JsonFile();
         //     sjf.inputStr(jsonString,"C:\\QA\\TESTRESULT\\temp.json");
-        sjf.inputStr(jsonString,"/QA/TESTRESULT/temp3.json");
+        sjf.inputStr(jsonString,"src/main/TESTRESULT/temp.json");
         JsonPath jsonPath=new JsonPath(data);
         String weat=jsonPath.getString("weather[0].main");
         System.out.println(weat);

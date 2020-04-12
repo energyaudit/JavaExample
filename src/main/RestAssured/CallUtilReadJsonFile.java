@@ -21,7 +21,7 @@ public class CallUtilReadJsonFile {
         ReadJsonFile2Str rj2s = new ReadJsonFile2Str();
    //;     String resultO = rj2s.inputpar("C:\\QA\\TESTRESULT\\user2.json");
 
-        String resultO = rj2s.inputpar("/QA/TESTRESULT/user2.json");
+        String resultO = rj2s.inputpar("src/main/TESTRESULT/user2.json");
 
         System.out.println("Before Update " + resultO);
         OutPutResult outR = new OutPutResult();
@@ -33,7 +33,7 @@ public class CallUtilReadJsonFile {
         ReadJsonFile2Str rj2s = new ReadJsonFile2Str();
         //;     String resultO = rj2s.inputpar("C:\\QA\\TESTRESULT\\user2.json");
 
-        String resultO = rj2s.inputpar("/QA/TESTRESULT/user2.json");
+        String resultO = rj2s.inputpar("src/main/TESTRESULT/user2.json");
 
         System.out.println("Before Update " + resultO);
         OutPutResult outR = new OutPutResult();
@@ -97,7 +97,7 @@ public class CallUtilReadJsonFile {
         ArrayList<JSONObject> json = new ArrayList<JSONObject>();
         JSONObject obj;
         // The name of the file to open.
-        String fileName = "C:\\QA\\TESTRESULT\\Dump\\testout1.txt";
+        String fileName = "src/main/TESTRESULT/testout1.txt";
 
         // This will reference one line at a time
         String line = null;
@@ -141,7 +141,7 @@ public class CallUtilReadJsonFile {
     @Test
     public void Call1GetJsonFileValueByName() {
         GetJsonFileValueByName gjv = new GetJsonFileValueByName();
-        ArrayList alst = gjv.inputStr("C:\\QA\\TESTRESULT\\Dump\\testout1.txt", "value");
+        ArrayList alst = gjv.inputStr("src/main/TESTRESULT/testout1.txt", "value");
 
         CountListFreq clf = new CountListFreq();
         Map outMp = clf.countFrequencies(alst);
@@ -153,7 +153,7 @@ public class CallUtilReadJsonFile {
     public void Call2GetJsonFileValueByName() {
         GetJsonFileValueByName gjv = new GetJsonFileValueByName();
     //    ArrayList alst = gjv.inputStr("C:\\QA\\TESTRESULT\\Dump\\testout2.txt", "value");
-        ArrayList alst = gjv.inputStr("/QA/TESTRESULT/Dump/testout2.txt", "value");
+        ArrayList alst = gjv.inputStr("src/main/TESTRESULT/testout2.txt", "value");
 
 
         CountListFreq clf = new CountListFreq();
@@ -164,7 +164,7 @@ public class CallUtilReadJsonFile {
     @Test
     public void Call3GetJsonFileValueByName() {
         GetJsonFileValueByName gjv = new GetJsonFileValueByName();
-        ArrayList alst = gjv.inputStr("/QA/TESTRESULT/Dump/testout3.txt", "value");
+        ArrayList alst = gjv.inputStr("src/main/TESTRESULT/testout3.txt", "value");
 
         CountListFreq clf = new CountListFreq();
         Map outMp = clf.countFrequencies(alst);

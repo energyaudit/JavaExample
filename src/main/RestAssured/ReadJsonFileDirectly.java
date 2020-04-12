@@ -13,7 +13,7 @@ public class ReadJsonFileDirectly {
         ArrayList<JSONObject> json=new ArrayList<JSONObject>();
         JSONObject obj;
         // The name of the file to open.
-        String fileName = "C:\\QA\\TESTRESULT\\Dump\\testout1.txt";
+        String fileName = "src/main/TESTRESULT/testout1.txt";
 
         // This will reference one line at a time
         String line = null;

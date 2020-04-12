@@ -168,7 +168,7 @@ public class ApiTestNGPostBonus {
         System.out.println(token_type);
 
         Str2JsonAppendFile sjf1=new Str2JsonAppendFile();
-        sjf1.inputStr(data,"src/main/TESTRESULT//temp6.json");
+        sjf1.inputStr(data,"src/main/TESTRESULT/temp6.json");
 
 
 
