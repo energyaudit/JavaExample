@@ -1,3 +1,11 @@
 
  API test data API Response Time success SUCCESS
 Test date and time is:09/09/2019 18:41:33
+Assert API test code success SUCCESS
+Test date and time is:04/12/2020 12:49:50
+Assert API test data write to jason file success SUCCESS
+Test date and time is:04/12/2020 13:07:33
+Assert API test data write to jason file success SUCCESS
+Test date and time is:04/12/2020 13:10:00
+Assert API test data write to jason file success SUCCESS
+Test date and time is:04/12/2020 13:12:53

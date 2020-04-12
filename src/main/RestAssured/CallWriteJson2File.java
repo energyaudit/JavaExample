@@ -57,7 +57,7 @@ public class CallWriteJson2File {
 
         try {
          //   FileWriter writer = new FileWriter("C:\\QA\\TESTRESULT\\temp.json");
-            FileWriter writer = new FileWriter("/QA/TESTRESULT/temp.json",true);
+            FileWriter writer = new FileWriter("src/main/TESTRESULT/temp.json",true);
 
             writer.write(jsonString);
             writer.close();
