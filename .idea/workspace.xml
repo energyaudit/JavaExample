@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe35c1d-4d7f-42c9-ae00-8be53e6f0651" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/RestAssured/CallWriteJson2File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/RestAssured/CallWriteJson2File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/RestAssured/ApiTestNGPostBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/RestAssured/ApiTestNGPostBonus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/TESTRESULT/temp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TESTRESULT/temp.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,39 +110,13 @@
       <recent name="$PROJECT_DIR$/src/main/RestAssured" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CallWriteJson2File.TestbodyJsonFile">
-    <configuration name="A5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.Java0.A5" />
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.Java0.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.ApiTestNGPostBonus (1)">
     <configuration name="Join2List" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.main.Java3.Join2List" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="src.main.Java3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Student2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.Java0.Student2" />
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.Java0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,13 +156,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiTestNGPostBonus (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.RestAssured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.RestAssured" />
+      <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.ApiTestNGPostBonus" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTestNGPostBonus" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.RestAssured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.RestAssured" />
+      <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.ApiTestNGPostBonus" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ApiTestNGPostBonus (1)" />
+        <item itemvalue="TestNG.ApiTestNGPostBonus" />
         <item itemvalue="JUnit.CallWriteJson2File.TestbodyJsonFile" />
         <item itemvalue="JUnit.CallUtilReadJsonFile.CallUtilReadJsonFile" />
         <item itemvalue="Application.Join2List" />
-        <item itemvalue="Application.Student2" />
-        <item itemvalue="Application.A5" />
       </list>
     </recent_temporary>
   </component>
@@ -235,37 +243,37 @@
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
     <state x="682" y="291" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586710049852" />
-    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1586711396858">
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1586711673432">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586711396858" />
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586711673432" />
     <state width="1659" height="341" key="GridCell.Tab.0.bottom/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751235" />
     <state width="1659" height="341" key="GridCell.Tab.0.bottom/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755761" />
     <state width="1485" height="341" key="GridCell.Tab.0.bottom/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151151" />
     <state width="1398" height="341" key="GridCell.Tab.0.bottom/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1054@-293.-1058.1920.1054" timestamp="1579727061410" />
     <state width="1485" height="341" key="GridCell.Tab.0.bottom/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.982@-293.-1058.1920.982" timestamp="1579125750879" />
-    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1586711396858">
+    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1586711673432">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1638" height="264" key="GridCell.Tab.0.center/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586711396858" />
+    <state width="1638" height="264" key="GridCell.Tab.0.center/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586711673432" />
     <state width="1659" height="341" key="GridCell.Tab.0.center/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751234" />
     <state width="1659" height="341" key="GridCell.Tab.0.center/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755760" />
     <state width="1485" height="341" key="GridCell.Tab.0.center/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151150" />
     <state width="1398" height="341" key="GridCell.Tab.0.center/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1054@-293.-1058.1920.1054" timestamp="1579727061409" />
     <state width="1485" height="341" key="GridCell.Tab.0.center/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.982@-293.-1058.1920.982" timestamp="1579125750878" />
-    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1586711396858">
+    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1586711673432">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1638" height="264" key="GridCell.Tab.0.left/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586711396858" />
+    <state width="1638" height="264" key="GridCell.Tab.0.left/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586711673432" />
     <state width="1659" height="341" key="GridCell.Tab.0.left/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751234" />
     <state width="1659" height="341" key="GridCell.Tab.0.left/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755759" />
     <state width="1485" height="341" key="GridCell.Tab.0.left/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151149" />
     <state width="1398" height="341" key="GridCell.Tab.0.left/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1054@-293.-1058.1920.1054" timestamp="1579727061408" />
     <state width="1485" height="341" key="GridCell.Tab.0.left/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.982@-293.-1058.1920.982" timestamp="1579125750877" />
-    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1586711396858">
+    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1586711673432">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1638" height="264" key="GridCell.Tab.0.right/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586711396858" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586711673432" />
     <state width="1659" height="341" key="GridCell.Tab.0.right/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751235" />
     <state width="1659" height="341" key="GridCell.Tab.0.right/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755760" />
     <state width="1485" height="341" key="GridCell.Tab.0.right/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151150" />

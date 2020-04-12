@@ -160,7 +160,7 @@ public class ApiTestNGPostBonus {
         String data=response.getBody().asString();
         System.out.println(data);
         Str2JsonFile sjf=new Str2JsonFile();
-        sjf.inputStr(data,"/QA/TESTRESULT/temp5.json");
+        sjf.inputStr(data,"src/main/TESTRESULT/temp5.json");
 //       the appending json must write into another josn file or not following steps cannot get last access_token and token_type
         String access_token = response.jsonPath().get("access_token");
         System.out.println(access_token);
@@ -168,7 +168,7 @@ public class ApiTestNGPostBonus {
         System.out.println(token_type);
 
         Str2JsonAppendFile sjf1=new Str2JsonAppendFile();
-        sjf1.inputStr(data,"/QA/TESTRESULT/temp6.json");
+        sjf1.inputStr(data,"src/main/TESTRESULT//temp6.json");
 
 
 
