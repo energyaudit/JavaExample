@@ -38,6 +38,8 @@ yarn-error.log*
 .idea/workspace.xml
 'idea/*
 
+#
+
 #result temp5 6
 src/main/TESTRESULT/temp5.json
 src/main/TESTRESULT/temp6.json
