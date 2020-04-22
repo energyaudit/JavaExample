@@ -25,14 +25,12 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="MultiBrowsers" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -45,7 +43,6 @@
         <option name="createModuleGroups" value="true" />
         <option name="downloadDocsAutomatically" value="true" />
         <option name="downloadSourcesAutomatically" value="true" />
-        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
@@ -59,7 +56,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -74,22 +70,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/TESTRESULT" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/RestAssured" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.Java1" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="src.main" />
       <recent name="" />
       <recent name="RestAssured" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="src.main.util" />
-      <recent name="util" />
-      <recent name="RestAssured" />
-      <recent name="Java1" />
-      <recent name="Java2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/Java3/JavaCompleteBeginner" />
@@ -98,14 +85,26 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/projectname" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="src.main.util" />
+      <recent name="util" />
+      <recent name="RestAssured" />
+      <recent name="Java1" />
+      <recent name="Java2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/TESTRESULT" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/RestAssured" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ReadJsonFileDirectly">
-    <configuration name="ReadJsonFileDirectly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.ReadJsonFileDirectly" />
+  <component name="RunManager" selected="Application.Palindrome">
+    <configuration name="AggregateOutClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Java1.AggregateOutClass" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.RestAssured.*" />
+          <option name="PATTERN" value="src.main.Java1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,68 +112,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrescendoData.TestbodyURI3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayDequeT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.Java2.ArrayDequeT" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.RestAssured.*" />
+          <option name="PATTERN" value="src.main.Java2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main.RestAssured" />
-      <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.CrescendoData" />
-      <option name="METHOD_NAME" value="TestbodyURI3" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchemaVerify.SchemaValidationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Java1.Palindrome" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.RestAssured.*" />
+          <option name="PATTERN" value="main.Java1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main.RestAssured" />
-      <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.SchemaVerify" />
-      <option name="METHOD_NAME" value="SchemaValidationTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTestNGPostBonus (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.RestAssured.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main.RestAssured" />
-      <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.ApiTestNGPostBonus" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JsonXmlTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.RestAssured.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main.RestAssured" />
-      <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.JsonXmlTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -226,6 +185,42 @@
       <option name="PACKAGE_NAME" value="main.RestAssured" />
       <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.JsonXmlTest" />
       <option name="METHOD_NAME" value="post_xml_test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonXmlTest.post_xml_test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.RestAssured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.RestAssured" />
+      <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.JsonXmlTest" />
+      <option name="METHOD_NAME" value="post_xml_test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="xmlTest1.xmlPostRequest_Test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.RestAssured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.RestAssured" />
+      <option name="MAIN_CLASS_NAME" value="main.RestAssured.xmlTest1" />
+      <option name="METHOD_NAME" value="xmlPostRequest_Test" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -235,25 +230,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReadJsonFileDirectly" />
-        <item itemvalue="TestNG.JsonXmlTest" />
-        <item itemvalue="JUnit.SchemaVerify.SchemaValidationTest" />
-        <item itemvalue="JUnit.CrescendoData.TestbodyURI3" />
-        <item itemvalue="TestNG.ApiTestNGPostBonus (1)" />
+        <item itemvalue="Application.Palindrome" />
+        <item itemvalue="Application.AggregateOutClass" />
+        <item itemvalue="Application.ArrayDequeT" />
+        <item itemvalue="TestNG.JsonXmlTest.post_xml_test" />
+        <item itemvalue="TestNG.xmlTest1.xmlPostRequest_Test" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -273,26 +256,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="250" y="45" key="#Project_Structure" timestamp="1587088635356">
       <screen x="0" y="23" width="1280" height="713" />
     </state>
     <state x="250" y="45" key="#Project_Structure/0.23.1280.713@0.23.1280.713" timestamp="1587088635356" />
+    <state x="336" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587318063530">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="336" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.709@0.23.1280.709" timestamp="1587318063530" />
     <state x="2602" y="303" key="FileChooserDialogImpl" timestamp="1586721136040">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="682" y="291" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586710049852" />
     <state x="2602" y="303" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586721136040" />
-    <state width="1218" height="220" key="GridCell.Tab.0.bottom" timestamp="1587089624820">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1218" height="205" key="GridCell.Tab.0.bottom" timestamp="1587519239773">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1638" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586728268083" />
     <state width="1638" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168999" />
@@ -301,10 +287,14 @@
     <state width="1485" height="341" key="GridCell.Tab.0.bottom/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151151" />
     <state width="1398" height="341" key="GridCell.Tab.0.bottom/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1054@-293.-1058.1920.1054" timestamp="1579727061410" />
     <state width="1485" height="341" key="GridCell.Tab.0.bottom/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.982@-293.-1058.1920.982" timestamp="1579125750879" />
-    <state width="1218" height="282" key="GridCell.Tab.0.bottom/0.23.1280.713@0.23.1280.713" timestamp="1587088736165" />
+    <state width="1218" height="220" key="GridCell.Tab.0.bottom/0.23.1280.710@0.23.1280.710" timestamp="1587100312756" />
+    <state width="1218" height="220" key="GridCell.Tab.0.bottom/0.23.1280.713@0.23.1280.713" timestamp="1587099505280" />
     <state width="1218" height="220" key="GridCell.Tab.0.bottom/0.23.1280.715@0.23.1280.715" timestamp="1587089624820" />
-    <state width="1218" height="220" key="GridCell.Tab.0.center" timestamp="1587089624819">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1218" height="219" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1587516203309" />
+    <state width="1218" height="219" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1587512483533" />
+    <state width="1218" height="205" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1587519239773" />
+    <state width="1218" height="205" key="GridCell.Tab.0.center" timestamp="1587519239772">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1638" height="279" key="GridCell.Tab.0.center/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586728268083" />
     <state width="1638" height="322" key="GridCell.Tab.0.center/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168999" />
@@ -313,10 +303,14 @@
     <state width="1485" height="341" key="GridCell.Tab.0.center/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151150" />
     <state width="1398" height="341" key="GridCell.Tab.0.center/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1054@-293.-1058.1920.1054" timestamp="1579727061409" />
     <state width="1485" height="341" key="GridCell.Tab.0.center/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.982@-293.-1058.1920.982" timestamp="1579125750878" />
-    <state width="1218" height="282" key="GridCell.Tab.0.center/0.23.1280.713@0.23.1280.713" timestamp="1587088736164" />
+    <state width="1218" height="220" key="GridCell.Tab.0.center/0.23.1280.710@0.23.1280.710" timestamp="1587100312755" />
+    <state width="1218" height="220" key="GridCell.Tab.0.center/0.23.1280.713@0.23.1280.713" timestamp="1587099505278" />
     <state width="1218" height="220" key="GridCell.Tab.0.center/0.23.1280.715@0.23.1280.715" timestamp="1587089624819" />
-    <state width="1218" height="220" key="GridCell.Tab.0.left" timestamp="1587089624819">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1218" height="219" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1587516203306" />
+    <state width="1218" height="219" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1587512483532" />
+    <state width="1218" height="205" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1587519239772" />
+    <state width="1218" height="205" key="GridCell.Tab.0.left" timestamp="1587519239771">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1638" height="279" key="GridCell.Tab.0.left/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586728268082" />
     <state width="1638" height="322" key="GridCell.Tab.0.left/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168998" />
@@ -325,10 +319,14 @@
     <state width="1485" height="341" key="GridCell.Tab.0.left/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151149" />
     <state width="1398" height="341" key="GridCell.Tab.0.left/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1054@-293.-1058.1920.1054" timestamp="1579727061408" />
     <state width="1485" height="341" key="GridCell.Tab.0.left/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.982@-293.-1058.1920.982" timestamp="1579125750877" />
-    <state width="1218" height="282" key="GridCell.Tab.0.left/0.23.1280.713@0.23.1280.713" timestamp="1587088736163" />
+    <state width="1218" height="220" key="GridCell.Tab.0.left/0.23.1280.710@0.23.1280.710" timestamp="1587100312755" />
+    <state width="1218" height="220" key="GridCell.Tab.0.left/0.23.1280.713@0.23.1280.713" timestamp="1587099505277" />
     <state width="1218" height="220" key="GridCell.Tab.0.left/0.23.1280.715@0.23.1280.715" timestamp="1587089624819" />
-    <state width="1218" height="220" key="GridCell.Tab.0.right" timestamp="1587089624820">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1218" height="219" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1587516203303" />
+    <state width="1218" height="219" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1587512483532" />
+    <state width="1218" height="205" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1587519239771" />
+    <state width="1218" height="205" key="GridCell.Tab.0.right" timestamp="1587519239772">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1638" height="279" key="GridCell.Tab.0.right/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586728268083" />
     <state width="1638" height="322" key="GridCell.Tab.0.right/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168999" />
@@ -337,24 +335,33 @@
     <state width="1485" height="341" key="GridCell.Tab.0.right/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151150" />
     <state width="1398" height="341" key="GridCell.Tab.0.right/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.1054@-293.-1058.1920.1054" timestamp="1579727061410" />
     <state width="1485" height="341" key="GridCell.Tab.0.right/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.982@-293.-1058.1920.982" timestamp="1579125750878" />
-    <state width="1218" height="282" key="GridCell.Tab.0.right/0.23.1280.713@0.23.1280.713" timestamp="1587088736164" />
+    <state width="1218" height="220" key="GridCell.Tab.0.right/0.23.1280.710@0.23.1280.710" timestamp="1587100312756" />
+    <state width="1218" height="220" key="GridCell.Tab.0.right/0.23.1280.713@0.23.1280.713" timestamp="1587099505279" />
     <state width="1218" height="220" key="GridCell.Tab.0.right/0.23.1280.715@0.23.1280.715" timestamp="1587089624820" />
-    <state x="338" y="113" key="SettingsEditor" timestamp="1586882669939">
-      <screen x="0" y="0" width="1920" height="1036" />
+    <state width="1218" height="219" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1587516203306" />
+    <state width="1218" height="219" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1587512483533" />
+    <state width="1218" height="205" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1587519239772" />
+    <state x="225" y="23" key="SettingsEditor" timestamp="1587099522529">
+      <screen x="0" y="23" width="1280" height="713" />
     </state>
     <state x="338" y="113" key="SettingsEditor/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586882669939" />
     <state x="37" y="-1050" key="SettingsEditor/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299669378" />
-    <state x="2463" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1587076382872">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="225" y="23" key="SettingsEditor/0.23.1280.713@0.23.1280.713" timestamp="1587099522529" />
+    <state x="225" y="23" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1587095329443" />
+    <state x="362" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1587318017560">
+      <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="2463" y="232" key="com.intellij.ide.util.TipDialog/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587076382872" />
     <state x="2170" y="-831" key="com.intellij.ide.util.TipDialog/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.977@1627.-1058.1920.1058" timestamp="1579727853105" />
-    <state x="2439" y="434" width="890" height="646" key="find.popup" timestamp="1586730793300">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="362" y="175" key="com.intellij.ide.util.TipDialog/0.23.1280.709@0.23.1280.709" timestamp="1587318017560" />
+    <state x="346" y="23" width="594" height="716" key="find.popup" timestamp="1587515798251">
+      <screen x="0" y="23" width="1280" height="716" />
     </state>
     <state x="519" y="417" width="890" height="619" key="find.popup/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586725987130" />
     <state x="2439" y="434" width="890" height="646" key="find.popup/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586730793300" />
     <state x="389" y="350" width="667" height="486" key="find.popup/0.22.1440.814/-301.-1178.1920.1178@0.22.1440.814" timestamp="1580406851310" />
+    <state x="346" y="23" width="594" height="713" key="find.popup/0.23.1280.713@0.23.1280.713" timestamp="1587508978911" />
+    <state x="346" y="23" width="594" height="716" key="find.popup/0.23.1280.716@0.23.1280.716" timestamp="1587515798251" />
     <state x="561" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1586710603029">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
