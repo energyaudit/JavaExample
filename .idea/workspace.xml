@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe35c1d-4d7f-42c9-ae00-8be53e6f0651" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/TESTRESULT/temp.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TESTRESULT/temp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/util/OutPutResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/OutPutResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Ffbank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Ffbank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ibs_Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ibs_Firefox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEB1/CallXpathTxtVeri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEB1/CallXpathTxtVeri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEB1/NewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEB1/NewWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEB1/VeriFloatCallUti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEB1/VeriFloatCallUti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEB1/VerifyFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEB1/VerifyFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEB1/WindowSwtCallUti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEB1/WindowSwtCallUti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEB1/callBrowserSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEB1/callBrowserSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEB1/cnn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEB1/cnn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEB1/util/BrowserSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEB1/util/BrowserSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEB1/xpathVerifyDiret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEB1/xpathVerifyDiret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/util/BrowserSetup.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,60 +107,8 @@
       <recent name="main.Java1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReadExcelCallUtil">
-    <configuration name="MergeResult" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WEB1.MergeResult" />
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="WEB1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MergeResultCallUti" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WEB1.MergeResultCallUti" />
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="WEB1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadExcel1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WEB1.ReadExcel1" />
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="WEB1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadExcelCallUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WEB1.ReadExcelCallUtil" />
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="WEB1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewWindow.testUntitledTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.WindowSwtCallUti.WindowSwtCallUti">
+    <configuration name="CallXpathTxtVeri.CallXpathTxt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
@@ -163,8 +117,74 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main.WEB1" />
-      <option name="MAIN_CLASS_NAME" value="WEB1.NewWindow" />
-      <option name="METHOD_NAME" value="testUntitledTestCase" />
+      <option name="MAIN_CLASS_NAME" value="WEB1.CallXpathTxtVeri" />
+      <option name="METHOD_NAME" value="CallXpathTxt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VeriFloatCallUti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WEB1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.WEB1" />
+      <option name="MAIN_CLASS_NAME" value="WEB1.VeriFloatCallUti" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VeriFloatCallUti.verifyVariable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WEB1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.WEB1" />
+      <option name="MAIN_CLASS_NAME" value="WEB1.VeriFloatCallUti" />
+      <option name="METHOD_NAME" value="verifyVariable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowSwtCallUti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WEB1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.WEB1" />
+      <option name="MAIN_CLASS_NAME" value="WEB1.WindowSwtCallUti" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowSwtCallUti.WindowSwtCallUti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WEB1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.WEB1" />
+      <option name="MAIN_CLASS_NAME" value="WEB1.WindowSwtCallUti" />
+      <option name="METHOD_NAME" value="WindowSwtCallUti" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,31 +234,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonXmlTest.post_xml_test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JavaExample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.RestAssured.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main.RestAssured" />
-      <option name="MAIN_CLASS_NAME" value="src.main.RestAssured.JsonXmlTest" />
-      <option name="METHOD_NAME" value="post_xml_test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReadExcelCallUtil" />
-        <item itemvalue="Application.ReadExcel1" />
-        <item itemvalue="JUnit.NewWindow.testUntitledTestCase" />
-        <item itemvalue="Application.MergeResultCallUti" />
-        <item itemvalue="Application.MergeResult" />
+        <item itemvalue="JUnit.WindowSwtCallUti.WindowSwtCallUti" />
+        <item itemvalue="JUnit.WindowSwtCallUti" />
+        <item itemvalue="JUnit.VeriFloatCallUti.verifyVariable" />
+        <item itemvalue="JUnit.VeriFloatCallUti" />
+        <item itemvalue="JUnit.CallXpathTxtVeri.CallXpathTxt" />
       </list>
     </recent_temporary>
   </component>
@@ -285,11 +287,12 @@
     </state>
     <state x="682" y="291" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587603838151" />
     <state x="2602" y="303" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586721136040" />
-    <state width="1660" height="420" key="GridCell.Tab.0.bottom" timestamp="1587615866508">
-      <screen x="0" y="0" width="1920" height="1036" />
+    <state width="1636" height="420" key="GridCell.Tab.0.bottom" timestamp="1587679322998">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1660" height="420" key="GridCell.Tab.0.bottom/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587615866508" />
     <state width="1638" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168999" />
+    <state width="1636" height="420" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587679322998" />
     <state width="1659" height="341" key="GridCell.Tab.0.bottom/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751235" />
     <state width="1659" height="341" key="GridCell.Tab.0.bottom/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755761" />
     <state width="1485" height="341" key="GridCell.Tab.0.bottom/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151151" />
@@ -301,11 +304,12 @@
     <state width="1218" height="219" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1587516203309" />
     <state width="1218" height="219" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1587512483533" />
     <state width="1218" height="205" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1587519239773" />
-    <state width="1660" height="420" key="GridCell.Tab.0.center" timestamp="1587615866508">
-      <screen x="0" y="0" width="1920" height="1036" />
+    <state width="1636" height="420" key="GridCell.Tab.0.center" timestamp="1587679322998">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1660" height="420" key="GridCell.Tab.0.center/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587615866508" />
     <state width="1638" height="322" key="GridCell.Tab.0.center/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168999" />
+    <state width="1636" height="420" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587679322998" />
     <state width="1659" height="341" key="GridCell.Tab.0.center/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751234" />
     <state width="1659" height="341" key="GridCell.Tab.0.center/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755760" />
     <state width="1485" height="341" key="GridCell.Tab.0.center/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151150" />
@@ -317,11 +321,12 @@
     <state width="1218" height="219" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1587516203306" />
     <state width="1218" height="219" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1587512483532" />
     <state width="1218" height="205" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1587519239772" />
-    <state width="1660" height="420" key="GridCell.Tab.0.left" timestamp="1587615866508">
-      <screen x="0" y="0" width="1920" height="1036" />
+    <state width="1636" height="420" key="GridCell.Tab.0.left" timestamp="1587679322998">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1660" height="420" key="GridCell.Tab.0.left/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587615866508" />
     <state width="1638" height="322" key="GridCell.Tab.0.left/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168998" />
+    <state width="1636" height="420" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587679322998" />
     <state width="1659" height="341" key="GridCell.Tab.0.left/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751234" />
     <state width="1659" height="341" key="GridCell.Tab.0.left/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755759" />
     <state width="1485" height="341" key="GridCell.Tab.0.left/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151149" />
@@ -333,11 +338,12 @@
     <state width="1218" height="219" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1587516203303" />
     <state width="1218" height="219" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1587512483532" />
     <state width="1218" height="205" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1587519239771" />
-    <state width="1660" height="420" key="GridCell.Tab.0.right" timestamp="1587615866508">
-      <screen x="0" y="0" width="1920" height="1036" />
+    <state width="1636" height="420" key="GridCell.Tab.0.right" timestamp="1587679322998">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1660" height="420" key="GridCell.Tab.0.right/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587615866508" />
     <state width="1638" height="322" key="GridCell.Tab.0.right/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168999" />
+    <state width="1636" height="420" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587679322998" />
     <state width="1659" height="341" key="GridCell.Tab.0.right/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751235" />
     <state width="1659" height="341" key="GridCell.Tab.0.right/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755760" />
     <state width="1485" height="341" key="GridCell.Tab.0.right/0.22.1440.822/1627.-1058.1920.1058/-293.-1058.1920.1058@-293.-1058.1920.1058" timestamp="1579132151150" />
@@ -349,10 +355,11 @@
     <state width="1218" height="219" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1587516203306" />
     <state width="1218" height="219" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1587512483533" />
     <state width="1218" height="205" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1587519239772" />
-    <state x="225" y="23" key="SettingsEditor" timestamp="1587099522529">
-      <screen x="0" y="23" width="1280" height="713" />
+    <state x="338" y="0" key="SettingsEditor" timestamp="1587679878762">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="338" y="113" key="SettingsEditor/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586882669939" />
+    <state x="338" y="0" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587679878762" />
     <state x="37" y="-1050" key="SettingsEditor/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299669378" />
     <state x="225" y="23" key="SettingsEditor/0.23.1280.713@0.23.1280.713" timestamp="1587099522529" />
     <state x="225" y="23" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1587095329443" />

@@ -26,8 +26,8 @@ public class callBrowserSetup {
 
 
     @Test
-    public void testCA51TemplateSetup() throws Exception {
-       driver=new BrowserSetup().Setup();
+    public void testCA51BrowserSetup() throws Exception {
+       driver=new BrowserSetup().Setup("chrome");
 //        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
         driver.get("http://www.51.ca/");
         driver.findElement(By.linkText("资讯")).click();
@@ -38,7 +38,19 @@ public class callBrowserSetup {
 //        OutPutResult outR = new OutPutResult();
 //        outR.inputStr("51CA  "+getbrowser+"success");
     }
+    @Test
+    public void firefoxCA51BrowserSetup() throws Exception {
+        driver=new BrowserSetup().Setup("firefox");
+//        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
+        driver.get("http://www.51.ca/");
+        driver.findElement(By.linkText("资讯")).click();
+        driver.findElement(By.linkText("新闻精要")).click();
+        driver.findElement(By.linkText("51首页")).click();
 
+//        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("51CA  "+getbrowser+"success");
+    }
     @After
     public void tearDown() throws Exception {
         driver.quit();

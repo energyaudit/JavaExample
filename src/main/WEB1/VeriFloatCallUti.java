@@ -23,17 +23,17 @@ public class VeriFloatCallUti {
 
     @Test
     public void verifyVariable() throws Exception {
-       driver=new BrowserSetup().Setup();
-        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
+       driver=new BrowserSetup().Setup("chrome");
+//        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
         // element is object that cannnot be compare to 0,so get txt attribute then parse back to float
-     //  gasprice =driver.findElement(By.cssSelector("li > span.gaspricebox > a")).getText();
+        driver.get("http://www.51.ca/");
 
         assertFloatByCss vf=new assertFloatByCss();
        boolean  result=vf.inputStr(driver,"li > span.gaspricebox > a",0);
         assertTrue(result);
-        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("51CA  "+getbrowser+" verified gas price >0");
+//        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("51CA  "+getbrowser+" verified gas price >0");
     }
 
     @After

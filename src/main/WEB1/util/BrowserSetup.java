@@ -11,17 +11,17 @@ import java.util.concurrent.TimeUnit;
 
 public class BrowserSetup {
     public static WebDriver driver;
-    public static WebDriver Setup() {
-//        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
-        String getbrowser="chrome";
-        switch (getbrowser) {//switch on string
+    public static WebDriver Setup(String browser) {
+//        String browser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
+
+        switch (browser) {//switch on string
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
                 driver = new ChromeDriver();
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                  break;
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "C:\\QA INSTALL\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
                 driver = new FirefoxDriver();
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                 break;

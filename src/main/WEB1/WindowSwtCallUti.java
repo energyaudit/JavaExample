@@ -16,30 +16,28 @@ public class WindowSwtCallUti {
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
- //   @Before
+    //   @Before
 
 
     @Test
     public void WindowSwtCallUti() throws Exception {
-     //   driver.get("https://www.toolsqa.com/automation-practice-switch-windows/");
-        driver=new BrowserSetup().Setup();
-        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL1));
-        String handle= driver.getWindowHandle();
+        driver = new BrowserSetup().Setup("chrome");
+//        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL1));
+        driver.get("https://www.toolsqa.com/automation-practice-switch-windows/");
+        String handle = driver.getWindowHandle();
         System.out.println(handle);
         driver.findElement(By.id("button1")).click();
 
         driver.findElement(By.id("content")).click();
-        SwitchWindow sw=new SwitchWindow();
-        drn=sw.inputStr(driver,2);//switch back to  2 window before
+        SwitchWindow sw = new SwitchWindow();
+        drn = sw.inputStr(driver, 2);//switch back to  2 window before
         drn.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='TestNG Tutorial'])[2]/following::span[2]")).click();
 
-        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Switch to window before"+getbrowser);
+//        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("Switch to window before"+getbrowser);
 
     }
-
-
 
 
     @After
