@@ -18,7 +18,7 @@ public class OutPutResult {
      String TestCaseName=Tstnam;
         try
         {
-            FileWriter w = new FileWriter(PropertyUtil.getMessageForApplication(TestConstants.REPORTFILE),true);
+            FileWriter w = new FileWriter(src.main.util.PropertyUtil.getMessageForApplication(src.main.util.TestConstants.REPORTFILE),true);
             BufferedWriter out = new BufferedWriter(w);
             out.newLine();
             out.write(TestCaseName+" SUCCESS");

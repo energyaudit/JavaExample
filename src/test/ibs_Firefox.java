@@ -16,7 +16,7 @@ public class ibs_Firefox {
 
   @Before
   public void setUp() throws Exception {
-  System.setProperty("webdriver.gecko.driver", "C:\\QA INSTALL\\geckodriver.exe");
+  System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
     driver = new FirefoxDriver();
     baseUrl = "https://qa.instantinternetbanking.com/";
   //  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

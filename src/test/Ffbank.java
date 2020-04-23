@@ -16,7 +16,7 @@ public class Ffbank {
 
   @Before
   public void setUp() throws Exception {
-	 System.setProperty("webdriver.gecko.driver", "C:\\QA INSTALL\\geckodriver.exe");
+	 System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
     driver = new FirefoxDriver();
     baseUrl = "http://192.168.103.129:8080/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

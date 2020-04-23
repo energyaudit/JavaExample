@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe35c1d-4d7f-42c9-ae00-8be53e6f0651" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/DatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TESTRESULT/temp.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TESTRESULT/temp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/util/OutPutResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/util/OutPutResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Ffbank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Ffbank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ibs_Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ibs_Firefox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,15 +66,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553713015960" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../docker-selenium" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="main.Java1" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/TESTRESULT" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/RestAssured" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="src.main" />
@@ -92,19 +97,17 @@
       <recent name="Java1" />
       <recent name="Java2" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/TESTRESULT" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/RestAssured" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.Java1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DatePicker.CalendarPicker1">
-    <configuration name="AggregateOutClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.Java1.AggregateOutClass" />
+  <component name="RunManager" selected="Application.ReadExcelCallUtil">
+    <configuration name="MergeResult" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WEB1.MergeResult" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.Java1.*" />
+          <option name="PATTERN" value="WEB1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayDequeT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.main.Java2.ArrayDequeT" />
+    <configuration name="MergeResultCallUti" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WEB1.MergeResultCallUti" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.Java2.*" />
+          <option name="PATTERN" value="WEB1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Java1.Palindrome" />
+    <configuration name="ReadExcel1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WEB1.ReadExcel1" />
       <module name="JavaExample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.Java1.*" />
+          <option name="PATTERN" value="WEB1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,21 +141,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatePicker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadExcelCallUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WEB1.ReadExcelCallUtil" />
       <module name="JavaExample" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="DatePicker" />
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WEB1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatePicker.CalendarPicker1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NewWindow.testUntitledTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaExample" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="DatePicker" />
-      <option name="METHOD_NAME" value="CalendarPicker1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WEB1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.WEB1" />
+      <option name="MAIN_CLASS_NAME" value="WEB1.NewWindow" />
+      <option name="METHOD_NAME" value="testUntitledTestCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DatePicker.CalendarPicker1" />
-        <item itemvalue="JUnit.DatePicker" />
-        <item itemvalue="Application.Palindrome" />
-        <item itemvalue="Application.AggregateOutClass" />
-        <item itemvalue="Application.ArrayDequeT" />
+        <item itemvalue="Application.ReadExcelCallUtil" />
+        <item itemvalue="Application.ReadExcel1" />
+        <item itemvalue="JUnit.NewWindow.testUntitledTestCase" />
+        <item itemvalue="Application.MergeResultCallUti" />
+        <item itemvalue="Application.MergeResult" />
       </list>
     </recent_temporary>
   </component>
@@ -264,15 +276,19 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="336" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.709@0.23.1280.709" timestamp="1587318063530" />
-    <state x="2602" y="303" key="FileChooserDialogImpl" timestamp="1586721136040">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="682" y="291" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1586710049852" />
-    <state x="2602" y="303" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586721136040" />
-    <state width="1636" height="420" key="GridCell.Tab.0.bottom" timestamp="1587603125995">
+    <state x="768" y="258" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587612377768">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1636" height="420" key="GridCell.Tab.0.bottom/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587603125995" />
+    <state x="768" y="258" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587612377768" />
+    <state x="682" y="291" key="FileChooserDialogImpl" timestamp="1587603838151">
+      <screen x="0" y="0" width="1920" height="1036" />
+    </state>
+    <state x="682" y="291" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587603838151" />
+    <state x="2602" y="303" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586721136040" />
+    <state width="1660" height="420" key="GridCell.Tab.0.bottom" timestamp="1587615866508">
+      <screen x="0" y="0" width="1920" height="1036" />
+    </state>
+    <state width="1660" height="420" key="GridCell.Tab.0.bottom/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587615866508" />
     <state width="1638" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168999" />
     <state width="1659" height="341" key="GridCell.Tab.0.bottom/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751235" />
     <state width="1659" height="341" key="GridCell.Tab.0.bottom/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755761" />
@@ -285,10 +301,10 @@
     <state width="1218" height="219" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1587516203309" />
     <state width="1218" height="219" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1587512483533" />
     <state width="1218" height="205" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1587519239773" />
-    <state width="1636" height="420" key="GridCell.Tab.0.center" timestamp="1587603125995">
+    <state width="1660" height="420" key="GridCell.Tab.0.center" timestamp="1587615866508">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1636" height="420" key="GridCell.Tab.0.center/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587603125995" />
+    <state width="1660" height="420" key="GridCell.Tab.0.center/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587615866508" />
     <state width="1638" height="322" key="GridCell.Tab.0.center/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168999" />
     <state width="1659" height="341" key="GridCell.Tab.0.center/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751234" />
     <state width="1659" height="341" key="GridCell.Tab.0.center/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755760" />
@@ -301,10 +317,10 @@
     <state width="1218" height="219" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1587516203306" />
     <state width="1218" height="219" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1587512483532" />
     <state width="1218" height="205" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1587519239772" />
-    <state width="1636" height="420" key="GridCell.Tab.0.left" timestamp="1587603125994">
+    <state width="1660" height="420" key="GridCell.Tab.0.left" timestamp="1587615866508">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1636" height="420" key="GridCell.Tab.0.left/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587603125994" />
+    <state width="1660" height="420" key="GridCell.Tab.0.left/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587615866508" />
     <state width="1638" height="322" key="GridCell.Tab.0.left/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168998" />
     <state width="1659" height="341" key="GridCell.Tab.0.left/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751234" />
     <state width="1659" height="341" key="GridCell.Tab.0.left/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755759" />
@@ -317,10 +333,10 @@
     <state width="1218" height="219" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1587516203303" />
     <state width="1218" height="219" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1587512483532" />
     <state width="1218" height="205" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1587519239771" />
-    <state width="1636" height="420" key="GridCell.Tab.0.right" timestamp="1587603125995">
+    <state width="1660" height="420" key="GridCell.Tab.0.right" timestamp="1587615866508">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1636" height="420" key="GridCell.Tab.0.right/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587603125995" />
+    <state width="1660" height="420" key="GridCell.Tab.0.right/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587615866508" />
     <state width="1638" height="322" key="GridCell.Tab.0.right/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586739168999" />
     <state width="1659" height="341" key="GridCell.Tab.0.right/0.22.1440.816/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579303751235" />
     <state width="1659" height="341" key="GridCell.Tab.0.right/0.22.1440.818/-301.-1178.1920.1178@-301.-1178.1920.1178" timestamp="1579299755760" />
@@ -346,10 +362,10 @@
     <state x="2463" y="232" key="com.intellij.ide.util.TipDialog/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587076382872" />
     <state x="2170" y="-831" key="com.intellij.ide.util.TipDialog/0.22.1440.878/1627.-1058.1920.1058/-293.-1058.1920.977@1627.-1058.1920.1058" timestamp="1579727853105" />
     <state x="362" y="175" key="com.intellij.ide.util.TipDialog/0.23.1280.709@0.23.1280.709" timestamp="1587318017560" />
-    <state x="519" y="417" width="890" height="619" key="find.popup" timestamp="1587603089420">
+    <state x="519" y="417" width="890" height="619" key="find.popup" timestamp="1587615905067">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state x="519" y="417" width="890" height="619" key="find.popup/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587603089420" />
+    <state x="519" y="417" width="890" height="619" key="find.popup/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1587615905067" />
     <state x="2439" y="434" width="890" height="646" key="find.popup/0.0.1920.1036/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587520305510" />
     <state x="389" y="350" width="667" height="486" key="find.popup/0.22.1440.814/-301.-1178.1920.1178@0.22.1440.814" timestamp="1580406851310" />
     <state x="346" y="23" width="594" height="713" key="find.popup/0.23.1280.713@0.23.1280.713" timestamp="1587508978911" />
