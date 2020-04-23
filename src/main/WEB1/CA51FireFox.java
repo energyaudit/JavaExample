@@ -23,7 +23,8 @@ public class CA51FireFox {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
+//        System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver");
         driver = new FirefoxDriver();
      //   baseUrl = "https://www.katalon.com/";
 

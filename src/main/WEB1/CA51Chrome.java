@@ -23,7 +23,8 @@ public class CA51Chrome {
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver");
         driver = new ChromeDriver();
      //   baseUrl = "https://www.katalon.com/";
         driver.get("http://www.51.ca/");
