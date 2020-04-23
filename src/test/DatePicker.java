@@ -13,11 +13,11 @@ public class DatePicker {
     @Test
 
     public void CalendarPicker1() throws Exception{
-    	 System.setProperty("webdriver.gecko.driver", "C:\\QA INSTALL\\geckodriver.exe");
+    	 System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
 
         //DAte and Time to be set in textbox
 
-        String dateTime ="12/07/2017 2:00 PM";
+        String dateTime ="12/07/2020 2:00 PM";
 
         WebDriver driver = new FirefoxDriver();
 
