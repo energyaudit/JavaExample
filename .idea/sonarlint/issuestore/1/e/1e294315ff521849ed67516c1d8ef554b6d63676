@@ -1,0 +1,32 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åƒœâ
+G
+java:S2440",Remove this instantiation of "BrowserSetup".(ÞÖÂ€øÿÿÿÿ
+W
+java:S1144I"<Remove this unused private "closeAlertAndGetItsText" method.(¡Ïòÿÿÿÿÿ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(óë¾Ù
+K
+java:S11447"5Remove this unused private "isElementPresent" method.(™Üœþ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(œÁÀùýÿÿÿÿ
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ýðó‹
+a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¼Þò
+G
+java:S2440*",Remove this instantiation of "OutPutResult".(‰‹º×úÿÿÿÿ
+H
+java:S1144@"3Remove this unused private "isAlertPresent" method.(ÕÒ™B
+K
+java:S2209+"5Change this instance-reference to a static reference.(ô±¢ë
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ýðó‹
+?
+java:S1481#")Remove this unused "etxt" local variable.(šœÌ
+u
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¸é¤Ì
+[	java:S112/"FDefine and throw a dedicated exception instead of using a generic one.(«¤ÜÕ
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ýðó‹8ÛÉÁÇš.
+N
+java:S1854#"8Remove this useless assignment to local variable "etxt".(šœÌ
+W
+java:S2209"5Change this instance-reference to a static reference.(ÞÖÂ€øÿÿÿÿ8ÛÉÁÇš.
+‚
+java:S1130/"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(«¤ÜÕ

@@ -27,7 +27,7 @@ public class callBrowserSetup {
 
     @Test
     public void testCA51BrowserSetup() throws Exception {
-       driver=new BrowserSetup().Setup("chrome");
+       driver=new BrowserSetup().Setup("chrome","windows");
 //        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
         driver.get("http://www.51.ca/");
         driver.findElement(By.linkText("资讯")).click();
@@ -40,7 +40,7 @@ public class callBrowserSetup {
     }
     @Test
     public void firefoxCA51BrowserSetup() throws Exception {
-        driver=new BrowserSetup().Setup("firefox");
+        driver=new BrowserSetup().Setup("firefox","windows");
 //        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
         driver.get("http://www.51.ca/");
         driver.findElement(By.linkText("资讯")).click();

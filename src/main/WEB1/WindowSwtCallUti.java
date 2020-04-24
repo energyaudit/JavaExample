@@ -21,7 +21,7 @@ public class WindowSwtCallUti {
 
     @Test
     public void WindowSwtCallUti() throws Exception {
-        driver = new BrowserSetup().Setup("chrome");
+        driver = new BrowserSetup().Setup("chrome","windows");
 //        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL1));
         driver.get("https://www.toolsqa.com/automation-practice-switch-windows/");
         String handle = driver.getWindowHandle();

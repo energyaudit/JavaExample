@@ -1,0 +1,12 @@
+
+{
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(íÒ«
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ù²Ò¬ıÿÿÿÿ
+d
+java:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(”÷›Â
+S
+java:S1197"8Move the array designator from the variable to the type.(²Á€œüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¶õŞ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åƒœâ
+g
+java:S2095 "QUse try-with-resources or close this "SequenceInputStream" in a "finally" clause.(‡òğÉ

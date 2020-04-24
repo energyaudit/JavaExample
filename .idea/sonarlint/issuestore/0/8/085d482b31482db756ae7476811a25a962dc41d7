@@ -1,0 +1,30 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(£°¶¢ùÿÿÿÿ
+Q
+java:S2696"6Make the enclosing method "static" or remove this set.(ŞÖÂ€øÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+W
+java:S2209"5Change this instance-reference to a static reference.(ŞÖÂ€øÿÿÿÿ8ş‡¼Çš.
+K
+java:S11444"5Remove this unused private "isElementPresent" method.(™Üœş
+W
+java:S1144F"<Remove this unused private "closeAlertAndGetItsText" method.(¡Ïòÿÿÿÿÿ
+u
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¸é¤Ì
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡î†ÿøÿÿÿÿ
+C
+java:S2440#"(Remove this instantiation of "XpathTxt".(«œŸŸÿÿÿÿÿ
+R
+java:S1854#"7Remove this useless assignment to local variable "xpt".(«œŸŸÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åƒœâ
+G
+java:S2440",Remove this instantiation of "BrowserSetup".(ŞÖÂ€øÿÿÿÿ
+C
+java:S1481#"(Remove this unused "xpt" local variable.(«œŸŸÿÿÿÿÿ
+H
+java:S1144="3Remove this unused private "isAlertPresent" method.(ÕÒ™B
+‚
+java:S1130,"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(«¤ÜÕ
+V	java:S125&"<This block of commented-out lines of code should be removed.(İÿîôüÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(úÑ—ÿÿÿÿÿ
+[	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(«¤ÜÕ

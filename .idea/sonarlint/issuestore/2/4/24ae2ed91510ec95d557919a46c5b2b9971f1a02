@@ -1,0 +1,36 @@
+
+V	java:S125""<This block of commented-out lines of code should be removed.(•ÂÒÇúÿÿÿÿ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(‡Ğß
+S	java:S106."9Replace this use of System.out or System.err by a logger.(´Éõõûÿÿÿÿ
+K
+java:S1144C"5Remove this unused private "isElementPresent" method.(™Üœş
+a
+java:S1128"FRemove this unused import 'org.openqa.selenium.firefox.FirefoxDriver'.(Úª ÿÿÿÿÿ
+o
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏÕ¾Ë
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(‡ƒ¨êşÿÿÿÿ
+F
+java:S1068"+Remove this unused "baseUrl" private field.(ˆ•«âÿÿÿÿÿ
+H
+java:S1144L"3Remove this unused private "isAlertPresent" method.(ÕÒ™B
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ˆ…Ïıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åƒœâ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(„¸•£
+V	java:S125&"<This block of commented-out lines of code should be removed.(ùÙ†¹øÿÿÿÿ
+Q	java:S125 "<This block of commented-out lines of code should be removed.(êôÌ
+W
+java:S2209!"5Change this instance-reference to a static reference.(ŞÖÂ€øÿÿÿÿ8‰³¾Çš.
+W
+java:S1144U"<Remove this unused private "closeAlertAndGetItsText" method.(¡Ïòÿÿÿÿÿ
+‚
+java:S1130;"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(«¤ÜÕ
+V	java:S1252"<This block of commented-out lines of code should be removed.(İÿîôüÿÿÿÿ
+
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ˆ…Ïıÿÿÿÿ8‰³¾Çš.
+[	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(«¤ÜÕ
+u
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¸é¤Ì
+G
+java:S2440!",Remove this instantiation of "BrowserSetup".(ŞÖÂ€øÿÿÿÿ
+P
+java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş

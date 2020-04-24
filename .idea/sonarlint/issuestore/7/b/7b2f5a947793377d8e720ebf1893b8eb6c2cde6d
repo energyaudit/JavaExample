@@ -1,0 +1,28 @@
+
+f
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ÒŒÂûıÿÿÿÿ
+‡
+java:S1130/"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ˆ…Ïıÿÿÿÿ
+<	java:S131""Add a default case to this switch.(ÒŒÂûıÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(İÿîôüÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(”œ·Ê
+K
+java:S1144@"5Remove this unused private "isElementPresent" method.(™Üœş
+H
+java:S1144I"3Remove this unused private "isAlertPresent" method.(ÕÒ™B
+‚
+java:S11308"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(«¤ÜÕ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åƒœâ
+V	java:S1250"<This block of commented-out lines of code should be removed.(úÑ—ÿÿÿÿÿ
+[	java:S1128"FDefine and throw a dedicated exception instead of using a generic one.(«¤ÜÕ
+u
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¸é¤Ì
+‡
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(‚ëô¡şÿÿÿÿ
+F
+java:S1068"+Remove this unused "baseUrl" private field.(ˆ•«âÿÿÿÿÿ
+V	java:S125)"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+W
+java:S1144R"<Remove this unused private "closeAlertAndGetItsText" method.(¡Ïòÿÿÿÿÿ
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‚ëô¡şÿÿÿÿ
+`	java:S112/"FDefine and throw a dedicated exception instead of using a generic one.(ˆ…Ïıÿÿÿÿ

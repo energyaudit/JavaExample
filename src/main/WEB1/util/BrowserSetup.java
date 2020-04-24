@@ -11,22 +11,35 @@ import java.util.concurrent.TimeUnit;
 
 public class BrowserSetup {
     public static WebDriver driver;
-    public static WebDriver Setup(String browser) {
+    static void setProperty(String  os) {
+        switch (os) {
+            case "mac":
+                System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver");
+                break;
+            case "windows":
+                System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+                break;
+        }
+    }
+    public static WebDriver Setup(String browser,String os) {
 //        String browser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
 
         switch (browser) {//switch on string
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+//                System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+                setProperty(os);
                 driver = new ChromeDriver();
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                  break;
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
+//                System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
+                setProperty(os);
                 driver = new FirefoxDriver();
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                 break;
             case "opera":
-                System.setProperty("webdriver.opera.driver", "C:\\QA INSTALL\\operadriver.exe");
+//                System.setProperty("webdriver.opera.driver", "C:\\QA INSTALL\\operadriver.exe");
+                setProperty(os);
                 OperaOptions options = new OperaOptions();
                 options.setBinary(new File("C:\\Program Files (x86)\\Opera\\58.0.3135.132\\opera.exe"));
               driver = new OperaDriver(options);

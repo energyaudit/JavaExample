@@ -1,0 +1,12 @@
+
+S
+java:S1197"8Move the array designator from the variable to the type.(²Á€œüÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åƒœâ
+V	java:S125"<This block of commented-out lines of code should be removed.(Ä”¿…ýÿÿÿÿ
+‡
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(²Á€œüÿÿÿÿ
+>
+java:S2440"(Remove this instantiation of "MergeOut".(À×„í
+P
+java:S2209"5Change this instance-reference to a static reference.(ºéÕ¨þÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À×„í

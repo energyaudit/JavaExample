@@ -1,0 +1,26 @@
+
+r
+java:S1450"WRemove the "gasprice" field and declare it as a local variable in the relevant methods.(ß™‰êýÿÿÿÿ
+W
+java:S1144B"<Remove this unused private "closeAlertAndGetItsText" method.(¡Ïòÿÿÿÿÿ
+[	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(«¤ÜÕ
+P
+java:S2209$"5Change this instance-reference to a static reference.(ù¡«Œþÿÿÿÿ
+\
+java:S1128"ARemove this unused import 'org.apache.commons.lang3.StringUtils'.(Øœ¼ºúÿÿÿÿ
+K
+java:S11440"5Remove this unused private "isElementPresent" method.(™Üœþ
+‚
+java:S1130("lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(«¤ÜÕ
+u
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¸é¤Ì
+H
+java:S11449"3Remove this unused private "isAlertPresent" method.(ÕÒ™B
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ï§šùÿÿÿÿ
+G
+java:S2440",Remove this instantiation of "BrowserSetup".(ÞÖÂ€øÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åƒœâ
+W
+java:S2209"5Change this instance-reference to a static reference.(ÞÖÂ€øÿÿÿÿ8‡Ã¿Çš.
+G
+java:S2440#",Remove this instantiation of "OutPutResult".(‰‹º×úÿÿÿÿ

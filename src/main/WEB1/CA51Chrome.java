@@ -20,13 +20,24 @@ public class CA51Chrome {
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
+     void setProperty(String  os) {
+         switch (os) {
+             case "mac":
+                 System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver");
+                 break;
+             case "windows":
+                 System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+                 break;
+         }
+     }
+
     @Before
     public void setUp() throws Exception {
 
+        setProperty("windows");
 //        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver");
         driver = new ChromeDriver();
-     //   baseUrl = "https://www.katalon.com/";
         driver.get("http://www.51.ca/");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
