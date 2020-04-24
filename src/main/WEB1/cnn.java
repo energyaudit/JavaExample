@@ -40,7 +40,8 @@ public class cnn {
 
     @Test
     public void testCA51TemplateSetup() throws Exception {
-        driver=new BrowserSetup().Setup("chrome","windows");
+//        driver=new BrowserSetup().Setup("chrome","windows");
+        driver=new BrowserSetup().Setup("chrome","mac");
 //        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
 //         driver.findElement(By.linkText("World")).click();
 //    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Millions of Brits warned to renew passports'])[1]/following::h2[2]")).click();

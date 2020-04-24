@@ -23,8 +23,10 @@ public class xpathVerifyDiret {
 
     @Test
     public void FacebookTemplateSetup() throws Exception {
-       driver=new BrowserSetup().Setup("chrome","windows");
-        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
+//       driver=new BrowserSetup().Setup("chrome","windows");
+        driver=new BrowserSetup().Setup("chrome","mac");
+//        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
+        driver.get("http://www.51.ca/");
         List<WebElement> webElements = driver.findElements(By.xpath("//*[@id=\"mainmenu\"]/ul/li[9]/a"));//Put whole second column of table to
         //list webElements,then check if Birthday is inside
 
@@ -38,9 +40,9 @@ public class xpathVerifyDiret {
             }
         }
 System.out.println(exist);
-        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Expect txt exist= "+exist+" "+getbrowser);
+//        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("Expect txt exist= "+exist+" "+getbrowser);
     }
 
     @After

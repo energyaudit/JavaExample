@@ -30,7 +30,8 @@ public class NewWindow{
     @Test
     public void testUntitledTestCase() throws Exception {
      //   driver.get("https://www.toolsqa.com/automation-practice-switch-windows/");
-        driver=new BrowserSetup().Setup("chrome","windows");
+//        driver=new BrowserSetup().Setup("chrome","windows");
+        driver=new BrowserSetup().Setup("chrome","mac");
 //        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL1));
         driver.get("http://www.51.ca/");
         String handle= driver.getWindowHandle();

@@ -19,7 +19,8 @@ public class CallXpathTxtVeri {
 
     @Test
     public void CallXpathTxt() throws Exception {
-       driver=new BrowserSetup().Setup("chrome","windows");
+//       driver=new BrowserSetup().Setup("chrome","windows");
+        driver=new WEB1.util.BrowserSetup().Setup("chrome","mac");
 //        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
 //        List<WebElement> webElements = driver.findElements(By.xpath("//*[@id="mainmenu"]/ul/li[9]/a"));//Put whole second column of table to
 //        //list webElements,then check if Birthday is inside

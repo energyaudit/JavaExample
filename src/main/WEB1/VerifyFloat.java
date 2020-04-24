@@ -23,7 +23,8 @@ public class VerifyFloat {
 
     @Test
     public void verifyVariable() throws Exception {
-       driver=new BrowserSetup().Setup("chrome","windows");
+//       driver=new BrowserSetup().Setup("chrome","windows");
+        driver=new BrowserSetup().Setup("chrome","mac");
         driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
         // element is object that cannnot be compare to 0,so get txt attribute then parse back to float
         gasprice =driver.findElement(By.cssSelector("li > span.gaspricebox > a")).getText();
