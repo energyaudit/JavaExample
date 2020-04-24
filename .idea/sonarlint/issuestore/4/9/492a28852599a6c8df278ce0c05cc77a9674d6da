@@ -1,41 +1,0 @@
-
-[	java:S1126"FDefine and throw a dedicated exception instead of using a generic one.(«¤ÜÕ
-9
-java:S1128"Remove this duplicated import.(ãÿöäþÿÿÿÿ
-W
-java:S2209+"5Change this instance-reference to a static reference.(ÞÖÂ€øÿÿÿÿ8˜£½Çš.
-‰
-java:S1130*"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ë¶ëê8˜£½Çš.
-4
-java:S1128"Remove this duplicated import.(«ñÖ«
-‚
-java:S11306"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(«¤ÜÕ
-4
-java:S1128"Remove this duplicated import.(¤—ôÃ
-V	java:S1250"<This block of commented-out lines of code should be removed.(Ýÿîôüÿÿÿÿ
-W
-java:S1144P"<Remove this unused private "closeAlertAndGetItsText" method.(¡Ïòÿÿÿÿÿ
-9
-java:S1128"Remove this duplicated import.(ÿ¶’õùÿÿÿÿ
-a
-java:S1128"FRemove this unused import 'org.openqa.selenium.firefox.FirefoxDriver'.(Úª ÿÿÿÿÿ
-b	java:S101 "MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¿ºëý
-9
-java:S1128"Remove this duplicated import.(ùžøèøÿÿÿÿ
-u
-java:S1149$"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¸é¤Ì
-K
-java:S1144>"5Remove this unused private "isElementPresent" method.(™Üœþ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åƒœâ
-V	java:S125,"<This block of commented-out lines of code should be removed.(úÑ—ÿÿÿÿÿ
-P
-java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™þ
-3
-java:S1128"Remove this duplicated import.(æïä_
-Y
-java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†È
-G
-java:S2440+",Remove this instantiation of "BrowserSetup".(ÞÖÂ€øÿÿÿÿ
-[	java:S112*"FDefine and throw a dedicated exception instead of using a generic one.(ë¶ëê
-H
-java:S1144G"3Remove this unused private "isAlertPresent" method.(ÕÒ™B
