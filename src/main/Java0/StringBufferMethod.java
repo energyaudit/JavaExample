@@ -23,7 +23,7 @@ public class StringBufferMethod {//Java StringBuffer class is used to create mut
 
         StringBuffer sb6=new StringBuffer("Hello");
         sb6.reverse();//The reverse() method of StringBuilder class reverses the current string.
-        System.out.println(sb6);//prints olleH
+        System.out.println("use string buffer reverse string:  "+sb6);//prints olleH
 
         StringBuffer sb7=new StringBuffer();
         System.out.println(sb7.capacity());//default 16
