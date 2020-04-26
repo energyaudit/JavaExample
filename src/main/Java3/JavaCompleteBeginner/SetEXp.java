@@ -68,7 +68,27 @@ public class SetEXp {
 
         intersection.retainAll(set2);
 
-        System.out.println(intersection);
+        System.out.println("intersection of 2 set:    "+intersection);
+
+        Set<String> set11 = new TreeSet<String>();
+        if (set11.isEmpty()) {
+            System.out.println("Set is empty at start");
+        }
+        Integer[] array1= { 0 ,  1 , 2 ,  3 ,  4  ,  5 };
+        for(int i=0; i<array1.length; i++) {
+            set11.add(array1[i].toString());
+                  }
+        System.out.println(set11);
+        Set<String> set22 = new TreeSet<String>();
+        Integer[] array2=  {  4 ,  7 , 8 , 9 , 10 , 1 };
+        for(int i=0; i<array2.length; i++) {
+            set22.add(array2[i].toString());
+        }
+        System.out.println(set22);
+        Set<String> intersection1 = new HashSet<String>(set11);
+        System.out.println(intersection1);
+        intersection1.retainAll(set22);
+        System.out.println("intersection of the set11 and set22 :    "+intersection1);
 
         ////////////// Difference /////////////////////////
 
