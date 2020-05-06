@@ -13,13 +13,16 @@ import java.sql.Statement;
 
 public class DBStringParameter {
   public static  String rs1;
-    public static String inputStr(String nam) throws Exception {
+    public static String inputStr(String nam,String dbpwd) throws Exception {
      String name=nam;
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/sugarcrm","root","pass");
+//            Connection con=DriverManager.getConnection(
+//                    "jdbc:mysql://localhost:3306/sugarcrm","root","pass");
+                        Connection con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/sugarcrm","root",dbpwd);
+
 
             Statement stmt=con.createStatement();
 

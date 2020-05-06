@@ -14,7 +14,7 @@ public class DBCallUtiIIntStr {
         System.out.println(DBRESULT);
 
         DBStringParameter sqlquery1 = new DBStringParameter();
-        String DBRESULT1 = sqlquery1.inputStr("'rick gu'");////Call Utility String parameter
+        String DBRESULT1 = sqlquery1.inputStr("'rick gu'","pass");////Call Utility String parameter
         System.out.println(DBRESULT1);
 
         OutPutResult outR = new OutPutResult();//Out put test result
