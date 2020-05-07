@@ -21,7 +21,7 @@ public class DBStringParameter {
 //            Connection con=DriverManager.getConnection(
 //                    "jdbc:mysql://localhost:3306/sugarcrm","root","pass");
                         Connection con=DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/sugarcrm","root",dbpwd);
+                    "jdbc:mysql://localhost:3306/sugarcrm?serverTimezone=UTC","root",dbpwd);
 
 
             Statement stmt=con.createStatement();

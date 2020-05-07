@@ -13,13 +13,16 @@ import java.sql.Statement;
 
 public class DBIntParameter {
   public static  String rs1;
-    public static String inputInt(int ptc) throws Exception {
+    public static String inputInt(int ptc,String dbpwd) throws Exception {
       int postcode=ptc;
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/sugarcrm","root","pass");
+//            Connection con=DriverManager.getConnection(
+//                    "jdbc:mysql://localhost:3306/sugarcrm","root","pass");
+                        Connection con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/sugarcrm?serverTimezone=UTC","root",dbpwd);
+
 
             Statement stmt=con.createStatement();
 
