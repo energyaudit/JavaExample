@@ -1,8 +1,6 @@
 package src.main.Java1;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 class Student implements Comparable<Student>{//Comparable interface has only one method named compareTo: age(Object o)
     int rollno;
@@ -66,6 +64,11 @@ public class ArrayListExmp{
         for(Student st: al){
             System.out.println(st.rollno+" "+st.name+" "+st.age);  }
 
+        String sentence="I am Proud";
+
+        List< String> words = Arrays.asList(sentence.split("\\s"));
+        Collections.reverse(words);
+        System.out.println("Reverse a sentence:"+words);
         //array members are accessed using [], while ArrayList has a set of methods to access elements
         int[] arr = new int[2];
         arr[0] = 1;

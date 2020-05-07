@@ -10,11 +10,11 @@ public class DBCallUtiIIntStr {
     public static void main(String[] args) throws Exception {
 
         DBIntParameter sqlquery = new DBIntParameter();
-        String DBRESULT = sqlquery.inputInt(20607,"ruby2020");//Call Utility int parameter
+        String DBRESULT = sqlquery.inputInt(20607,"pass");//Call Utility int parameter
         System.out.println(DBRESULT);
 
         DBStringParameter sqlquery1 = new DBStringParameter();
-        String DBRESULT1 = sqlquery1.inputStr("'rick gu'","ruby2020");////Call Utility String parameter
+        String DBRESULT1 = sqlquery1.inputStr("'rick gu'","pass");////Call Utility String parameter
         System.out.println(DBRESULT1);
 
         OutPutResult outR = new OutPutResult();//Out put test result
