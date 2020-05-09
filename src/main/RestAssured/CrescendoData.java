@@ -1,22 +1,10 @@
-package src.main.RestAssured;
+package main.RestAssured;
 
 import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
-
-import src.main.util.GetDataJPath;
-import src.main.util.RTBody;
-import src.main.util.OutPutResult;
-import src.main.util.CountListFreq;
-
-import src.main.util.Str2JsonFile;
+import main.util.*;
 
 import java.util.ArrayList;
 import java.util.Map;
-
-import static io.restassured.RestAssured.given;
-        import static org.hamcrest.Matchers.hasSize;
-import static org.junit.Assert.fail;
 
 
 public class CrescendoData  {

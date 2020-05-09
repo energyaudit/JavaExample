@@ -1,18 +1,9 @@
 package WEB1;
 
 import WEB1.util.BrowserSetup;
-import WEB1.util.OutPutResult;
-import WEB1.util.PropertyUtil;
-
-import WEB1.util.TestConstants;
 import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.fail;
 
