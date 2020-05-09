@@ -2,6 +2,7 @@ package main.TestNG;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -20,11 +21,9 @@ public class SeleniumGrid {
     @BeforeTest
     public void setUp() throws MalformedURLException {
         baseURL = "http://demo.guru99.com/test/guru99home/";
-        nodeURL = "http://192.168.43.223:4444/wd/hub";
-        DesiredCapabilities capability = DesiredCapabilities.chrome();
-        capability.setBrowserName("chrome");
-        capability.setPlatform(Platform.WIN10);
-        driver = new RemoteWebDriver(new URL(nodeURL), capability);
+        nodeURL = "http://localhost:4444/wd/hub";
+//       driver=new BrowserSetup().Setup("chrome","windows");
+        driver=new WEB1.util.BrowserSetup().Setup("chrome","mac");
     }
 
     @AfterTest

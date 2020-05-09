@@ -24,10 +24,10 @@ public class BrowserSetup {
     static void FirefoxSetProperty(String  os) {
         switch (os) {
             case "mac":
-                System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver");
                 break;
             case "windows":
-                System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver.exe");
                 break;
         }
     }

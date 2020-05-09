@@ -1,4 +1,4 @@
-package src.main.Java1;
+package main.Java1;
 
 
 public class Fibonacci {
@@ -18,6 +18,10 @@ public class Fibonacci {
             i++;
         }
 
+    }
+    public static void main(String args[]){
+
+       inputr(0,10);
     }
 
 }

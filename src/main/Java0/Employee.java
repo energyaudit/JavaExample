@@ -1,4 +1,4 @@
-package src.main.Java0;
+package main.Java0;
 
 /**
  * Created by byang on 1/19/2018.
@@ -14,4 +14,5 @@ public class Employee
         salary=s;
     }
     void display(){System.out.println(id+" "+name+" "+salary);}
+    public void display2(){System.out.println("public method can be accessed outside");}
 }
