@@ -1,4 +1,4 @@
-package src.main.util;
+package main.util;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;

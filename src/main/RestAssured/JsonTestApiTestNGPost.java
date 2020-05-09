@@ -7,7 +7,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 import org.apache.http.HttpStatus;
-import src.main.util.OutPutResult;
+import main.util.OutPutResult;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
@@ -17,8 +17,8 @@ import static org.hamcrest.core.Is.is;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import src.main.util.RTBody;
-import src.main.util.Str2JsonFile;
+import main.util.RTBody;
+import main.util.Str2JsonFile;
 
 import java.util.HashMap;
 

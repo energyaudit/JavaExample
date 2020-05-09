@@ -5,8 +5,8 @@ import io.restassured.config.SSLConfig;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
-import src.main.util.OutPutResult;
-import src.main.util.Str2JsonFile;
+import main.util.OutPutResult;
+import main.util.Str2JsonFile;
 
 import java.io.FileWriter;
 import java.io.IOException;

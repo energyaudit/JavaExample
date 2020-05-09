@@ -1,4 +1,4 @@
-package src.main.util;
+package main.util;
 
 /**
  * Created by byang on 8/28/2017.

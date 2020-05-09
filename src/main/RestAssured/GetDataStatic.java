@@ -5,7 +5,7 @@ import io.restassured.config.SSLConfig;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
-import src.main.util.OutPutResult;
+import main.util.OutPutResult;
 
 public class GetDataStatic {
     @Test

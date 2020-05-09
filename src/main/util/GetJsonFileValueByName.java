@@ -1,4 +1,4 @@
-package src.main.util;
+package main.util;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

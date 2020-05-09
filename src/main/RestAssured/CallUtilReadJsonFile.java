@@ -1,11 +1,12 @@
 package src.main.RestAssured;
 
 import com.google.common.io.CharStreams;
+import main.util.*;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.junit.Test;
-import src.main.util.*;
+import main.util.ReadJsonFile2Str;
 
 import java.io.*;
 import java.util.ArrayList;

@@ -1,9 +1,9 @@
-package src.main.RestAssured;
+package main.RestAssured;
 
 
 import org.junit.Test;
 
-import src.main.util.*;
+import main.util.*;
 
 import java.util.HashMap;
 

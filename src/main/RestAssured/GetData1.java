@@ -7,9 +7,9 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 import org.junit.Test;
-import src.main.util.OutPutResult;
-import src.main.util.RTBody;
-import src.main.util.Str2JsonFile;
+import main.util.OutPutResult;
+import main.util.RTBody;
+import main.util.Str2JsonFile;
 
 public class GetData1 {
     @Test

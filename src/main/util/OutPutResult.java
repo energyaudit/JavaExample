@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+import main.util.TestConstants;
 
 /**
  * Created by byang on 2018-09-18.
@@ -18,7 +18,7 @@ public class OutPutResult {
      String TestCaseName=Tstnam;
         try
         {
-            FileWriter w = new FileWriter(src.main.util.PropertyUtil.getMessageForApplication(src.main.util.TestConstants.REPORTFILE),true);
+            FileWriter w = new FileWriter(main.util.PropertyUtil.getMessageForApplication(TestConstants.REPORTFILE),true);
             BufferedWriter out = new BufferedWriter(w);
             out.newLine();
             out.write(TestCaseName+" SUCCESS");
