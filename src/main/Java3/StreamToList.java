@@ -11,10 +11,8 @@ import java.util.stream.Stream;
 public class StreamToList {
     public static void main(String[] args) {
         Stream<String> s = Stream.of("a","b","c");
-
         List<String> names = s
                 .collect(Collectors.toList());
-
         System.out.println(names);
     }
 }

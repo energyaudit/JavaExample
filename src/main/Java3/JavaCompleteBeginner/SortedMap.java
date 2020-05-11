@@ -1,18 +1,15 @@
 package main.Java3.JavaCompleteBeginner;
 
 
-import java.util.HashMap;
-        import java.util.LinkedHashMap;
-        import java.util.Map;
-        import java.util.TreeMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class SortedMap {
 
     public static void main(String[] args) {
-        Map<Integer, String> hashMap = new HashMap<Integer, String>();
-        Map<Integer, String> linkedHashMap = new LinkedHashMap<Integer, String>();
-        Map<Integer, String> treeMap = new TreeMap<Integer, String>();
 
+        Map<Integer, String> treeMap = new TreeMap<Integer, String>();
+//if sort map by key, then just use tree map will do
         testMap(treeMap);
     }
 
@@ -25,9 +22,8 @@ public class SortedMap {
         map.put(15, "bear");
         map.put(6, "snake");
 
-        for(Integer key: map.keySet()) {
+        for (Integer key : map.keySet()) {
             String value = map.get(key);
-
             System.out.println(key + ": " + value);
         }
     }

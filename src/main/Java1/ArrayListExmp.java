@@ -1,5 +1,6 @@
 package src.main.Java1;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 class Student implements Comparable<Student>{//Comparable interface has only one method named compareTo: age(Object o)
@@ -59,13 +60,16 @@ public class ArrayListExmp{
          //reverse
         System.out.println(al);
         Collections.reverse(al);
-
+        Integer[] testReverse={2, 97, 89, 23, 54, 10};
+        List<Integer>  reverseList =Arrays.asList(testReverse);
+        Collections.reverse(reverseList);
+        System.out.println("After change array into ArrayList then I can reverse it : " );
+        System.out.println(reverseList);
         System.out.println("After Reverse Order, ArrayList Contains : " );
         for(Student st: al){
             System.out.println(st.rollno+" "+st.name+" "+st.age);  }
 
         String sentence="I am Proud";
-
         List< String> words = Arrays.asList(sentence.split("\\s"));
         Collections.reverse(words);
         System.out.println("Reverse a sentence:"+words);

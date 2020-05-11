@@ -2,9 +2,9 @@ package main.Java3.JavaCompleteBeginner;
 
 
 import java.util.LinkedHashMap;
-        import java.util.LinkedHashSet;
-        import java.util.Map;
-        import java.util.Set;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
 
 class PersonSet {
     private int id;
@@ -61,16 +61,14 @@ public class CustomSetInMap {
         PersonSet p4 = new PersonSet(1, "Sue");
 
         Map<PersonSet, Integer> map = new LinkedHashMap<PersonSet, Integer>();
-
         map.put(p1, 1);
         map.put(p2, 2);
         map.put(p3, 3);
         map.put(p4, 1);
 
-        for(PersonSet key: map.keySet()) {
+        for (PersonSet key : map.keySet()) {
             System.out.println(key + ": " + map.get(key));
         }
-
         Set<PersonSet> set = new LinkedHashSet<PersonSet>();
 
         set.add(p1);

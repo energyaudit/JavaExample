@@ -7,6 +7,7 @@ class TestMultiPriority1 extends Thread{
     public void run(){
         System.out.println("running thread name is:"+Thread.currentThread().getName());
         System.out.println("running thread priority is:"+Thread.currentThread().getPriority());
+        System.out.println("id of the thread is " + Thread.currentThread().getId());
 
     }
     public static void main(String args[]){

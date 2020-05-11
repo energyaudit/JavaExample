@@ -1,7 +1,10 @@
 package src.main.Java3;
 
 /**
- * Created by byang on 4/5/2018.
+ * Created by byang on 4/5/2018.Suppose we are creating a singleton class JavaHungry . It means only one  and only one instance of JavaHungry class we  can have at any point of execution in the application code
+ * *   We  should create a static variable so that it can hold one single instance of our class .
+ *          private static JavaHungrySingleton  uniqueInstance ;
+ * *   We should declare the constructor private so that  only Class itself can instantiate the object .
  */
 public class SingleTonClass {
     //Static Class Reference
