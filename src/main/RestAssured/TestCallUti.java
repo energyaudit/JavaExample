@@ -1,17 +1,12 @@
 package main.RestAssured;
 
 
-import org.junit.Test;
-
 import main.util.*;
+import org.junit.Test;
 
 import java.util.HashMap;
 
-import static io.restassured.RestAssured.config;
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 
 public class TestCallUti {
