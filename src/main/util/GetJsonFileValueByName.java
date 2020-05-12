@@ -17,8 +17,7 @@ public class GetJsonFileValueByName {
     public static ArrayList inputStr(String fpath,String nam)  {
         ArrayList<JSONObject> json = new ArrayList<JSONObject>();
         JSONObject obj;
-        // The name of the file to open.
-      //  String fileName = "C:\\QA\\TESTRESULT\\Dump\\testout1.txt";
+
         String fileName =fpath;
 
         // This will reference one line at a time
