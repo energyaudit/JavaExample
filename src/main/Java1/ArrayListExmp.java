@@ -39,8 +39,8 @@ public class ArrayListExmp{
         al.add(new Student(108,"Jai",18));
 
 
-        System.out.println("Student implements Comparable,compareTo() method internally provides the comparison logic,use collection sort method sorting" +
-                "\n Comparable interface has only one method named compareTo,Sorting by Age...");
+        System.out.println("Arraylist elements are objects,Student implements Comparable,compareTo() method internally provides the comparison logic,use collection sort method sorting" +
+                "\n Comparable interface has only one method named compareTo,Collections.sort() will do the job,Sorting by Age...");
         Collections.sort(al);
 
         for(Student st:al){//student is type, st is abbreviation used in loop,
@@ -54,7 +54,7 @@ public class ArrayListExmp{
 
         //swap
         Collections.swap(al,0,3);
-        System.out.println("After swap, ArrayList Contains : " );
+        System.out.println("Collections.swap: After swap, ArrayList Contains : " );
         for(Student st: al){
             System.out.println(st.rollno+" "+st.name+" "+st.age);  }
          //reverse
