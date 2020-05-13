@@ -17,15 +17,10 @@ public class MacPcDriveSpace
             for (File drive : drives)
             {
                 System.out.println("====================");
-
                 System.out.println("Drive Name : "+drive);
-
                 System.out.println("Type Of Drive : "+fsv.getSystemTypeDescription(drive));
-
                 System.out.println("Total Space : "+drive.getTotalSpace()/(1024*1024*1024)+" GB");
-
                 System.out.println("Free Space : "+drive.getFreeSpace()/(1024*1024*1024)+" GB");
-
                 System.out.println("Usable Space : "+drive.getUsableSpace()/(1024*1024*1024)+" GB");
             }
         }

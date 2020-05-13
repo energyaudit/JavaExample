@@ -4,6 +4,7 @@ package src.main.Java0;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 /**
  * Created by byang on 4/25/2018.
@@ -77,12 +78,35 @@ public class HashSetExamp {//HashSet class extends AbstractSet class which imple
         hashSet.add(new Long("2473483643"));
         hashSet.add(new Long("32987432984"));
 
-
         Object obj = Collections.max(hashSet);
         System.out.println("Maximum Element of Java HashSet is : " + obj);
+        //following make hashset into a read only set by Collections.unmodifiableSet
+        Set<String> readOnlySet = Collections.unmodifiableSet(hashSet);
+        //Printing readOnlySet
+        System.out.println("=========== Read Only Set ===========");
+        System.out.println(hashSet);
+        //Modification operations on readOnlySet throws UnsupportedOperationException
 
+        try
+        {
+            readOnlySet.add("AnyName");
+            readOnlySet.remove("2374324832");
+        }
+        catch (UnsupportedOperationException e)
+        {
+            System.out.println("====== Modifications to read only set not allowed ======");
+        }
+
+        //Modification operations on originalSet are reflected in readOnlySet also
+        hashSet.add("AnyName");
+        hashSet.remove("2374324832");
+        //Printing readOnlySet
+        System.out.println("====== Modifications to original set are reflected in read only set ======");
+        System.out.println("=========== Read Only set ===========");
+        System.out.println(readOnlySet);
+    }
 
 
     }
 
-}
+
