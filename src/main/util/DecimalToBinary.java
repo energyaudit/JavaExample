@@ -1,7 +1,7 @@
-package main.Java1;
+package main.util;
 
 public class DecimalToBinary {
-    static void DecimalToBina(String numInput){
+ public static void DecimalToBina(String numInput){
        Integer num = Integer.parseInt(numInput);//must change string into integer first
         String hexa = Integer.toHexString(num);
         System.out.println("HexaDecimal Value is : " + hexa);

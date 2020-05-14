@@ -20,15 +20,12 @@ public class JsonStringToMap {
     public static void main(String[] args) {
 
         try {
-
             ObjectMapper mapper = new ObjectMapper();
             String json = "{\"name\":\"mkyong\", \"age\":29}";
-
             Map<String, Object> map = new HashMap<String, Object>();
 
             // convert JSON string to Map
             map = mapper.readValue(json, new TypeReference<Map<String, String>>(){});
-
             System.out.println(map);
 //Map to JSON
             ObjectMapper mapper1 = new ObjectMapper();
@@ -47,7 +44,7 @@ public class JsonStringToMap {
 
             // pretty print
             System.out.println(json1);
-            FileWriter w = new FileWriter("/QA/TESTRESULT/temp1.json");
+            FileWriter w = new FileWriter("./src/main/TESTRESULT/temp1.json");
             BufferedWriter out = new BufferedWriter(w);
             out.newLine();
             out.write(json1);

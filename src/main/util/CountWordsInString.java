@@ -1,10 +1,10 @@
-package main.Java0;
+package main.util;
 
 
 public class CountWordsInString
 {
     static int i,c=0,res;
-    static int wordcount(String s)
+  public  static int wordcount(String s)
     {
         char ch[]= new char[s.length()];      //in string especially we have to mention the () after length
         for(i=0;i<s.length();i++)

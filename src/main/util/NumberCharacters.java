@@ -1,9 +1,9 @@
-package main.Java1;
+package main.util;
 
 public class NumberCharacters {
     static int i,c=0,res;
 
-    static int charcount(String s)
+ public static int charcount(String s)
     {
         for(i=0,c=0;i<s.length();i++)
         {

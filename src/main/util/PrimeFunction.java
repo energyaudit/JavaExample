@@ -1,7 +1,7 @@
-package main.Java0;
+package main.util;
 
 public class PrimeFunction {
-    static void  isPrime( int num){
+  public  static void  isPrime( int num){
         int temp;
         boolean isPrime = true;
 

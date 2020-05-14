@@ -15,6 +15,14 @@ public class removeWhiteSpace
     for(int i=0;i<test.length;i++){
         removeWhiteSpaceMtd(test[i]);
     }
+        //following is remove all
+        String inputString ="Enter the string...";
+        String newInputString = inputString.replaceAll("[AEIOUaeiou]", "");
+
+        System.out.println("The string without vowels...");
+
+        System.out.println(newInputString);
     }
+
 }
 

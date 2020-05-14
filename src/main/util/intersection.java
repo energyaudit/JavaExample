@@ -1,6 +1,4 @@
-package main.Java1;
-
-import org.apache.poi.ss.formula.functions.T;
+package main.util;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,7 +9,7 @@ First, we remove the duplicated elements with distinct. Then, we use the filter 
 Finally, we convert our output with a Collector.
  */
 public class intersection {
-    static <T> void findIntersection(T[] arry1, T[] arry2){
+  public static <T> void findIntersection(T[] arry1, T[] arry2){
         List<T> list = Arrays.asList(arry1);//arrayToList
         List<T> otherList = Arrays.asList(arry2);
         Set<T> result = list.stream()
