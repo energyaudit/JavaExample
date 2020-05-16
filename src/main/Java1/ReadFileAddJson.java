@@ -25,16 +25,6 @@ public class ReadFileAddJson {
 
            JsonNode root = mapper.readTree(new File("/Billy/Testing/JavaExample/JavaExample/src/main/java/src.main.Java1/temp.json"));
 
-
-//            JSONParser jsonParser=new JSONParser();
-//
-//
-//            FileReader reader =new FileReader("temp.json");
-
-
-
-
-
             String resultOriginal = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(root);
             System.out.println("Before Update " + resultOriginal);
 

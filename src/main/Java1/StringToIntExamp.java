@@ -1,10 +1,5 @@
 package src.main.Java1;
 
-import java.util.Scanner;
-
-/**
- * Created by byang on 4/23/2018.
- */
 public class StringToIntExamp {
     static boolean numberOrNot(String input)
     {

@@ -1,4 +1,4 @@
-package main.Java1;
+package main.util;
 
 /**
  * Pseudo Algorithm :

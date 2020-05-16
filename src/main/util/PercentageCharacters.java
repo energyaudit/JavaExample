@@ -1,10 +1,10 @@
-package main.Java1;
+package main.util;
 
 import java.text.DecimalFormat;
 
 public class PercentageCharacters
 {
-    static void characterPercentage(String inputString)
+  public static void characterPercentage(String inputString)
     {
         //Getting total no of characters in the given string
         int totalChars = inputString.length();

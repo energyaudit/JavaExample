@@ -1,9 +1,9 @@
-package main.Java1;
+package main.util;
 
 
 public class removeWhiteSpace
 {
-   static void removeWhiteSpaceMtd(String str) {
+ public  static void removeWhiteSpaceMtd(String str) {
        String str2 = str.replaceAll("\\s", "");
        System.out.println(str2);
    }
@@ -15,12 +15,10 @@ public class removeWhiteSpace
     for(int i=0;i<test.length;i++){
         removeWhiteSpaceMtd(test[i]);
     }
-        //following is remove all
+        //following is remove all vowels by .replaceAll
         String inputString ="Enter the string...";
         String newInputString = inputString.replaceAll("[AEIOUaeiou]", "");
-
         System.out.println("The string without vowels...");
-
         System.out.println(newInputString);
     }
 
