@@ -15,7 +15,7 @@ import java.util.Map;
  * Created by byang on 2018-09-19.
  */
 
-public class JsonStringToMap {
+public class JsonStringToMapToJson {
     public static void MaptoJsonFile(String filepath, Map mapinput) {//no need Map<T,T>
         try {
             ObjectMapper mapper = new ObjectMapper();

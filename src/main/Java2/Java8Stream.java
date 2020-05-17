@@ -44,7 +44,7 @@ public class Java8Stream {
         Stream.generate(Math::random)//generate(Supplier<T> s) uses Supplier to generate an infinite sequential unordered stream.
                 .limit(5)
                 .forEach(System.out::println);
-
+System.out.println("ramdom integers: ");
         new Random().ints()//java.src.main.util.Random class provides ints(), longs(), and doubles() return infinite IntStream, LongStream, and DoubleStream, respectively.
                 .limit(5)
                 .forEach(System.out::println);

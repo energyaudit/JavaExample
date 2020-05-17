@@ -3,8 +3,8 @@ package main.RestAssured;
 import java.util.HashMap;
 import java.util.Map;
 
-import static main.util.JsonStringToMap.MaptoJsonFile;
-import static main.util.JsonStringToMap.strinToMap;
+import static main.util.JsonStringToMapToJson.MaptoJsonFile;
+import static main.util.JsonStringToMapToJson.strinToMap;
 
 public class CallJsonStrToMapFile {
     public static void main(String[] args) {
