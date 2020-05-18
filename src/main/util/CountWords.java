@@ -1,4 +1,4 @@
-package main.Java3;
+package main.util;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -28,7 +28,7 @@ public class CountWords {
         arrayElementCount(new int[]{891, 187, 891, 187, 891, 476, 555, 741});
     }
 //count elements in array method
-static void arrayElementCount(int inputArray[])
+public static void arrayElementCount(int inputArray[])
 {
     //Creating a HashMap object with elements of inputArray as keys and their count as values
     HashMap<Integer, Integer> elementCountMap = new HashMap<Integer, Integer>();
