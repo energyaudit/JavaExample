@@ -1,6 +1,13 @@
-package main.Java3;
+package main.util;
+
 import java.util.*;
 public class arraylistToArray {
+    public static String[] ArrayListToArray(List listIn){
+        String[] array = new String[listIn.size()];
+        listIn.toArray(array);//list's toArray() method to convert the list items to array items.
+        System.out.println(Arrays.toString(array));
+        return array;
+    }
     public static void main(String args[]) {
 
         /*ArrayList declaration and initialization*/
@@ -20,8 +27,6 @@ public class arraylistToArray {
         //method2:
         ArrayList<String> arrlist2= new ArrayList<String>();
         Collections.addAll(arrlist2, "Apple","Banana","Mango","Pear");
-        String[] array2 = new String[arrlist2.size()];
-        arrlist2.toArray(array2);//list's toArray() method to convert the list items to array items.
-        System.out.println(Arrays.toString(array2));
+        ArrayListToArray(arrlist2);
     }
 }
