@@ -1,7 +1,7 @@
 package main.util;
 
 
-public class CountWordsInString
+public class CountTotalWordsInString
 {
     static int i,c=0,res;
   public  static int wordcount(String s)
@@ -18,7 +18,7 @@ public class CountWordsInString
 
     public static void main (String args[])
     {
-        res=CountWordsInString.wordcount("   manchester united is also known as red devil ");
+        res= CountTotalWordsInString.wordcount("   manchester united is also known as red devil ");
         //string is always passed in double quotes
 
         System.out.println("The number of words in the String are :  "+res);
