@@ -107,7 +107,13 @@ public class watchweight {
                 }
             }
         }
-
+//        for (int i = 0; i < weekTest.length; i++) {
+//            for (int j = 0; j < list.size(); j++) {
+//                if (countOccurences(weekTest[i], list.get(j)) != 0) {
+//                    System.out.println(weekTest[i] + ":" + list.get(j) + "::" + countOccurences(weekTest[i], list.get(j)));
+//                }
+//            }
+//        }
 
 
 
