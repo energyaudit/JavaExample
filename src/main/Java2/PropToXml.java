@@ -17,7 +17,7 @@ public class PropToXml {
         prop.setProperty("domain", "www.tutorialspointexamples.com");
         prop.setProperty("email", "tutorialspointexamples@gmail.com");
         try {
-            os = new FileOutputStream("TestProp.properties");
+            os = new FileOutputStream("src/main/TESTRESULT/TestProp.properties");
             prop.storeToXML(os, "Dynamic Property File");
             System.out.println("XML Property file created successfully.");
         } catch (Exception e) {
