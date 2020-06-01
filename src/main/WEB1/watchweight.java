@@ -29,24 +29,6 @@ public class watchweight {
     private StringBuffer verificationErrors = new StringBuffer();
     private ArrayList<String> ar = new ArrayList<String>();
 
-//    public static void main(String args[]) {
-//        TreeSet treeSet = new TreeSet();
-//        treeSet.add("JOHN B");
-//        treeSet.add("JOHN B");
-//        treeSet.add("DANA F");
-//        treeSet.add("LISA S");
-//        treeSet.add("LAUREN C");
-//        treeSet.add("ARANSAS S");
-//        treeSet.add("CAMI B");
-//        treeSet.add("MARIA S");
-//        treeSet.add("STEVEN H");
-//        treeSet.add("MINDI K");
-//        treeSet.add("SILMARA R");
-//        treeSet.add("RICARDO M");
-//        treeSet.add("ROBERT B");
-//    }
-    // @Before
-
 
     @Test
     public void watchweight() throws Exception {
@@ -66,10 +48,7 @@ public class watchweight {
         driver.findElement(By.id("meetingSearch")).sendKeys(Keys.ENTER);
 //        driver.findElement(By.xpath("//a[@href='https://www.weightwatchers.com/us/find-a-meeting/1180510/ww-studio-flatiron-new-york-ny']").
         driver.get("https://www.weightwatchers.com/us/find-a-meeting/1180510/ww-studio-flatiron-new-york-ny");
-//        WebElement element=driver.findElement(By.xpath("//span[text()='WW Studio Flatiron']"));
-//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-//        Thread.sleep(500);
-//        element.click();
+
         List<WebElement> bakeries = driver.findElements(By.className("schedule-detailed-day"));
         for (WebElement webElement : bakeries) {
             String name = webElement.getText();
@@ -112,18 +91,9 @@ public class watchweight {
                 }
             }
         }
-//        for (int i = 0; i < weekTest.length; i++) {
-//            for (int j = 0; j < list.size(); j++) {
-//                if (countOccurences(weekTest[i], list.get(j)) != 0) {
-//                    System.out.println(weekTest[i] + ":" + list.get(j) + "::" + countOccurences(weekTest[i], list.get(j)));
-//                }
-//            }
-//        }
-
 
 
     }
-
 
 
     @After
