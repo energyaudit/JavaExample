@@ -48,78 +48,9 @@ public class ApiTestNGPostBonus {
 
     }
 
-    @Test
-    public void testPOST(){
-        org.apache.log4j.BasicConfigurator.configure();
-        String uri="https://loyaltyone-sandbox-pin.auth0.com/oauth/token";
-        if(uri.toLowerCase().contains("https")) { config = config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
-        String resTitle=given()
-                .contentType("application/json")
-                .body(map)
-                .when()
-                .post(uri)
-                .then()
-                .statusCode(200)
-                .and()
-                .extract().path("access_token");
-        //body("title", equalTo("this is projectdebug.com"));
-        System.out.println(resTitle) ;
-
-    }
-    @Test
-    public void testPOSTHeaderAccpt(){
-        org.apache.log4j.BasicConfigurator.configure();
-        String uri="https://loyaltyone-sandbox-pin.auth0.com/oauth/token";
-        if(uri.toLowerCase().contains("https")) { config = config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
-        String resTitle=given()
-                .contentType("application/json")
-                .accept("application/json")
-                .body(map)
-                .when()
-                .post(uri)
-                .then()
-                .statusCode(200)
-                .and()
-                .extract().path("access_token");
-        //body("title", equalTo("this is projectdebug.com"));
-        System.out.println(resTitle) ;
-
-    }
-    @Test
-    public void testPOSTRespBody(){
-        org.apache.log4j.BasicConfigurator.configure();
-        String uri="https://loyaltyone-sandbox-pin.auth0.com/oauth/token";
-        if(uri.toLowerCase().contains("https")) { config = config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
-        String resTitle=given()
-                .contentType("application/json")
-                .body(map)
-                .when()
-                .post(uri).asString();
-//                .then()
-//                .statusCode(200)
-//                .and()
-//                .extract().path("access_token");
-        //body("title", equalTo("this is projectdebug.com"));
-        System.out.println(resTitle) ;
-
-    }
-    @Test
-    public void testPOSTMap(){
-        org.apache.log4j.BasicConfigurator.configure();
-        String uri="https://loyaltyone-sandbox-pin.auth0.com/oauth/token";
-        if(uri.toLowerCase().contains("https")) { config = config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
-        given()
-                .contentType("application/json")
-                .body(map)
-                .when()
-                .post(uri)
-                .then()
-                .statusCode(200);
-        //  .and()
-        // .body("title", equalTo("this is projectdebug.com"));
 
 
-    }
+
     @Test
     public void TestResponsecode()
     {
@@ -137,44 +68,7 @@ public class ApiTestNGPostBonus {
         OutPutResult outR = new OutPutResult();
         outR.inputStr("Assert API test code success");
     }
-    @Test
-    public void PostResponse()
-    {
-        org.apache.log4j.BasicConfigurator.configure();
-        String uri="https://loyaltyone-sandbox-pin.auth0.com/oauth/token";
-        if(uri.toLowerCase().contains("https")) { config = config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
-        // src.main.RestAssured.baseURI = "https://loyaltyone-sandbox-pin.auth0.com/oauth";
-        RequestSpecification httpRequest = RestAssured.given();
-        httpRequest.header("Content-Type", "application/json");
-        // Create new JSON Object
-        JsonObject loginCredentials = new JsonObject();
-        loginCredentials.addProperty("client_id", "V2Wkew1NeiWQUgAnmyGU4mnAHYv1jTPM");
-        loginCredentials.addProperty("client_secret", "vZL-MVfQepAYNqcPkFnz5qc0BagQ574hBX_OtW_1pz1SHzyuPu6o1WihbvYQus6A");
-        loginCredentials.addProperty("audience", "https://partners.loyalty.com");
-        loginCredentials.addProperty("grant_type", "client_credentials");
-        httpRequest.body(loginCredentials.toString());
 
-
-        Response response = httpRequest.post(uri);
-        jsonString=response.toString();
-        String data=response.getBody().asString();
-        System.out.println(data);
-        Str2JsonFile sjf=new Str2JsonFile();
-        sjf.inputStr(data,"src/main/TESTRESULT/temp5.json");
-//       the appending json must write into another josn file or not following steps cannot get last access_token and token_type
-        String access_token = response.jsonPath().get("access_token");
-        System.out.println(access_token);
-        String token_type = response.jsonPath().get("token_type");
-        System.out.println(token_type);
-
-        Str2JsonAppendFile sjf1=new Str2JsonAppendFile();
-        sjf1.inputStr(data,"src/main/TESTRESULT/temp6.json");
-
-
-
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API test data success"+"access_token:"+access_token+"token_type:"+token_type);
-    }
     @Test
     public void TestResponsebdy1()
     {

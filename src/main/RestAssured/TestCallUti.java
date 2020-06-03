@@ -96,49 +96,10 @@ public class TestCallUti {
         OutPutResult outR = new OutPutResult();
         outR.inputStr("Assert API test header content success");
     }
-    @Test
-    public void testPOSTResPath(){
 
-        String puri="https://loyaltyone-sandbox-pin.auth0.com/oauth/token";
-        HashMap map = new HashMap();
-        map.put("client_id", "V2Wkew1NeiWQUgAnmyGU4mnAHYv1jTPM");
-        map.put("client_secret", "vZL-MVfQepAYNqcPkFnz5qc0BagQ574hBX_OtW_1pz1SHzyuPu6o1WihbvYQus6A");
-        map.put("audience", "https://partners.loyalty.com");
-        map.put("grant_type", "client_credentials");
 
-        RPResPath rppt=new RPResPath();
-        String rePath=rppt.inputpar(puri,map,200,"access_token");
-        System.out.println(rePath) ;
-    }
 
-    @Test
-    public void testPOSTResBody(){
 
-        String puri="https://loyaltyone-sandbox-pin.auth0.com/oauth/token";
-        HashMap map = new HashMap();
-        map.put("client_id", "V2Wkew1NeiWQUgAnmyGU4mnAHYv1jTPM");
-        map.put("client_secret", "vZL-MVfQepAYNqcPkFnz5qc0BagQ574hBX_OtW_1pz1SHzyuPu6o1WihbvYQus6A");
-        map.put("audience", "https://partners.loyalty.com");
-        map.put("grant_type", "client_credentials");
-
-        RAPBody rppt=new RAPBody();
-        String rePath=rppt.inputpar(puri,map);
-        System.out.println(rePath) ;
-    }
-    @Test
-    public void testPOSTResCode(){
-
-        String puri="https://loyaltyone-sandbox-pin.auth0.com/oauth/token";
-        HashMap map = new HashMap();
-        map.put("client_id", "V2Wkew1NeiWQUgAnmyGU4mnAHYv1jTPM");
-        map.put("client_secret", "vZL-MVfQepAYNqcPkFnz5qc0BagQ574hBX_OtW_1pz1SHzyuPu6o1WihbvYQus6A");
-        map.put("audience", "https://partners.loyalty.com");
-        map.put("grant_type", "client_credentials");
-
-        PostCode rppt=new  PostCode();
-        boolean rePath=rppt.inputpar(puri,map,200);
-        System.out.println(rePath) ;
-    }
     @Test
     public void testPOSTResPath1(){
 
