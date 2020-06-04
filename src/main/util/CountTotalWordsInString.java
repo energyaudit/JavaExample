@@ -10,6 +10,7 @@ public class CountTotalWordsInString
         for(i=0;i<s.length();i++)
         {
             ch[i]= s.charAt(i);
+            //word is between 2 white space exception the first word
             if( ((i>0)&&(ch[i]!=' ')&&(ch[i-1]==' ')) || ((ch[0]!=' ')&&(i==0)) )
                 c++;
         }

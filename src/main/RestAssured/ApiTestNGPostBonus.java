@@ -33,20 +33,7 @@ public class ApiTestNGPostBonus {
     public static   HashMap map = new HashMap();
 
     @BeforeTest
-    public void postdata(){
-        map.put("client_id", "V2Wkew1NeiWQUgAnmyGU4mnAHYv1jTPM");
-        map.put("client_secret", "vZL-MVfQepAYNqcPkFnz5qc0BagQ574hBX_OtW_1pz1SHzyuPu6o1WihbvYQus6A");
-        map.put("audience", "https://partners.loyalty.com");
-        map.put("grant_type", "client_credentials");
-        //The above hashmap created json object as following for testPost testing:
-//        {
-//“userId”: 2,
-//“id”: 19,
-//“title”: “this is projectdebug.com”,
-//“body”: “this is REST-Assured Tutorial”
-//        }
 
-    }
 
 
 

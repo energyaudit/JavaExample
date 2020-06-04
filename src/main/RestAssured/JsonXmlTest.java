@@ -2,7 +2,13 @@ package src.main.RestAssured;
 
 
         import static io.restassured.RestAssured.given;
+        import static org.junit.Assert.assertTrue;
+
         import java.util.Random;
+
+        import io.restassured.RestAssured;
+        import main.util.OutPutResult;
+        import main.util.TestCode;
         import org.hamcrest.Matchers;
         import org.testng.Assert;
         import org.testng.annotations.Test;
@@ -13,29 +19,22 @@ package src.main.RestAssured;
 public class JsonXmlTest {
 
 
+
+
     @Test
     public void post_xml_test() {
         org.apache.log4j.BasicConfigurator.configure();
         Random random = new Random();
         String requestBody =
-                "{\"name\": \"Lisa "+random.nextInt()+"Tamaki\"}";
+                "{\"id\":" +random.nextInt()+",\"name\":"+"\"Tamaki\"}";
         Response response = given().
                 contentType(ContentType.XML)
         .contentType(ContentType.JSON)
-//                .accept(ContentType.XML)
-//                .body("<empRequest>\n" +
-//                        "	<id>1</id>\n" +
-//                        "	<name>PK</name>\n" +
-//                        "</empRequest>")
-//                .body("{\"name\": \"Lisa Tamaki\"}")
                 .body(requestBody)
                 .when()
-                .post("http://localhost:8080/actor");
+                .post("http://localhost:7000/posts");
         System.out.println("POST Response\n" + response.asString());
-        // tests
-        Assert.assertEquals(response.getStatusCode(),200);
-//        response.then().body("empResponse.id", Matchers.is("1"));
-//        response.then().body("empResponse.name", Matchers.is("PK"));
+             Assert.assertEquals(response.getStatusCode(),200);
     }
 
     @Test

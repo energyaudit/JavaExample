@@ -15,8 +15,7 @@ public class xmlTest1 {
     @Test
     public void xmlPostRequest_Test() {
         org.apache.log4j.BasicConfigurator.configure();
-//        RestAssured.baseURI = "http://localhost:8080";
-        RestAssured.baseURI = "http://localhost:3000";
+        RestAssured.baseURI = "http://localhost:7000";
 
 //        String requestBody = "<client>\r\n" +
 //                "    <clientNo>100</clientNo>\r\n" +
