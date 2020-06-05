@@ -1,12 +1,14 @@
 package main.RestAssured;
 
 
+import io.restassured.RestAssured;
 import main.util.*;
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Random;
 
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.junit.Assert.assertTrue;
 
 
@@ -32,7 +34,17 @@ public class TestCallUti {
         OutPutResult outR = new OutPutResult();
         outR.inputStr("Assert API get data call getDataJpath success");
     }
+    @Test
+    public void testJsonSchema() {
 
+        RestAssured.given()
+                .when()
+                .get("https://jsonplaceholder.typicode.com/comments?postId=1")
+                .then()
+                .assertThat()
+                .body(matchesJsonSchemaInClasspath("./src/main/resources/JsonSchemaFile.json"));
+
+    }
 
 
     @Test
