@@ -1,9 +1,10 @@
-package test;
+package test.java;
 
 
 import io.restassured.RestAssured;
-import main.util.*;
+import util.*;
 import org.junit.Test;
+
 
 import java.util.HashMap;
 import java.util.Random;
