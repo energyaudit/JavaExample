@@ -1,8 +1,6 @@
-package test.java;
-
-
 import io.restassured.RestAssured;
 import util.*;
+
 import org.junit.Test;
 
 
@@ -21,8 +19,8 @@ public class TestCallUti {
         TestCode tcd = new TestCode();
         boolean result = tcd.inputpar(puri, 200);
         assertTrue(result);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API test code success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("Assert API test code success");
     }
 
     @Test
@@ -32,8 +30,8 @@ public class TestCallUti {
         GetDataJPath gdj = new GetDataJPath();
         String result = gdj.inputpar(puri, "weather[0].main");
 
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API get data call getDataJpath success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("Assert API get data call getDataJpath success");
     }
     @Test
     public void testJsonSchema() {
@@ -55,8 +53,8 @@ public class TestCallUti {
         RTNodeSize rts = new RTNodeSize();
         boolean result = rts.inputpar(puri, 20);
         assertTrue(result);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API test body size success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("Assert API test body size success");
     }
 
     @Test
@@ -64,8 +62,8 @@ public class TestCallUti {
         String puri = "http://localhost:7000/employees";
         RTBody rty = new RTBody();
         rty.inputpar(puri);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr(" API test data BODY success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr(" API test data BODY success");
     }
 
     @Test
@@ -73,8 +71,8 @@ public class TestCallUti {
         String puri = "https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22";
         RTBody rty = new RTBody();
         rty.inputpar(puri);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr(" API test data BODY success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr(" API test data BODY success");
     }
 
     @Test
@@ -82,8 +80,8 @@ public class TestCallUti {
         String puri = "https://jsonplaceholder.typicode.com/posts/1";
         RTSchemaVe rty = new RTSchemaVe();
         rty.inputpar(puri, "schemaFile.json", 200);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr(" API test Test ShemaVerify success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr(" API test Test ShemaVerify success");
     }
 
     @Test
@@ -91,8 +89,8 @@ public class TestCallUti {
         String puri = "http://restapi.demoqa.com/authentication/CheckForAuthentication";
         RTAuthCode rty = new RTAuthCode();
         rty.inputpar(puri, "schemaFile.json", "ToolsQA", 200);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr(" API test Test AUTH success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr(" API test Test AUTH success");
     }
 
     @Test
@@ -101,16 +99,16 @@ public class TestCallUti {
 
         RTime rty = new RTime();
         rty.inputpar(puri);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr(" API test data API Response Time success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr(" API test data API Response Time success");
     }
     @Test
     public void TestResponseTime1() {
         String puri = "https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22";
               RTime rty = new RTime();
         rty.inputpar(puri);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr(" API test data API Response Time success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr(" API test data API Response Time success");
     }
 
     @Test
@@ -120,8 +118,8 @@ public class TestCallUti {
         RTHeader rth = new RTHeader();
         boolean result = rth.inputpar(puri, "2");
         assertTrue(result);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API test header content success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("Assert API test header content success");
     }
 
     @Test
@@ -131,8 +129,8 @@ public class TestCallUti {
         RTHeader rth = new RTHeader();
         boolean result = rth.inputpar(puri, "4551");
         assertTrue(result);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API test header content success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("Assert API test header content success");
     }
 
 
@@ -173,8 +171,8 @@ public class TestCallUti {
         TestCode tcd = new TestCode();
         boolean result = tcd.inputpar(puri,200);
         assertTrue(result);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API test code success");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("Assert API test code success");
     }
 
     @Test

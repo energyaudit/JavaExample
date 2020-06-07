@@ -137,14 +137,12 @@ public class TestCallUti {
 
     @Test
     public void testPOSTResPath1() {
-
         String puri = "http://jsonplaceholder.typicode.com/posts/";
         HashMap map = new HashMap();
         map.put("userId", "2");
         map.put("id", "19");
         map.put("title", "this is projectdebug.com");
         map.put("body", "this is REST-Assured Tutorial");
-
         RPResPath rppt = new RPResPath();
         String rePath = rppt.inputpar(puri, map, 201, "title");
         System.out.println(rePath);

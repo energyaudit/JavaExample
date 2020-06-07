@@ -8,6 +8,7 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 import io.restassured.RestAssured;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.Test;
 import test.java.Util;
 import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
