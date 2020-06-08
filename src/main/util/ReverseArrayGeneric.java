@@ -1,4 +1,4 @@
-package main.Java3;
+package main.util;
 import java.util.*;
 public class ReverseArrayGeneric
 {
