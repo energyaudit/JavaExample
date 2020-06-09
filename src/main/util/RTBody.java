@@ -23,7 +23,7 @@ public class RTBody {
         String jsonString=data;
 
         try {
-            FileWriter writer = new FileWriter("../resources/temp.json");
+            FileWriter writer = new FileWriter("src/main/TESTRESULT/temp.json");
             writer.write(jsonString);
             writer.close();
         } catch (IOException e) {
