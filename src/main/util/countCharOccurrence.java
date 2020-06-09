@@ -27,6 +27,15 @@ public class countCharOccurrence {
                         str.charAt(i) + " is:" + count[str.charAt(i)]);
         }
     }
+    public static Integer countCharOccur(String str, char chara){
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == chara) {
+                count++;
+            }
+        }
+        return count;
+    }
     public static void main(String[] args)
     {
         String str = "geeksforgeeks";
@@ -34,13 +43,7 @@ public class countCharOccurrence {
 
         String someString = "elephant";
         char someChar = 'e';
-        int count = 0;
-
-        for (int i = 0; i < someString.length(); i++) {
-            if (someString.charAt(i) == someChar) {
-                count++;
-            }
-        }
+        System.out.println(someChar+" in "+someString+":"+countCharOccur(someString,someChar));
     }
 
 }
