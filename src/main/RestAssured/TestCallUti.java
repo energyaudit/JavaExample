@@ -5,6 +5,7 @@ import io.restassured.RestAssured;
 import main.util.*;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -14,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 
 public class TestCallUti {
     @Test
-    public void TestResponsecode() {
+    public void TestResponsecode() throws IOException {
 
         String puri = "https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22";
         TestCode tcd = new TestCode();
@@ -42,13 +43,13 @@ public class TestCallUti {
                 .get("https://jsonplaceholder.typicode.com/comments?postId=1")
                 .then()
                 .assertThat()
-                .body(matchesJsonSchemaInClasspath("./src/main/resources/JsonSchemaFile.json"));
+                .body(matchesJsonSchemaInClasspath("src/main/resources/JsonSchemaFile.json"));
 
     }
 
 
     @Test
-    public void TestRTsize() {
+    public void TestRTsize()throws IOException {
 
         String puri = "http://ergast.com/api/f1/2017/circuits.json";
         RTNodeSize rts = new RTNodeSize();
@@ -95,7 +96,7 @@ public class TestCallUti {
     }
 
     @Test
-    public void TestResponseTime() {
+    public void TestResponseTime() throws IOException{
         String puri = "http://localhost:7000/employees";
 
         RTime rty = new RTime();
@@ -104,7 +105,7 @@ public class TestCallUti {
         outR.inputStr(" API test data API Response Time success");
     }
     @Test
-    public void TestResponseTime1() {
+    public void TestResponseTime1() throws IOException {
         String puri = "https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22";
               RTime rty = new RTime();
         rty.inputpar(puri);
@@ -113,7 +114,7 @@ public class TestCallUti {
     }
 
     @Test
-    public void TestRTheader() {
+    public void TestRTheader() throws IOException {
 
         String puri = "http://localhost:7000/employee";
         RTHeader rth = new RTHeader();
@@ -124,7 +125,7 @@ public class TestCallUti {
     }
 
     @Test
-    public void TestRTheader1() {
+    public void TestRTheader1() throws IOException {
 
         String puri = "http://ergast.com/api/f1/2017/circuits.json";
         RTHeader rth = new RTHeader();
@@ -164,7 +165,7 @@ public class TestCallUti {
     }
 
     @Test
-    public void TestResponsecode2() {
+    public void TestResponsecode2() throws IOException {
 
         String puri = "http://localhost:7000/employees";
         TestCode tcd = new TestCode();
@@ -175,7 +176,7 @@ public class TestCallUti {
     }
 
     @Test
-    public void testPOSTResCode1() {
+    public void testPOSTResCode1() throws IOException {
 
         String puri = "http://jsonplaceholder.typicode.com/posts/";
         HashMap map = new HashMap();
@@ -190,7 +191,7 @@ public class TestCallUti {
     }
 
     @Test
-    public void testPOSTResCode2() {
+    public void testPOSTResCode2() throws IOException {
         String puri = "http://localhost:3000/posts";
         Random random = new Random();
         Integer inputId = random.nextInt();
@@ -206,7 +207,7 @@ public class TestCallUti {
     }
 
     @Test
-    public void testPatchResCode() {
+    public void testPatchResCode() throws IOException {
         String puri = "http://localhost:3000/posts/1423317429";
         Random random = new Random();
         String authorName = random.nextInt() + "billy";

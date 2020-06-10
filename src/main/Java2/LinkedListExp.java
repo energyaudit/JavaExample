@@ -5,6 +5,7 @@ package src.main.Java2;
  */
 
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
@@ -78,6 +79,15 @@ public class LinkedListExp {
 //Replace an Element of LinkedList Java example
         linkedList.set(3, "Replaced");
         System.out.println("After replacing 4, LinkedList contains : " + linkedList);
+        //join an ArrayList at the end of a LinkedList
+        ArrayList<String> arrayList = new ArrayList<String>();
+        arrayList.add("SIX");
+        arrayList.add("SEVEN");
+        arrayList.add("EIGHT");
+        arrayList.add("NINE");
 
+        linkedList.addAll(arrayList);
+        //Printing the elements of linkedList
+        System.out.println(linkedList);
     }
 }

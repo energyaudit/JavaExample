@@ -35,9 +35,16 @@ public class HashSetExamp {//HashSet class extends AbstractSet class which imple
         set.add("Vijay");//iterator is used when you want to remove stuff whilst you iterate over the array contents.
         set.add("Ravi");//If you don't use an iterator but simply have a for loop and inside it use the remove method you will get exceptions
         set.add("Ajay");//because the contents of the array is deleted while you iterate through.
+
+
            Iterator<String> itr=set.iterator();//Traversing elements//e.g: you might think array size is 10 at the start of the for loop
         while(itr.hasNext()){//but it wont be the case once you remove stuff(For exp:9 after delete one).
             System.out.println(itr.next());    }
+        // create a synchronized set
+        Set<String> synset = Collections.synchronizedSet(set);
+        Iterator<String> itrSyn=synset.iterator();//Traversing elements//e.g: you might think array size is 10 at the start of the for loop
+        while(itrSyn.hasNext()){//but it wont be the case once you remove stuff(For exp:9 after delete one).
+            System.out.println(itrSyn.next());    }
 
         HashSet<Book> set1=new HashSet<Book>();
         //Creating Books
@@ -52,6 +59,7 @@ public class HashSetExamp {//HashSet class extends AbstractSet class which imple
         for(Book b:set1){//both while and for can print set
             System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);
         }
+
 
 
 

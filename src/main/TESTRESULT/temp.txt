@@ -117,3 +117,13 @@ Test date and time is:04/12/2020 14:19:31
 Test date and time is:04/12/2020 14:19:40
 Assert API test code success SUCCESS
 Test date and time is:04/12/2020 14:19:41
+Test date and time is:06/09/2020 17:44:30
+Test date and time is:06/09/2020 17:48:19
+Test date and time is:06/09/2020 17:50:31
+Test date and time is:06/09/2020 17:52:37result is:false
+Test date and time is:06/09/2020 17:53:18result is:falsejava.net.ConnectException: Connection refused (Connection refused)
+Test date and time is:06/09/2020 17:54:24result is:falsecausejava.net.ConnectException: Connection refused (Connection refused)
+Test date and time is:06/09/2020 17:55:06result is:false  cause: java.net.ConnectException: Connection refused (Connection refused)
+Test date and time is:06/09/2020 18:08:04result is:false  cause: java.net.ConnectException: Connection refused (Connection refused)
+Test date and time is:06/09/2020 19:06:31
+Test date and time is:06/09/2020 19:06:33result is:false  cause: java.net.ConnectException: Connection refused (Connection refused)

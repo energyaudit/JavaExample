@@ -11,7 +11,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 import static org.junit.Assert.assertTrue;
 
 
-public class TestCallUti {
+public class TestCallUtiTest {
     @Test
     public void TestResponsecode() {
 

@@ -5,9 +5,7 @@ import java.io.File;
 public class fileExist {
   static  boolean exist;
     public static boolean fileExistPath(String filepath) {
-
 //Map to JSON
-
         File file = new File(filepath);
         exist=( file.canExecute()||file.canRead()||file.canWrite());
         if(exist){
