@@ -27,7 +27,8 @@ public class CA51SetBrowDirec {
 //        for (int i=0; i <2; i++){
             switch(getbrowser){//switch on string
                 case "chrome":
-                    System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+                   // System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver");
                     driver = new ChromeDriver();
                     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                     break;
