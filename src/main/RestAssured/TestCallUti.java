@@ -205,7 +205,21 @@ public class TestCallUti {
         boolean rePath = rppt.inputpar(puri, map, 201);
         System.out.println(rePath);
     }
-
+    @Test
+    public void testPOSTResCode3() throws IOException {
+        String puri = "http://localhost:8080/posts";
+        Random random = new Random();
+        Integer inputId = random.nextInt();
+        String authorName = random.nextInt() + "billy";
+        System.out.println(authorName);
+        HashMap map = new HashMap();
+        map.put("id", inputId);
+        map.put("title", "this is projectdebug.com");
+        map.put("author", authorName);
+        PostCode rppt = new PostCode();
+        boolean rePath = rppt.inputpar(puri, map, 201);
+        System.out.println(rePath);
+    }
     @Test
     public void testPatchResCode() throws IOException {
         String puri = "http://localhost:3000/posts/1423317429";

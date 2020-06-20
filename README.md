@@ -13,3 +13,5 @@ Clone this repository using a git client as a first step, build project
   driver=new BrowserSetup().Setup("chrome","mac");
 - For test use :http://localhost:7000,please install JSON Server:_**npm install -g json-server**_. It’s a great tool to create mock JSON based web services, all it requires is a sample JSON file. It automatically creates GET, POST, PUT, DELETE API endpoints for us. 
 - **json-server --port 7000 --routes routes.json --watch db1.json ** 
+- For test use :http://localhost:8080,please install JSON Server:_**npm install -g json-server**_. It’s a great tool to create mock JSON based web services, all it requires is a sample JSON file. It automatically creates GET, POST, PUT, DELETE API endpoints for us. 
+- **json-server --port 8080 --routes routes.json --watch db.json ** 
