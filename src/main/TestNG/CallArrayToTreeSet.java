@@ -1,6 +1,6 @@
 package main.TestNG;
 
-import static main.util.ConvertArrayToSet.arrayToTreeset;
+import static main.util.ConvertArrayToTreeset.arrayToTreeset;
 
 public class CallArrayToTreeSet {
     public static void main(String[] args) {

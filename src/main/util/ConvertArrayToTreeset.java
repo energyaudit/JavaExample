@@ -4,7 +4,7 @@ package main.util;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class                                                                                                                                                                                                                                                                                                                               ConvertArrayToSet {
+public class ConvertArrayToTreeset {
 public static<T> Set arrayToTreeset(T[] arrayInput){
         /*First we convert an Array to List using,Arrays.asList(), then pass the list as an
       argument to the constructor of TreeSet */

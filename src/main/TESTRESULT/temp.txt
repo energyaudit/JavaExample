@@ -1,5 +1,4 @@
-
- API test data API Response Time success SUCCESS
+API test data API Response Time success SUCCESS
 Test date and time is:09/09/2019 18:41:33
 Assert API test code success SUCCESS
 Test date and time is:04/12/2020 12:49:50
