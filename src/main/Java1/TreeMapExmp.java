@@ -39,7 +39,7 @@ public class TreeMapExmp {
                     entry.getValue());
         }
 
-        // To get a Head Map from Java TreeMap use,        SortedMap headMap(Object toKey) method of Java TreeMap class.
+        // To get a Head Map from Java TreeMap use, SortedMap headMap(Object toKey) method of Java TreeMap class.
         //        This method returns the portion of TreeMap whose keys are less than toKey.
         SortedMap sortedMap = hm.headMap(102);
         System.out.println("\nHead Map Contains : " + sortedMap);

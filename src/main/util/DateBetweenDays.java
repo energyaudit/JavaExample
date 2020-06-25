@@ -30,7 +30,7 @@ public class DateBetweenDays {
         String date1 = "2017-05-24";
         String date2 = "2020-05-15";
         System.out.println("days between these 2 date are:  "+betweenDays(date1,date2));
-
         System.out.println("days between now and date are:  "+betweenDays(date2,parseDateNow2String ()));
+
     }
 }

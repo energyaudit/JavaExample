@@ -6,7 +6,6 @@ public class EnumType {
     public static void main(String[] args) {
 
         AnimalEnum animal = AnimalEnum.DOG;
-
         switch(animal) {
             case CAT:
                 System.out.println("Cat");
@@ -19,7 +18,6 @@ public class EnumType {
                 break;
             default:
                 break;
-
         }
 
         System.out.println(AnimalEnum.DOG);

@@ -1,6 +1,6 @@
-package main.Java0;
+package main.util;
 
-public class LongestPrefix {
+public class getLongestCommonPrefix {
     public static String getLongestCommonPrefix(String[] strArr) {
         if(strArr.length==0) return "";
         // Find minimum length String
