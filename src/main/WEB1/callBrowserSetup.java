@@ -1,7 +1,9 @@
 package WEB1;
 
 import WEB1.util.BrowserSetup;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.*;
 
@@ -13,13 +15,15 @@ public class callBrowserSetup {
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
-   // @Before
-
+//    @BeforeClass
+//    public static void setupClass() {
+//        WebDriverManager.edgedriver().setup();
+//    }
 
     @Test
     public void testCA51BrowserSetup() throws Exception {
-  //     driver=new BrowserSetup().Setup("chrome","windows");
-       driver=new BrowserSetup().Setup("chrome","mac");
+       driver=new BrowserSetup().Setup("chrome","windows");
+//       driver=new BrowserSetup().Setup("chrome","mac");
 //        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
         driver.get("http://www.51.ca/");
         driver.findElement(By.linkText("资讯")).click();
@@ -42,6 +46,26 @@ public class callBrowserSetup {
 //        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
 //        OutPutResult outR = new OutPutResult();
 //        outR.inputStr("51CA  "+getbrowser+"success");
+    }
+
+    @Test
+    public void EdgeCA51BrowserSetup() throws Exception {
+        driver=new BrowserSetup().Setup("edge","windows");
+
+        driver.get("http://www.51.ca/");
+        driver.findElement(By.linkText("资讯")).click();
+        driver.findElement(By.linkText("新闻精要")).click();
+        driver.findElement(By.linkText("51首页")).click();
+
+    }
+    @Test
+    public void OperaCA51BrowserSetup() throws Exception {
+        driver=new BrowserSetup().Setup("opera","windows");
+        driver.get("http://www.51.ca/");
+        driver.findElement(By.linkText("资讯")).click();
+        driver.findElement(By.linkText("新闻精要")).click();
+        driver.findElement(By.linkText("51首页")).click();
+
     }
     @After
     public void tearDown() throws Exception {
