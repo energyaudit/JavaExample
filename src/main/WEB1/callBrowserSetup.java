@@ -2,6 +2,7 @@ package WEB1;
 
 import WEB1.util.BrowserSetup;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import main.WEB1.util.BrowserSetupHeadless;
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -24,28 +25,30 @@ public class callBrowserSetup {
     public void testCA51BrowserSetup() throws Exception {
        driver=new BrowserSetup().Setup("chrome","windows");
 //       driver=new BrowserSetup().Setup("chrome","mac");
-//        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
         driver.get("http://www.51.ca/");
         driver.findElement(By.linkText("资讯")).click();
         driver.findElement(By.linkText("新闻精要")).click();
         driver.findElement(By.linkText("51首页")).click();
-
-//        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
-//        OutPutResult outR = new OutPutResult();
-//        outR.inputStr("51CA  "+getbrowser+"success");
+    }
+    @Test
+    public void HeadlessCA51BrowserSetup() throws Exception {
+        driver=new BrowserSetupHeadless().Setup("chrome","windows",true);
+//        driver=new BrowserSetupHeadless().Setup("chrome","windows",false);
+//       driver=new BrowserSetup().Setup("chrome","mac");
+        driver.get("http://www.51.ca/");
+        driver.findElement(By.linkText("资讯")).click();
+        driver.findElement(By.linkText("新闻精要")).click();
+        driver.findElement(By.linkText("51首页")).click();
     }
     @Test
     public void firefoxCA51BrowserSetup() throws Exception {
         driver=new BrowserSetup().Setup("firefox","windows");
-//        driver.get(PropertyUtil.getMessageForApplication(TestConstants.BASE_URL));
+
         driver.get("http://www.51.ca/");
         driver.findElement(By.linkText("资讯")).click();
         driver.findElement(By.linkText("新闻精要")).click();
         driver.findElement(By.linkText("51首页")).click();
 
-//        String getbrowser = PropertyUtil.getMessageForApplication(TestConstants.BROWSER);
-//        OutPutResult outR = new OutPutResult();
-//        outR.inputStr("51CA  "+getbrowser+"success");
     }
 
     @Test
@@ -67,6 +70,7 @@ public class callBrowserSetup {
         driver.findElement(By.linkText("51首页")).click();
 
     }
+
     @After
     public void tearDown() throws Exception {
         driver.quit();
