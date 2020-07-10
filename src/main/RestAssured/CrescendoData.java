@@ -1,15 +1,15 @@
 package main.RestAssured;
 
-import org.junit.Test;
+
 import main.util.*;
 
 import java.util.ArrayList;
 import java.util.Map;
-
+import org.testng.annotations.Test;
 
 public class CrescendoData  {
 
-    @Test
+    @Test(priority=2)
     public void TestbodyURI3()
 
     {
@@ -39,7 +39,7 @@ public class CrescendoData  {
         Map outMp=clf.countFrequencies(list);
 
     }
-    @Test
+     @Test(priority=1)
     public void TestbodyURI2()
 
     {

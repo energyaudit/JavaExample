@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SmokeSuite" parallel="none" thread-count="2">
+	<parameter  name="searchKey" value="Toronto Weather"/>
+	<test name="DataProvider">
+		<classes>
+			<class name="main.TestNG.DataParameter" />
+		</classes>
+	</test>
+</suite>

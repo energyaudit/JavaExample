@@ -1,4 +1,4 @@
-package TestNG;
+package main.TestNG;
 
 import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
@@ -6,21 +6,22 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import WEB1.util.BrowserSetup;
 
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class DataProvider {
+public class DataParameter {
 
     WebDriver driver;
     @Test
     @Parameters({"author","searchKey"})
-    public void testParameterWithXML( @Optional("billy") String author,String searchKey) throws InterruptedException{
-
-        System.setProperty("webdriver.gecko.driver", "./src/main/resourcesgeckodriver.exe");
-        driver = new FirefoxDriver();
+    public void testParameterWithXML( @Optional("billy") String author,@Optional("Toronto")String searchKey) throws InterruptedException{
+        driver=new BrowserSetup().Setup("chrome","windows");
+//       driver=new BrowserSetup().Setup("chrome","mac");
+//        System.setProperty("webdriver.gecko.driver", "./src/main/resourcesgeckodriver.exe");
+//        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://google.com");
 
