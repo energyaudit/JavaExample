@@ -1,4 +1,4 @@
-package test.java;
+package restassured;
 
 import java.io.IOException;
 import java.io.InputStream;
