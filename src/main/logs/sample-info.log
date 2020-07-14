@@ -1,0 +1,3 @@
+2020-07-13T22:49:36,177 INFO  [Sample][main|LogApp] 17 main Info : number is 9
+2020-07-13T22:49:36,196 INFO  [Sample][main|LogApp] 30 main Info : You chose a number < 100 
+2020-07-13T22:49:36,207 INFO  [Sample][main|LogApp] 39 main Info : Your number has the digit 9

@@ -47,4 +47,6 @@ src/main/TESTRESULT/temp5.json
 src/main/TESTRESULT/temp6.json
 #iml files
 Javaexamples.iml
+#logs
+src/main/logs
 

@@ -1,0 +1,15 @@
+2020-07-13T22:49:36,177 INFO  [Sample][main|LogApp] 17 main Info : number is 9
+2020-07-13T22:49:36,193 WARN  [Sample][main|LogApp] 18 main Warning : number is 9
+2020-07-13T22:49:36,194 DEBUG [Sample][main|LogApp] 19 main Debug : number is 9
+2020-07-13T22:49:36,194 ERROR [Sample][main|LogApp] 20 main Error : number is 9
+2020-07-13T22:49:36,195 FATAL [Sample][main|LogApp] 21 main Fatal : number is 9
+2020-07-13T22:49:36,196 INFO  [Sample][main|LogApp] 30 main Info : You chose a number < 100 
+2020-07-13T22:49:36,196 WARN  [Sample][main|LogApp] 31 main Warning : You chose a number < 100 
+2020-07-13T22:49:36,198 DEBUG [Sample][main|LogApp] 32 main Debug : You chose a number < 100 
+2020-07-13T22:49:36,206 ERROR [Sample][main|LogApp] 33 main Error : You chose a number < 100 
+2020-07-13T22:49:36,206 FATAL [Sample][main|LogApp] 34 main Fatal : You chose a number < 100 
+2020-07-13T22:49:36,207 INFO  [Sample][main|LogApp] 39 main Info : Your number has the digit 9
+2020-07-13T22:49:36,207 WARN  [Sample][main|LogApp] 40 main Warning : Your number has the digit 9
+2020-07-13T22:49:36,208 DEBUG [Sample][main|LogApp] 41 main Debug : Your number has the digit 9
+2020-07-13T22:49:36,208 ERROR [Sample][main|LogApp] 42 main Error : Your number has the digit 9
+2020-07-13T22:49:36,208 FATAL [Sample][main|LogApp] 43 main Fatal : Your number has the digit 9

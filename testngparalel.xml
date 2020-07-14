@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="SmokeSuite" parallel="tests" thread-count="2">
+<suite name="SmokeSuite" parallel="tests" thread-count="3">
 	<test name="ParallelTest 1">
 		<classes>
 			<class name="testng.TestWebsite" />
