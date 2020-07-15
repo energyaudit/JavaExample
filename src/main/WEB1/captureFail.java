@@ -13,7 +13,7 @@ import java.io.IOException;
 public class captureFail extends CaptureFailScreenshot {
 
     @Test
-    //Tests google calculator
+    //Tests google calculator1
     public void googleCalculator() throws IOException {
 
         //Launch google
