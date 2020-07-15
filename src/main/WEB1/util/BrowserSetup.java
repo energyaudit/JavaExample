@@ -67,21 +67,17 @@ public class BrowserSetup {
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                  break;
             case "firefox":
-//
+
                 FirefoxSetProperty(os);
                 driver = new FirefoxDriver();
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                 break;
             case "opera":
                 OperaSetProperty(os);
-//                OperaOptions options = new OperaOptions();
-//                options.setBinary(new File("./src/main/resources/operadriver.exe"));
-//              driver = new OperaDriver(options);
                 driver = new OperaDriver();
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                 break;
             case "edge":
-
                 EdgeSetProperty(os);
                 driver = new EdgeDriver();
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
