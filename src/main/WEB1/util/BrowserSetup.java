@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -81,10 +82,10 @@ public class BrowserSetup {
                 EdgeSetProperty(os);
                 driver = new EdgeDriver();
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//                ChromeOptions chromeOptions = new ChromeOptions();
-//      EdgeSetProperty(os);
-//                EdgeOptions edgeOptions = new EdgeOptions().merge(chromeOptions);
-//                driver = new EdgeDriver(edgeOptions);
+                break;
+            case "IE":
+                System.setProperty("webdriver.ie.driver","./src/main/resources/IEDriverServer.exe");
+                driver=new InternetExplorerDriver();
                 break;
         }
         return driver;

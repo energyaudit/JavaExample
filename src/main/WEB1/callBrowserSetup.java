@@ -22,7 +22,7 @@ public class callBrowserSetup {
 //    }
 
     @Test
-    public void testCA51BrowserSetup() throws Exception {
+    public void chromeCA51BrowserSetup() throws Exception {
        driver=new BrowserSetup().Setup("chrome","windows");
 //       driver=new BrowserSetup().Setup("chrome","mac");
         driver.get("http://www.51.ca/");
@@ -67,6 +67,16 @@ public class callBrowserSetup {
         driver.get("http://www.51.ca/");
         driver.findElement(By.linkText("资讯")).click();
         driver.findElement(By.linkText("新闻精要")).click();
+        driver.findElement(By.linkText("51首页")).click();
+    }
+
+    @Test
+    public void IECA51BrowserSetup() throws Exception {
+        driver=new BrowserSetup().Setup("IE","windows");
+        driver.get("http://www.51.ca/");
+       // driver.findElement(By.linkText("资讯")).click();
+        driver.findElement(By.xpath("//li[@class='li02']//a")).click();
+       driver.findElement(By.linkText("新闻精要")).click();
         driver.findElement(By.linkText("51首页")).click();
 
     }

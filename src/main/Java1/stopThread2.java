@@ -31,9 +31,23 @@ public class stopThread2
         {
             e.printStackTrace();
         }
-
         //interrupting the thread
-
         thread.interrupt();
+      ////////////////////////only way to   stop a endless thread
+        Thread loop = new Thread(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        while (true) {
+                            if (Thread.interrupted()) {
+                                break;
+                            }
+                            // Continue to do nothing
+                        }
+                    }
+                }
+        );
+        loop.start();
+        loop.interrupt();
     }
 }
