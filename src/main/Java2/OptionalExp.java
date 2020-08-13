@@ -30,6 +30,15 @@ public class OptionalExp {
             System.out.println("Name not found");
         }
 
+        for(String nt:nameList){
+            Optional <String> searchedName1 = test.findName(nt);
+            if (searchedName1.isPresent()) {
+                System.out.println("HI," + searchedName1.get());
+            } else {
+                System.out.println("Name not found");
+            }
+        }
+
         OptionalInt maxOdd = IntStream.of(10, 20, 30).filter(n -> n % 2 == 1).max();
         if (maxOdd.isPresent()) {
             int value = maxOdd.getAsInt();
