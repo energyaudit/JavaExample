@@ -23,7 +23,7 @@ public class ReadFileAddJson {
        //     JsonNode root = mapper.readTree(new File("C:\\QA\\TEST\\TEST DOC\\user2.json"));
        //     JsonNode root = mapper.readTree(new File("C:\\QA\\TESTRESULT\\temp.json"));
 
-           JsonNode root = mapper.readTree(new File("/Billy/Testing/JavaExample/JavaExample/src/main/java/src.main.Java1/temp.json"));
+           JsonNode root = mapper.readTree(new File("./src/main/resources/temp6.json"));
 
             String resultOriginal = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(root);
             System.out.println("Before Update " + resultOriginal);

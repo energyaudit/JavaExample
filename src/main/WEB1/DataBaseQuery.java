@@ -9,7 +9,7 @@ import java.sql.Statement;
 /**
  * Created by byang on 2018-09-18.
  */
-// w  w w. j  ava2s  .co m
+
 public class DataBaseQuery {
     public static void main(String[] args) throws Exception {
 
