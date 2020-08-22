@@ -20,4 +20,3 @@ public class PersonSeria implements Serializable {
     }
 }
  
-// www.caveofprogramming.com

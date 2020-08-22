@@ -1,4 +1,4 @@
-package src.main.Java2;
+package main.Java2;
 
 /**
  * Created by byang on 2018-06-08.
@@ -11,11 +11,8 @@ import java.io.FileOutputStream;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 
-/**
- * This program is used to show the serialization process.
- * @author codesjava
- */
-class Student implements Serializable{
+
+class StudentSer implements Serializable{
     //Serial Version UID.
     private static final long serialVersionUID = 1L;
     String name;
@@ -23,7 +20,7 @@ class Student implements Serializable{
     String rollNo;
 
     //Constructor.
-    Student(String name, String className, String rollNo){
+    StudentSer(String name, String className, String rollNo){
         this.name = name;
         this.className = className;
         this.rollNo = rollNo;
@@ -32,12 +29,12 @@ class Student implements Serializable{
 
 class TestSe{
     //Write serialized object into objectoutputstream.
-    public void objectSerialization(Student stu){
+    public void objectSerialization(StudentSer stu){
         try
         {
             //Creating FileOutputStream object.
             FileOutputStream fos =
-                    new FileOutputStream("C:\\QA\\TEST_INOUT\\student.ser");
+                    new FileOutputStream("src/main/TESTRESULT/student.ser");
 
             //Creating ObjectOutputStream object.
             ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -50,7 +47,7 @@ class TestSe{
             fos.close();
 
             System.out.println("Serialized data is saved in " +
-                    "C:\\QA\\TEST_INOUT\\student.ser");
+                    "src/main/TESTRESULT/student.ser");
         }catch(IOException e)
         {
             System.out.println(e);
@@ -64,16 +61,16 @@ class TestDse{
     public void objectDeSerialization(){
         try
         {
-            Student stu = null;
+            StudentSer stu = null;
             //Creating FileOutputStream object.
             FileInputStream fis =
-                    new FileInputStream("C:\\QA\\TEST_INOUT\\student.ser");
+                    new FileInputStream("src/main/TESTRESULT/student.ser");
 
             //Creating ObjectOutputStream object.
             ObjectInputStream ois = new ObjectInputStream(fis);
 
             //write object.
-            stu = (Student) ois.readObject();
+            stu = (StudentSer) ois.readObject();
 
             //close streams.
             ois.close();
@@ -92,8 +89,8 @@ class TestDse{
 public class serialization {
     public static void main(String args[]){
         //Creating Student object.
-        Student stu =
-                new Student("Parmander", "MCA", "MCA/07/27");
+        StudentSer stu =
+                new StudentSer("Parmander", "MCA", "MCA/07/27");
         //Creating Test object.
         TestSe obj = new TestSe();
         //Method call.
