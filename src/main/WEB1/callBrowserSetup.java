@@ -8,6 +8,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.*;
 
+import java.util.concurrent.TimeUnit;
+
+import static main.WEB1.util.scrollDown.ScrollDownPage;
 import static org.junit.Assert.fail;
 
 public class callBrowserSetup {
@@ -80,6 +83,21 @@ public class callBrowserSetup {
         driver.findElement(By.linkText("51首页")).click();
 
     }
+
+
+    @Test
+    public void CallScrollPage() throws Exception {
+         driver=new BrowserSetup().Setup("chrome","windows");
+//        driver=new BrowserSetup().Setup("chrome","mac");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.get("https://www.google.com");
+        WebElement element = driver.findElement(By.name("q"));
+        element.sendKeys("SoftwareTestingHelp");
+        element.sendKeys(Keys.ENTER);
+        ScrollDownPage(driver,600);
+    }
+
 
     @After
     public void tearDown() throws Exception {
