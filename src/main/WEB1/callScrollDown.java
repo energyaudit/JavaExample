@@ -20,8 +20,8 @@ public class callScrollDown {
         WebElement element = driver.findElement(By.name("q"));
         element.sendKeys("SoftwareTestingHelp");
         element.sendKeys(Keys.ENTER);
-        ScrollDownPage(driver,600);
-        driver.quit();
+        ScrollDownPage(driver,1600);
+//        driver.quit();
     }
 
 }
