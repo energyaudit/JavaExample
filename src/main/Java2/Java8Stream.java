@@ -6,11 +6,9 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
-
 /**
  * Created by byang on 2018-09-17.
  */
-
 public class Java8Stream {
     static int i=0;
     private static int next(){
@@ -38,8 +36,6 @@ public class Java8Stream {
                 .filter(n -> n % 2  == 1)
                 .sorted()
                 .forEach(System.out::println);
-
-
 
         Stream.generate(Math::random)//generate(Supplier<T> s) uses Supplier to generate an infinite sequential unordered stream.
                 .limit(5)
@@ -77,16 +73,27 @@ System.out.println("ramdom integers: ");
         int[] a = {1,2,3,4};//judge if a array contains a integer
         boolean contains = IntStream.of(a).anyMatch(x -> x == 4);
         System.out.println(contains);
-
         count = Stream.of(1,2,3,4,5,6,7,8,9).filter(i -> i%2 == 0).collect(Collectors.counting());//Count Number of Elements Using Collectors.counting()
         System.out.printf("There are %d elements in the stream %n", count);
-
         Collection<String> list = Arrays.asList("A", "B", "C", "D", "A", "B", "C");
-
 // Get collection without duplicate i.e. distinct only
         List<String> distinctElements = list.stream().distinct().collect(Collectors.toList());
-
 //Let's verify distinct elements
         System.out.println(distinctElements);
+
+        //A List of Strings to Uppercase
+        List<String> alpha = Arrays.asList("a", "b", "c", "d");
+
+        //Before Java8
+        List<String> alphaUpper = new ArrayList<>();
+        for (String s : alpha) {
+            alphaUpper.add(s.toUpperCase());
+        }
+        System.out.println(alpha); //[a, b, c, d]
+        System.out.println(alphaUpper); //[A, B, C, D]
+        // Java 8
+        List<String> collect = alpha.stream().map(String::toUpperCase).collect(Collectors.toList());
+        System.out.println(collect); //[A, B, C, D]
+
     }
     }
