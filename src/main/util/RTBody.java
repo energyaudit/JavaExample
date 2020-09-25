@@ -6,7 +6,9 @@ import io.restassured.response.Response;
 
 import java.io.FileWriter;
 import java.io.IOException;
-
+/**
+ * Created by byang on 91/22/2016.
+ */
 
 public class RTBody {
     public static boolean vrf;
