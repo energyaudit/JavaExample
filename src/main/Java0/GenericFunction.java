@@ -9,7 +9,7 @@ class GenericFunction
 {
     // A Generic method example
     static <T> void genericDisplay (T element)
-    {
+    {//Java Object getClass() Method,This method returns the runtime class of this object
         System.out.println(element.getClass().getName() +
                 " = " + element);
     }

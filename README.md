@@ -6,12 +6,15 @@ This project is used for API/front-end testing of applications. It uses Selenium
 
 Clone this repository using a git client as a first step, build project
 
-### Running Locally
+### Running Locally UI test
 - All browser-related tests are runnable whatever you laptop operation system mac or windows.  If the test case is web browser-related and your pc  is windows please use the code line :
   driver=new BrowserSetup().Setup("chrome","windows");
   If mac  then comments out above line choose following:
   driver=new BrowserSetup().Setup("chrome","mac");
+ 
+### Running Locally API test
 - For test use :http://localhost:7000,please install JSON Server:_**npm install -g json-server**_. It’s a great tool to create mock JSON based web services, all it requires is a sample JSON file. It automatically creates GET, POST, PUT, DELETE API endpoints for us. 
 - **json-server --port 7000 --routes routes.json --watch db1.json ** 
 - For test use :http://localhost:8080,please install JSON Server:_**npm install -g json-server**_. It’s a great tool to create mock JSON based web services, all it requires is a sample JSON file. It automatically creates GET, POST, PUT, DELETE API endpoints for us. 
 - **json-server --port 8080 --routes routes.json --watch db.json ** 
+- or you can download from my repo: https://github.com/energyaudit/typicodeJsonSeverBilly  then start server by json-server --port 8080 --routes routes.json --watch db.json

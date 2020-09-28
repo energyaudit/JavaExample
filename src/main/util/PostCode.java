@@ -3,7 +3,6 @@ package main.util;
 import io.restassured.RestAssured;
 import io.restassured.config.SSLConfig;
 import io.restassured.response.Response;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -11,9 +10,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-
 import static io.restassured.RestAssured.given;
-
+/**
+ * Created by byang on 91/26/2016.
+ */
 
 public class PostCode {
     public static boolean vrf;

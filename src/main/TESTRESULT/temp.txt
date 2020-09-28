@@ -126,3 +126,6 @@ Test date and time is:06/09/2020 17:55:06result is:false  cause: java.net.Connec
 Test date and time is:06/09/2020 18:08:04result is:false  cause: java.net.ConnectException: Connection refused (Connection refused)
 Test date and time is:06/09/2020 19:06:31
 Test date and time is:06/09/2020 19:06:33result is:false  cause: java.net.ConnectException: Connection refused (Connection refused)
+Test date and time is:09/25/2020 17:17:05result is:false  cause: java.net.ConnectException: Connection refused: connect
+Test date and time is:09/26/2020 13:31:29result is:false  cause: java.net.ConnectException: Connection refused: connect
+Test date and time is:09/26/2020 13:32:10result is:false  cause: java.net.ConnectException: Connection refused: connect

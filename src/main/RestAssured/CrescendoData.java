@@ -19,7 +19,7 @@ public class CrescendoData  {
         for(int k=0;k<l;k++){
             //    String puri="https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22";
             String puri="http://34.214.27.37/api/dice/3";
-            RTBody rty= new RTBody();
+            RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
             String jsonString=rty.inputpar(puri);
             Str2JsonFile sjf=new Str2JsonFile();
             System.out.println("Working Directory = " +
@@ -49,7 +49,7 @@ public class CrescendoData  {
         for(int k=0;k<l;k++){
             //    String puri="https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22";
             String puri="http://34.214.27.37/api/dice/2";
-            RTBody rty= new RTBody();
+            RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
             String jsonString=rty.inputpar(puri);
             Str2JsonFile sjf=new Str2JsonFile();
             sjf.inputStr(jsonString,"/QA/TESTRESULT/temp2.json");
@@ -76,7 +76,7 @@ public class CrescendoData  {
         for(int k=0;k<l;k++){
             //    String puri="https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22";
             String puri="http://34.214.27.37/api/dice/1";
-            RTBody rty= new RTBody();
+            RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
             String jsonString=rty.inputpar(puri);
             Str2JsonFile sjf=new Str2JsonFile();
             sjf.inputStr(jsonString,"/QA/TESTRESULT/temp2.json");

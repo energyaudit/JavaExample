@@ -5,12 +5,12 @@ import io.restassured.config.SSLConfig;
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import org.apache.http.HttpStatus;
-
-
 import static io.restassured.RestAssured.config;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.Is.is;
-
+/**
+ * Created by byang on 91/26/2016.
+ */
 public class RTSchemaVe {
 
 

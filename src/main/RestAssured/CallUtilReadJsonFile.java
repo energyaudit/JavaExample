@@ -15,22 +15,9 @@ import java.util.Map;
 import static org.hamcrest.Matchers.hasSize;
 
 
-
 public class CallUtilReadJsonFile {
     @Test
     public void CallUtilReadJsonFile() {
-        ReadJsonFile2Str rj2s = new ReadJsonFile2Str();
-   //;     String resultO = rj2s.inputpar("C:\\QA\\TESTRESULT\\user2.json");
-
-        String resultO = rj2s.inputpar("src/main/TESTRESULT/user2.json");
-
-        System.out.println("Before Update " + resultO);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API test code success");
-    }
-
-    @Test
-    public void CallUtilReadJsonFile1() {
         ReadJsonFile2Str rj2s = new ReadJsonFile2Str();
         //;     String resultO = rj2s.inputpar("C:\\QA\\TESTRESULT\\user2.json");
 
@@ -42,25 +29,33 @@ public class CallUtilReadJsonFile {
     }
 
     @Test
+    public void CallUtilReadJsonFile1() {
+        ReadJsonFile2Str rj2s = new ReadJsonFile2Str();
+        String resultO = rj2s.inputpar("src/main/TESTRESULT/user2.json");
+        System.out.println("Before Update " + resultO);
+        OutPutResult outR = new OutPutResult();
+        outR.inputStr("Assert API test code success");
+    }
+
+
+
+    @Test
     public void CallUtilReadJsonFileFromResource() throws Exception {
         ReadJsonFileResource rj2s = new ReadJsonFileResource();
-
         String resultO = rj2s.inputpar("projectname/ent2e.json");
-
         System.out.println("Before Update " + resultO);
         OutPutResult outR = new OutPutResult();
         outR.inputStr("Read json file from resource folder success");
     }
 
     @Test
-    public void givenFileNameAsAbsolutePath_whenUsingClasspath_thenFileData() throws Exception{
+    public void givenFileNameAsAbsolutePath_whenUsingClasspath_thenFileData() throws Exception {
         ClassLoader classLoader = getClass().getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream("ent1e.json");
         String text = null;
         try (final Reader reader = new InputStreamReader(inputStream)) {
             text = CharStreams.toString(reader);
-        }
-        finally {
+        } finally {
             if (inputStream != null) {
                 try {
                     inputStream.close();
@@ -69,18 +64,17 @@ public class CallUtilReadJsonFile {
                 }
             }
         }
-
         System.out.println(text);
     }
+
     @Test
-    public void Classpath_FileData() throws Exception{
+    public void Classpath_FileData() throws Exception {
         ClassLoader classLoader = getClass().getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream("projectname/ent2e.json");
         String text = null;
         try (final Reader reader = new InputStreamReader(inputStream)) {
             text = CharStreams.toString(reader);
-        }
-        finally {
+        } finally {
             if (inputStream != null) {
                 try {
                     inputStream.close();
@@ -153,7 +147,7 @@ public class CallUtilReadJsonFile {
     @Test
     public void Call2GetJsonFileValueByName() {
         GetJsonFileValueByName gjv = new GetJsonFileValueByName();
-    //    ArrayList alst = gjv.inputStr("C:\\QA\\TESTRESULT\\Dump\\testout2.txt", "value");
+        //    ArrayList alst = gjv.inputStr("C:\\QA\\TESTRESULT\\Dump\\testout2.txt", "value");
         ArrayList alst = gjv.inputStr("src/main/TESTRESULT/testout2.txt", "value");
 
 
@@ -162,23 +156,16 @@ public class CallUtilReadJsonFile {
         OutPutResult outR = new OutPutResult();
         outR.inputStr(" API test data analysis result success");
     }
+
     @Test
     public void Call3GetJsonFileValueByName() {
         GetJsonFileValueByName gjv = new GetJsonFileValueByName();
         ArrayList alst = gjv.inputStr("src/main/TESTRESULT/testout3.txt", "value");
-
         CountListFreq clf = new CountListFreq();
         Map outMp = clf.countFrequencies(alst);
         OutPutResult outR = new OutPutResult();
         outR.inputStr(" API test data analysis result success");
     }
-
-
-
-
-
-
-
 
 
 }

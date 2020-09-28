@@ -1,12 +1,9 @@
 package src.main.RestAssured;
 
 import io.restassured.config.SSLConfig;
-import io.restassured.http.ContentType;
-import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-import org.apache.http.HttpStatus;
 import main.util.OutPutResult;
 
 import static io.restassured.RestAssured.*;
@@ -17,7 +14,7 @@ import static org.hamcrest.core.Is.is;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import main.util.RTBody;
+import main.util.RestAssuredGetResponseBody;
 import main.util.Str2JsonFile;
 
 import java.util.HashMap;
@@ -87,7 +84,7 @@ public class JsonTestApiTestNGPost {
         Response resp= get(uri);
         String data=resp.getBody().asString();
         System.out.println(data);
-        RTBody rty= new RTBody();
+        RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
         String jsonString=rty.inputpar(uri);
         Str2JsonFile sjf=new Str2JsonFile();
         sjf.inputStr(jsonString,"src/main/TESTRESULT/temp.json");

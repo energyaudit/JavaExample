@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.*;
 
 import org.junit.Test;
 import main.util.OutPutResult;
-import main.util.RTBody;
+import main.util.RestAssuredGetResponseBody;
 import main.util.Str2JsonFile;
 
 public class GetData1 {
@@ -41,7 +41,7 @@ public class GetData1 {
         String data=resp.getBody().asString();
         System.out.println(data);
         System.out.println("Response time:"+resp.getTime());
-        RTBody rty= new RTBody();
+        RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
         String jsonString=rty.inputpar(uri);
         Str2JsonFile sjf=new Str2JsonFile();
         //     sjf.inputStr(jsonString,"C:\\QA\\TESTRESULT\\temp.json");
