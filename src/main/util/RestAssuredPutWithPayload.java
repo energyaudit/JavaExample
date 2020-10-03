@@ -18,6 +18,7 @@ public class RestAssuredPutWithPayload {
 
 
     public static Response inputpar(String puri, HashMap requestParams, String path)  {
+        RestAssured.baseURI = puri;
         org.apache.log4j.BasicConfigurator.configure();
         if(puri.toLowerCase().contains("https")) { RestAssured.config = RestAssured.config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
         Response response=null;
@@ -26,7 +27,7 @@ public class RestAssuredPutWithPayload {
                 .contentType("application/json")
                 .body(requestParams)
                 .when()
-                .put(puri);
+                .put(path);
         } catch (Exception e) {
             e.printStackTrace();
         }

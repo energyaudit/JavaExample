@@ -3,6 +3,7 @@ package main.WEB1;
 import WEB1.util.BrowserSetup;
 import main.WEB1.util.BrowserSetupHeadless;
 import main.WEB1.util.getWebTableCells;
+import main.WEB1.util.getWebTableColumn;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.*;
@@ -32,8 +33,25 @@ public class callGetWebTableCells {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         gwtc=new getWebTableCells().getTableCells(driver,"/html/body/table/tbody");
     }
-
-
+    @Test
+    public void getTableFritColumnTest() throws Exception {
+        driver=new BrowserSetup().Setup("chrome","windows");
+//       driver=new BrowserSetup().Setup("chrome","mac");
+        driver.get("http://demo.guru99.com/test/table.html");
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        WebElement table = driver.findElement(By.xpath("/html/body/table/tbody"));
+        List<WebElement> firstCells = table.findElements(By.xpath(".//tr/td[1]"));
+                System.out.println(firstCells.get(3).getText());
+    }
+    @Test
+    public void getTableFritColumnByCallMethodTest() throws Exception {
+        driver=new BrowserSetup().Setup("chrome","windows");
+//       driver=new BrowserSetup().Setup("chrome","mac");
+        driver.get("http://demo.guru99.com/test/table.html");
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//        WebElement table = driver.findElement(By.xpath("/html/body/table/tbody"));
+        gwtc=new getWebTableColumn().getTableColumnCells(driver, "/html/body/table/tbody",1);
+    }
     @After
     public void tearDown() throws Exception {
         driver.quit();

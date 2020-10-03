@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 public class postResponseBody {
     static  RequestSpecification httpRequest;
      public static Response  postWithPaylaod(String requestBody,String puri, String path)  {
+         RestAssured.baseURI = puri;
         Response response = null;
         try {
             response = RestAssured.given()

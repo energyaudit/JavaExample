@@ -11,6 +11,7 @@ import static io.restassured.RestAssured.given;
 
 public class RestAssuredPatch {
     public static Response inputpar(String puri, HashMap map, String path)  {
+        RestAssured.baseURI = puri;
         org.apache.log4j.BasicConfigurator.configure();
         if(puri.toLowerCase().contains("https")) { RestAssured.config = RestAssured.config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
         Response response = null;

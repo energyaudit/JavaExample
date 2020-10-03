@@ -373,11 +373,8 @@ public class TestCallUti {
 
     @Test
     public void putRequestByCallPutMethod() throws Exception {
-    }
-
-    {
-        int empid = 1943992775;
-        String puri = "http://localhost:8080/posts/" + empid;
+           int empid = 1943992775;
+        String puri = "http://localhost:8080/";
         Random random = new Random();
         Integer inputId = random.nextInt(1000000);
         String authorName = random.nextInt() + "billy";
@@ -418,7 +415,7 @@ public class TestCallUti {
     @Test
     public void patchRequestByMethod() throws Exception {
         int empid = 1943992775;
-        String puri = "http://localhost:8080/posts/" + empid;
+        String puri = "http://localhost:8080/";
         Random random = new Random();
         Integer inputId = random.nextInt(1000000);
         String authorName = random.nextInt() + "billy";

@@ -21,7 +21,7 @@ public class CrescendoData  {
             String puri="http://34.214.27.37/api/dice/3";
             RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
             String jsonString=rty.inputpar(puri);
-            Str2JsonFile sjf=new Str2JsonFile();
+            JsonStr2JsonFile sjf=new JsonStr2JsonFile();
             System.out.println("Working Directory = " +
                     System.getProperty("user.dir"));
        //     sjf.inputStr(jsonString,"C:\\QA\\TESTRESULT\\temp.json");
@@ -51,7 +51,7 @@ public class CrescendoData  {
             String puri="http://34.214.27.37/api/dice/2";
             RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
             String jsonString=rty.inputpar(puri);
-            Str2JsonFile sjf=new Str2JsonFile();
+            JsonStr2JsonFile sjf=new JsonStr2JsonFile();
             sjf.inputStr(jsonString,"/QA/TESTRESULT/temp2.json");
 
             GetDataJPath gdj=new GetDataJPath();
@@ -78,7 +78,7 @@ public class CrescendoData  {
             String puri="http://34.214.27.37/api/dice/1";
             RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
             String jsonString=rty.inputpar(puri);
-            Str2JsonFile sjf=new Str2JsonFile();
+            JsonStr2JsonFile sjf=new JsonStr2JsonFile();
             sjf.inputStr(jsonString,"/QA/TESTRESULT/temp2.json");
 
             GetDataJPath gdj=new GetDataJPath();

@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import main.util.RestAssuredGetResponseBody;
-import main.util.Str2JsonFile;
+import main.util.JsonStr2JsonFile;
 
 import java.util.HashMap;
 
@@ -86,7 +86,7 @@ public class JsonTestApiTestNGPost {
         System.out.println(data);
         RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
         String jsonString=rty.inputpar(uri);
-        Str2JsonFile sjf=new Str2JsonFile();
+        JsonStr2JsonFile sjf=new JsonStr2JsonFile();
         sjf.inputStr(jsonString,"src/main/TESTRESULT/temp.json");
         System.out.println("Response time:"+resp.getTime());
         JsonPath jsonPath=new JsonPath(data);

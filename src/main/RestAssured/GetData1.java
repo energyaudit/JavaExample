@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.*;
 import org.junit.Test;
 import main.util.OutPutResult;
 import main.util.RestAssuredGetResponseBody;
-import main.util.Str2JsonFile;
+import main.util.JsonStr2JsonFile;
 
 public class GetData1 {
     @Test
@@ -43,7 +43,7 @@ public class GetData1 {
         System.out.println("Response time:"+resp.getTime());
         RestAssuredGetResponseBody rty= new RestAssuredGetResponseBody();
         String jsonString=rty.inputpar(uri);
-        Str2JsonFile sjf=new Str2JsonFile();
+        JsonStr2JsonFile sjf=new JsonStr2JsonFile();
         //     sjf.inputStr(jsonString,"C:\\QA\\TESTRESULT\\temp.json");
         sjf.inputStr(jsonString,"src/main/TESTRESULT/temp.json");
         JsonPath jsonPath=new JsonPath(data);
