@@ -5,6 +5,8 @@ package src.main.Java2;
  */
 
 
+import main.util.filterContainExpectList;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -58,9 +60,12 @@ public class Java8Filter {
 
         longnames.forEach(System.out::println);//method reference
 
-
-
-
-
+        List<String> containEnames = names.stream()
+                .filter(s->s.contains("e"))
+                .collect(Collectors.toList());
+System.out.println("The names contain letter e");
+        containEnames.forEach(System.out::println);//method reference
+        filterContainExpectList fCElt=new filterContainExpectList();
+        List<String> callContainEnames=fCElt.filterListContainSpecificStr(names,"e");
     }
 }

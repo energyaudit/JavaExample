@@ -1,6 +1,9 @@
 package main.Java3;
 
 
+import main.util.arraylistContainStrEle;
+import main.util.arraylistElementContainStr;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -27,8 +30,14 @@ public class hashmapToArraylist {
         for (String key : listOfKeys) {
             System.out.println(key);
         }
-
+//test if the list contains a special string/element:John Kevin
+        arraylistContainStrEle aLcsE=new arraylistContainStrEle();
+        aLcsE.arraylistContainStr(listOfKeys,"John Kevin");
+        //test if the list contains a special substring by any of list element
+        arraylistElementContainStr alEcS=new  arraylistElementContainStr();
+        alEcS.arraylistEleContainInputStr(listOfKeys,"Jacob");
         System.out.println("--------------------------");
+
 
         //Getting Collection of values
 
@@ -59,5 +68,6 @@ public class hashmapToArraylist {
         for (Entry<String, String> entry : listOfEntry) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
+
     }
 }
