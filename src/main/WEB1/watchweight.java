@@ -9,13 +9,12 @@ import org.junit.Test;
 import org.openqa.selenium.*;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.TreeSet;
 
 import  main.util.arraylistToArray;
 
-import static main.WEB1.util.TitleAssert.titleAssert;
+import static WEB1.util.TitleAssert.titleAssert;
 import static main.util.CountWords.countWordRepat;
 import static main.util.countOccur.countOccurences;
 import static main.util.removeLineBreakArray.removeLineBrArray;

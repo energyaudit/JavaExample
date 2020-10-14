@@ -1,16 +1,15 @@
 package main.WEB1;
 
 import WEB1.util.BrowserSetup;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import WEB1.util.BrowserSetupHeadless;
 import org.junit.After;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
-import static main.WEB1.util.scrollDown.ScrollDownPage;
+import static WEB1.util.scrollDown.ScrollDownPage;
 import static org.junit.Assert.fail;
 
 public class callBrowserSetup {
@@ -96,6 +95,28 @@ public class callBrowserSetup {
         element.sendKeys("SoftwareTestingHelp");
         element.sendKeys(Keys.ENTER);
         ScrollDownPage(driver,600);
+    }
+
+    @Test
+    public void TestSelectDirectly() throws Exception {
+        driver=new BrowserSetup().Setup("chrome","windows");
+//        driver=new BrowserSetup().Setup("chrome","mac");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.get("https://www.browserstack.com/");
+        Thread.sleep(3000);
+        WebElement developers_dropdown = driver.findElement(By.id("developers-menu-toggle"));
+        Select objSelect = new Select(developers_dropdown);
+        objSelect.selectByIndex(2);
+        Thread.sleep(3000);
+        driver.get("https://www.browserstack.com/");
+        WebElement solutions_dropdown = driver.findElement(By.id("solutions-menu-dropdown"));
+        Select solutions = new Select(solutions_dropdown);
+        solutions.selectByValue("4000");
+        Thread.sleep(3000);
+        WebElement solutions_d = driver.findElement(By.id("solutions-menu-dropdown"));
+        Select s1 = new Select(solutions_d);
+        s1.selectByVisibleText("Geolocation Testing");
     }
 
 

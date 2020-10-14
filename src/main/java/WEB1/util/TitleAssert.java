@@ -1,4 +1,4 @@
-package main.WEB1.util;
+package WEB1.util;
 
 public class TitleAssert {
     public static void titleAssert(Integer n,String actual, String expect){

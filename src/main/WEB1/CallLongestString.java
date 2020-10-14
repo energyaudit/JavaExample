@@ -2,7 +2,7 @@ package main.WEB1;
 
 import java.util.Arrays;
 
-import static main.WEB1.util.LongestString.longestWords;
+import static WEB1.util.LongestString.longestWords;
 
 public class CallLongestString {
     public static void main(String[] args) {

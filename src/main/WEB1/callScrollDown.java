@@ -6,7 +6,7 @@ import org.openqa.selenium.*;
 
 import java.util.concurrent.TimeUnit;
 
-import static main.WEB1.util.scrollDown.ScrollDownPage;
+import static WEB1.util.scrollDown.ScrollDownPage;
 
 public class callScrollDown {
 

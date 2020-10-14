@@ -1,4 +1,4 @@
-package main.WEB1.util;
+package WEB1.util;
 
 public class numberOrNot {
     static boolean numberOrNot(String input)
