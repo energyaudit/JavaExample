@@ -1,8 +1,8 @@
-package WEB1;
+package main.WEB1;
 
 import WEB1.util.BrowserSetup;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import main.WEB1.util.BrowserSetupHeadless;
+import WEB1.util.BrowserSetupHeadless;
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;

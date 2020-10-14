@@ -1,7 +1,6 @@
-package main.WEB1;
+package WEB1.util;
 
 import WEB1.util.BrowserSetup;
-import main.WEB1.util.BrowserSetupHeadless;
 import main.WEB1.util.getWebTableCells;
 import main.WEB1.util.getWebTableColumn;
 import org.junit.After;
