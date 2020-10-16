@@ -33,7 +33,7 @@ public class reverseLinkedList2 {
             // parameter and returns the reversed list
             Collections.reverse(linkedliStr);
             System.out.print("\nElements after reversing: " + linkedliStr);
-            Collections.sort(linkedliStr, Collections.reverseOrder());
+            Collections.sort(linkedliStr, Collections.reverseOrder());//descending
             System.out.print("\nElements after reverseOrder(): " + linkedliStr);
         }
     }

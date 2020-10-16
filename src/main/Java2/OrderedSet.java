@@ -31,7 +31,7 @@ public class OrderedSet {
 
         //Print the TreeSet elements using iterator.
         Iterator iterator=treeSet.iterator();
-        System.out.println("TreeSet elements using iterator:");//the elements will be sorted automatically
+        System.out.println("TreeSet elements using iterator:");//the elements will be sorted automatically,ascending
         while(iterator.hasNext()){
             System.out.println(iterator.next());
         }

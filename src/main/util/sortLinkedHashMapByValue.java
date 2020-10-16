@@ -7,7 +7,7 @@ import java.util.*;
  */
 
 public class sortLinkedHashMapByValue {
-    //converted the hash map to a list capitalList. Then, we use sort() method which takes a list and a comparator.
+    //converted the hash map to a list capitalList. Then, we use sort() method which takes a list and a comparator.ascending
     public static LinkedHashMap<String, String> sortLinkedHashMap(LinkedHashMap<String, String> map) {
         List<Map.Entry<String, String>> capitalList = new LinkedList<>(map.entrySet());
 //comparator is the lambda which compares (o1, o2) -> o1.getValue().compareTo(o2.getValue()) two values of the items in the list o1 and o2.

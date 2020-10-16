@@ -79,7 +79,7 @@ public class SortingLists {
         animals.add("elephant");
 
         // Collections.sort(animals, new StringLengthComparator());
-        Collections.sort(animals, new ReverseAlphabeticalComparator());
+        Collections.sort(animals, new ReverseAlphabeticalComparator());//descending
 
         for(String animal: animals) {
             System.out.println(animal);

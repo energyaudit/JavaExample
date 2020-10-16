@@ -1,5 +1,7 @@
 package main.Java3;
 
+import main.util.JavaUtil;
+
 import java.util.*;
 
 public class ArrayListDescendingSort {
@@ -21,5 +23,7 @@ public class ArrayListDescendingSort {
         for(String str: arraylist){
             System.out.println(str);
         }
+        JavaUtil jul=new JavaUtil();
+        jul.ArrayListStrDescendingSort(arraylist);
     }
 }
