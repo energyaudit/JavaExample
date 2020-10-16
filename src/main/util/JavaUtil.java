@@ -1,9 +1,12 @@
 package main.util;
-
+/**
+ * Created by byang on 2016-08-28.
+ */
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 public class JavaUtil {
     public ArrayList<String> ArrayListStrDescendingSort(ArrayList<String> arrayList) {
@@ -19,5 +22,27 @@ public class JavaUtil {
         }
         return arrayList;
     }
+    public ArrayList ArrayListAscendingSort(ArrayList arrayList) {//Arraylist is general,it can be either integer or string
+        Iterator iterator1=arrayList.iterator();
+        System.out.println("Collection elements before sorting: \n");
+        while(iterator1.hasNext()){
+            System.out.println(iterator1.next());
+        }
+        //Call the Collections sort method for sorting
+        Collections.sort(arrayList);
+        Iterator iterator2=arrayList.iterator();
+        System.out.println("Collection elements after sorting:\n");
+        while(iterator2.hasNext()){
+            System.out.println(iterator2.next());
+        }
+        return arrayList;
+    }
+
+
+
+
+
+
+
 
 }

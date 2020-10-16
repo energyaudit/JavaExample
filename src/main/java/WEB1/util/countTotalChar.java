@@ -1,5 +1,7 @@
 package WEB1.util;
-
+/**
+ * Created by byang on 2018-08-28.
+ */
 public class countTotalChar {
 
         static int i,c=0,res;

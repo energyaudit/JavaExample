@@ -5,6 +5,8 @@ package src.main.Java2;
  */
 
 
+import main.util.JavaUtil;
+
 import java.util.ArrayList;
         import java.util.Collections;
         import java.util.Iterator;
@@ -50,7 +52,8 @@ public class CollectionSortExp {
         while(iterator2.hasNext()){
             System.out.println(iterator2.next());
         }
-
+        JavaUtil jul=new JavaUtil();
+        jul.ArrayListAscendingSort(arrayList1);
         //Print the Collection Wrapper elements before sorting.
         Iterator iterator3=arrayList2.iterator();
         System.out.println("Collection Wrapper elements " +
@@ -69,6 +72,6 @@ public class CollectionSortExp {
         while(iterator4.hasNext()){
             System.out.println(iterator4.next());
         }
-
+        jul.ArrayListAscendingSort(arrayList2);
     }
 }

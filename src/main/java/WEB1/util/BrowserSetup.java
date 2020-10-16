@@ -1,5 +1,7 @@
 package WEB1.util;
-
+/**
+ * Created by byang on 2018-08-28.
+ */
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
