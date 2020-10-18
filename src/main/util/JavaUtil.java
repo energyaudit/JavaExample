@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.Iterator;
 
 public class JavaUtil {
-    public ArrayList<String> ArrayListStrDescendingSort(ArrayList<String> arrayList) {
+    public static ArrayList<String> ArrayListStrDescendingSort(ArrayList<String> arrayList) {
         System.out.println("ArrayList Before Sorting:");
         for(String str: arrayList){
             System.out.println(str);
@@ -22,7 +22,7 @@ public class JavaUtil {
         }
         return arrayList;
     }
-    public ArrayList ArrayListAscendingSort(ArrayList arrayList) {//Arraylist is general,it can be either integer or string
+    public static ArrayList ArrayListAscendingSort(ArrayList arrayList) {//Arraylist is general,it can be either integer or string
         Iterator iterator1=arrayList.iterator();
         System.out.println("Collection elements before sorting: \n");
         while(iterator1.hasNext()){

@@ -11,10 +11,6 @@ import java.util.ArrayList;
         import java.util.Collections;
         import java.util.Iterator;
 
-/**
- * This class is used to show the sorting functionality.
- * @author codesjava
- */
 public class CollectionSortExp {
     public static void main(String args[]){
         ArrayList arrayList1 = new ArrayList();
