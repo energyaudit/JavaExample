@@ -105,6 +105,15 @@ public class CallWriteJson2File {
     }
 
     @Test
+    public void TesCallWriteJsonFileStr() {
+        String inline = "{ \"results\":{\"brand\" : \"Mercedes\", \"doors\" : 5," +
+                "  \"owners\" : [\"John\", \"Jack\", \"Jill\"]," +
+                "  \"nestedObject\" : { \"field\" : \"value\" } }}";
+        JsonStr2JsonFile sjf=new JsonStr2JsonFile();
+        sjf.inputStr(inline,"src/main/TESTRESULT/temp1.json");
+    }
+
+    @Test
     public void TesCallWriteJsonFile1() {
         Random random = new Random();
         Integer inputId = random.nextInt(1000000);

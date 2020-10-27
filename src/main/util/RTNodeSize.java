@@ -1,6 +1,8 @@
 package main.util;
 
+import io.restassured.RestAssured;
 import io.restassured.config.SSLConfig;
+import io.restassured.response.Response;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -22,8 +24,7 @@ public class RTNodeSize {
 
         try {
             org.apache.log4j.BasicConfigurator.configure();
-       //     String uri="http://ergast.com/api/f1/2017/circuits.json";
-            if(puri.toLowerCase().contains("https")) { config = config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
+             if(puri.toLowerCase().contains("https")) { config = config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
 
             given()
                     .when()
@@ -52,5 +53,27 @@ public class RTNodeSize {
         }
 return vrf;
     }
+
+    public static int getResponseSizebyUrl(String puri,String jpath)  {
+                    org.apache.log4j.BasicConfigurator.configure();
+
+            if(puri.toLowerCase().contains("https")) { config = config().sslConfig(SSLConfig.sslConfig().allowAllHostnames()); }
+
+            Response resp= RestAssured.get(puri);
+            int size = resp.jsonPath().getList(jpath).size();
+             // .body("MRData.CircuitTable.Circuits.circuitId",hasSize(size));
+        return size;
+    }
+
+    public static int getResSizebyResponse(Response resp,String jpath) {
+        org.apache.log4j.BasicConfigurator.configure();
+        int size = resp.jsonPath().getList(jpath).size();
+        return size;
+    }
+
+
+
+
+
 
 }

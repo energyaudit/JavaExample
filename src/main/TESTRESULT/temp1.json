@@ -1,5 +1,14 @@
-
 {
-  "name" : "mkyong-map1",
-  "age" : 29
+  "results": {
+    "brand": "Mercedes",
+    "doors": 5,
+    "owners": [
+      "John",
+      "Jack",
+      "Jill"
+    ],
+    "nestedObject": {
+      "field": "value"
+    }
+  }
 }

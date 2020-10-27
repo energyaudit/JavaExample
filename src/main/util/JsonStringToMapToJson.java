@@ -42,7 +42,7 @@ public class JsonStringToMapToJson {
         }
     }
 
-    public static Map strinToMap(String str) {
+    public static Map jsonStrinToMap(String str) {
 //       Map<String, Object> map = new HashMap<String, Object>();
         Map map = new HashMap<>();
            try {
@@ -59,13 +59,19 @@ public class JsonStringToMapToJson {
 
     public static void main(String[] args) {
         String json = "{\"name\":\"mkyong\", \"age\":29}";
-        strinToMap(json);
+        jsonStrinToMap(json);
 //Map to JSON
         Map<String, Object> map1 = new HashMap<String, Object>();
         map1.put("name", "mkyong-map1");
         map1.put("age", 29);
         // convert map to JSON string then into json file
         MaptoJsonFile("./src/main/TESTRESULT/temp1.json", map1);
+        Map<String, Object> map2 = new HashMap<String, Object>();
+        map2.put("brand", "Mercedes");
+        map2.put("doors", 4);
+        // convert map to JSON string then into json file
+        MaptoJsonFile("./src/main/TESTRESULT/car.json", map2);
+
     }
 }
 

@@ -1,5 +1,7 @@
 package main.util;
-
+/**
+ * Created by byang on 2/20/2018.
+ */
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
@@ -7,15 +9,6 @@ import static main.util.parseDateNow2String.parseDateNow2String;
 
 public class DateBetweenDays {
     public static long betweenDays(String dateBeforeString, String dateAfterString){
-        LocalDate localDate = LocalDate.now();
-        System.out.println("Today is:  "+localDate.toString());                //2013-05-15
-        System.out.println("day of week today is:   "+localDate.getDayOfWeek().toString()); //WEDNESDAY
-        System.out.println(localDate.getDayOfMonth());           //15
-        System.out.println(localDate.getDayOfYear());            //135
-        System.out.println("is this year leap year?"+localDate.isLeapYear());              //false
-        System.out.println("what is 12 days later of doady?   "+localDate.plusDays(12).toString());   //2013-05-27
-
-
         //Parsing the date
         LocalDate dateBefore = LocalDate.parse(dateBeforeString);
         LocalDate dateAfter = LocalDate.parse(dateAfterString);

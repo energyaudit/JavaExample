@@ -13,9 +13,7 @@ import java.io.IOException;
 
 public class ReadJsonFile2Str {
 public static String resultO;
-
     public static String inputpar(String path)   {
-
         try {
             ObjectMapper mapper = new ObjectMapper();
             JsonNode root = mapper.readTree(new File(path));

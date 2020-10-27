@@ -17,17 +17,11 @@ public class ReadFileAddJson {
     public static void main(String[] args) {
 
         try {
-
             ObjectMapper mapper = new ObjectMapper();
-
-       //     JsonNode root = mapper.readTree(new File("C:\\QA\\TEST\\TEST DOC\\user2.json"));
-       //     JsonNode root = mapper.readTree(new File("C:\\QA\\TESTRESULT\\temp.json"));
-
            JsonNode root = mapper.readTree(new File("./src/main/resources/temp6.json"));
 
             String resultOriginal = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(root);
             System.out.println("Before Update " + resultOriginal);
-
 
         } catch (JsonGenerationException e) {
             e.printStackTrace();

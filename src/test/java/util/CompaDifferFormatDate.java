@@ -17,8 +17,8 @@ public class CompaDifferFormatDate {
 
         CompaDifferFormatDate obj = new CompaDifferFormatDate();
         String str = obj.datecheckcmp("dd/MM/yyyy", "dd/MM/yyyy", "27/12/2018", today);
-        //  String str= obj.datecheckcmp("dd/MM/yyyy", "dd/MM/yyyy", "27/12/2018","23/03/2019");
-        //  String str= obj.datecheckcmp("dd/MM/yyyy", "MM/dd/yyyy", "27/12/2013", "11/28/2013");
+          String str1= obj.datecheckcmp("dd/MM/yyyy", "dd/MM/yyyy", "27/12/2018","23/03/2019");
+          String str2= obj.datecheckcmp("dd/MM/yyyy", "MM/dd/yyyy", "27/12/2013", "11/28/2013");
         System.out.println(str);
     }
 

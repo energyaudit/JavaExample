@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static main.util.JsonStringToMapToJson.MaptoJsonFile;
-import static main.util.JsonStringToMapToJson.strinToMap;
+import static main.util.JsonStringToMapToJson.jsonStrinToMap;
 
 public class CallJsonStrToMapFile {
     public static void main(String[] args) {
         String json = "{\"name\":\"mkyong\", \"age\":29,\"name1\":\"Kelvin\", \"age1\":19}";//map not allowed duplicated keys,so you have to name1,age1,name2,age2,....
-        strinToMap(json);
+        jsonStrinToMap(json);
 //Map to JSON
         Map<String, Object> map1 = new HashMap<String, Object>();
         map1.put("name", "mkyong-map1");

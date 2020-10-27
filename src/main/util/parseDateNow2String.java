@@ -6,8 +6,8 @@ public class parseDateNow2String {
     public static String parseDateNow2String (){
         String Currentdate;
         Calendar now = Calendar.getInstance();
-        if ((now.get(Calendar.MONTH) < 10)) {
-             Currentdate = now.get(Calendar.YEAR) + "-0" + (now.get(Calendar.MONTH) + 1)
+        if ((now.get(Calendar.MONTH) <10)) {
+             Currentdate = now.get(Calendar.YEAR) + "-" + (now.get(Calendar.MONTH) + 1)
                     + "-" + now.get(Calendar.DATE);
         } else {
          Currentdate = now.get(Calendar.YEAR) + "-0" + (now.get(Calendar.MONTH) + 1)

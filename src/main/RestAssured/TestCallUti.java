@@ -41,8 +41,12 @@ public class TestCallUti {
         GetDataJPath gdj = new GetDataJPath();
         String result = gdj.inputpar(puri, "weather[0].main");
 
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API get data call getDataJpath success");
+        Response resp= RestAssured.get(puri);
+        String data=resp.getBody().asString();
+        JavaUtil jul=new JavaUtil();
+        String wind=jul.getFiledByJpath(data,"weather[0].main");
+//        OutPutResult outR = new OutPutResult();
+//        outR.inputStr("Assert API get data call getDataJpath success");
     }
 
     @Test
@@ -65,8 +69,12 @@ public class TestCallUti {
         RTNodeSize rts = new RTNodeSize();
         boolean result = rts.inputpar(puri, 20);
         assertTrue(result);
-        OutPutResult outR = new OutPutResult();
-        outR.inputStr("Assert API test body size success");
+
+        int nodeSize=rts.getResponseSizebyUrl(puri,"MRData.CircuitTable.Circuits.circuitId");
+        System.out.println("nodeSize is : "+nodeSize);
+        Response resp= RestAssured.get(puri);
+        int nodeSize1=rts.getResSizebyResponse(resp,"MRData.CircuitTable.Circuits.circuitId");
+        System.out.println("nodeSize1 is : "+nodeSize);
     }
 
     @Test

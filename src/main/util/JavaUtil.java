@@ -2,6 +2,10 @@ package main.util;
 /**
  * Created by byang on 2016-08-28.
  */
+import io.restassured.RestAssured;
+import io.restassured.config.SSLConfig;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
@@ -37,7 +41,12 @@ public class JavaUtil {
         }
         return arrayList;
     }
-
+    public static String getFiledByJpath(String data,String Jpath)  {
+        JsonPath jsonPath=new JsonPath(data);
+        String filed=jsonPath.getString(Jpath);
+        System.out.println("the field is: "+filed);
+        return filed;
+    }
 
 
 
