@@ -1,4 +1,4 @@
-package src.main.RestAssured;
+package main.RestAssured;
 
 import com.google.common.io.CharStreams;
 import main.util.*;
@@ -19,8 +19,6 @@ public class CallUtilReadJsonFile {
     @Test
     public void CallUtilReadJsonFile() {
         ReadJsonFile2Str rj2s = new ReadJsonFile2Str();
-        //;     String resultO = rj2s.inputpar("C:\\QA\\TESTRESULT\\user2.json");
-
         String resultO = rj2s.inputpar("src/main/TESTRESULT/user2.json");
 
         System.out.println("Before Update " + resultO);

@@ -1,6 +1,10 @@
 package main.RestAssured;
 
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jayway.jsonpath.JsonPath;
+import com.jayway.jsonpath.ReadContext;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -11,11 +15,9 @@ import org.json.simple.JSONObject;
 import org.junit.Test;
 import org.testng.Assert;
 
+import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Random;
-import java.util.UUID;
+import java.util.*;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -101,6 +103,15 @@ public class TestCallUti {
         String puri = "http://localhost:8080/posts/";
         ReturnResponseByGet rty = new ReturnResponseByGet();
         Response rsp = rty.inputpar(puri);
+    }
+
+    @Test
+    public void getJsonNodeSize() throws IOException {
+        String path = "src/main/resources/jsonNodes.json";
+        ObjectMapper mapper = new ObjectMapper();
+        JsonNode rootNode = mapper.readTree(new File(path));
+        List<JsonNode> listOfNodes = rootNode.findParents("first");
+        System.out.println(listOfNodes.size());
     }
 
     @Test
@@ -453,8 +464,31 @@ public class TestCallUti {
                 then().statusCode(200);
 
     }
-
-
+    @Test
+    public void callgetJsonPathsByFieldName() throws Exception {
+        File jsonFile = new File("src/main/resources/schemaFile.json").getAbsoluteFile();
+        JavaUtil jul=new JavaUtil();
+        String[] strArray= new String[]{"title", "userId"};
+        List<String> paths=jul.getJsonPathsByFieldName("src/main/resources/schemaFile.json",strArray);
+        ReadContext readContext = JsonPath.parse(jsonFile);
+        for (String path : paths) {
+            System.out.println("Path: " + path);
+            System.out.println("Value: " + readContext.read(path));
+        }
+    }
+    @Test
+    public void callgetJsonPathsFrmJsonByFieldKey() throws Exception {
+        ReadJsonFile2Str rj2s = new ReadJsonFile2Str();
+        String resultO = rj2s.inputpar("src/main/resources/schemaFile.json");
+        JavaUtil jul=new JavaUtil();
+        String[] strArray= new String[]{"title", "userId"};
+        List<String> paths=jul.getJsonPathsFrmJsonByFieldKey(resultO,strArray);
+        ReadContext readContext = JsonPath.parse(resultO);
+        for (String path : paths) {
+            System.out.println("Path: " + path);
+            System.out.println("Value: " + readContext.read(path));
+        }
+    }
 
 
 
