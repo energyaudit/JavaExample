@@ -1,4 +1,4 @@
-package main.Java2.Json;
+package main.Java2.JsonWeather;
 
 import com.google.gson.Gson;
 import main.util.ReadJsonFile2Str;

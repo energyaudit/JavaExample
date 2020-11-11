@@ -1,4 +1,4 @@
-package main.Java2.Json;/*
+package main.Java2.JsonWeather;/*
  * This file is part of Weather web-service call.
  * Weather web-service call is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 3
@@ -12,25 +12,35 @@ package main.Java2.Json;/*
  * Author(s):
  * © 2015 Kasra Madadipouya <kasra@madadipouya.com>
  */
-
-import java.util.Map.Entry;
+import java.util.Map;
 import java.util.TreeMap;
 
-public class CallWebservice {
-	public static void main(String[] args) {
-		Parser parser =  new Parser();
-		parser.parse(args);
-		WeatherForecast wfc = new WeatherForecast();
-		TreeMap <String,String> results;
-		if(parser.has(Parser.QUERY)) {
-			results = wfc.getWeather(true);
-		}else {
-			results = wfc.getWeather();
+public class Parser {
+	private Map<String,Boolean> results;
+	public static final String QUERY = "--query";
+	public Parser() {
+		this.results = new TreeMap<String,Boolean>();
+	}
+	public void parse(String[] args) {
+		try {
+			for(String arg : args) {
+				this.results.put(arg,true);
+			}
+		} catch(Exception ex) {
+			ex.printStackTrace();
 		}
-		for (Entry<String, String> entry : results.entrySet()) {
-		    String key = entry.getKey();
-		    String value = entry.getValue();
-		    System.out.printf("%s : %s\n", key, value);
+	}
+	public boolean has(String val) {
+		try {
+			Boolean rtn = this.results.get(val);
+			if(rtn != null) {
+				return rtn;
+			} else {
+				return false;
+			}
+		} catch(Exception ex) {
+			ex.printStackTrace();
 		}
+		return false;
 	}
 }

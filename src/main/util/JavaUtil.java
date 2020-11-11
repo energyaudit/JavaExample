@@ -9,11 +9,13 @@ import io.restassured.RestAssured;
 import io.restassured.config.SSLConfig;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.apache.poi.ss.formula.functions.T;
 import org.openqa.selenium.WebElement;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.IntStream;
 
 public class JavaUtil {
     public static ArrayList<String> ArrayListStrDescendingSort(ArrayList<String> arrayList) {
@@ -53,7 +55,7 @@ public class JavaUtil {
         return filed;
     }
 
-    public static List<String> getJsonPathsByFieldName(String filepath,String[] stringArray) throws IOException {
+    public static List<String> getJsonPathsByFieldName(String filepath, String[] stringArray) throws IOException {
         File jsonFile = new File(filepath).getAbsoluteFile();
         List<String> paths = new ArrayList<>();
         ReadContext findPathsContext = com.jayway.jsonpath.JsonPath.parse(jsonFile).withListeners((found) -> {
@@ -65,8 +67,8 @@ public class JavaUtil {
         return paths;
     }
 
-    public static List<String> getJsonPathsFrmJsonByFieldKey(String jsonStr,String[] stringArray) throws IOException {
-               List<String> paths = new ArrayList<>();
+    public static List<String> getJsonPathsFrmJsonByFieldKey(String jsonStr, String[] stringArray) throws IOException {
+        List<String> paths = new ArrayList<>();
         ReadContext findPathsContext = com.jayway.jsonpath.JsonPath.parse(jsonStr).withListeners((found) -> {
             paths.add(found.path());
             return EvaluationListener.EvaluationContinuation.CONTINUE;
@@ -75,6 +77,26 @@ public class JavaUtil {
         properties.forEach(p -> findPathsContext.read("$.." + p));
         return paths;
     }
+
+    public boolean ArrayContains(int[] a, int y) {
+        boolean contains = IntStream.of(a).anyMatch(x -> x == y);
+        return contains;
+    }
+
+    public boolean ListIntContains(List<Integer> arr, int y) {
+        boolean contains = arr.contains(y);
+        return contains;
+    }
+    public boolean ListStrContains(List<String> arr, String y) {
+        boolean contains = arr.contains(y);
+        return contains;
+    }
+
+
+
+
+
+
 
 
 }

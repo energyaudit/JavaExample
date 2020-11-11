@@ -1,4 +1,4 @@
-package main.Java2.Json;/*
+package main.Java2.JsonWeather;/*
  * This file is part of Weather web-service call.
  * Weather web-service call is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 3
