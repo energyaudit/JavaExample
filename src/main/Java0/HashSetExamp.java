@@ -60,10 +60,6 @@ public class HashSetExamp {//HashSet class extends AbstractSet class which imple
             System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);
         }
 
-
-
-
-
         System.out.println(set1);
         Iterator<Book> itr1=set1.iterator();//Traversing elements//e.g: you might think array size is 10 at the start of the for loop
         while(itr1.hasNext()){//but it wont be the case once you remove stuff(For exp:9 after delete one).

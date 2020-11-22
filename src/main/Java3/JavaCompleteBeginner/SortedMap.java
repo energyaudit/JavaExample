@@ -1,5 +1,10 @@
 package main.Java3.JavaCompleteBeginner;
-
+/**
+ * Differences between TreeMap, HashMap and LinkedHashMap in Java,HashMap offers 0(1) lookup and insertion.
+ * If you iterate through the keys, though, the ordering of the keys is essentially arbitrary.LinkedHashMap
+ * offers 0(1) lookup and insertion. Keys are ordered by their insertion order.TreeMap offers O(log N) lookup
+ * and insertion. Keys are ordered, so if you need to iterate through the keys in sorted order
+ */
 
 import java.util.Map;
 import java.util.TreeMap;

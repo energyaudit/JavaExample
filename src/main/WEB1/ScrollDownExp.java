@@ -23,7 +23,7 @@ public class ScrollDownExp {
         element.sendKeys("SoftwareTestingHelp");
         element.sendKeys(Keys.ENTER);
         js.executeScript("window.scrollBy(0,3000)");
-        driver.quit();
+       // driver.quit();
     }
 
 }

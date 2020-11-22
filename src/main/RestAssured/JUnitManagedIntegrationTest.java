@@ -1,3 +1,5 @@
+package main.RestAssured;
+
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;

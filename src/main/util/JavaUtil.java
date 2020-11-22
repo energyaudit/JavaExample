@@ -15,7 +15,9 @@ import org.openqa.selenium.WebElement;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class JavaUtil {
     public static ArrayList<String> ArrayListStrDescendingSort(ArrayList<String> arrayList) {
@@ -91,8 +93,35 @@ public class JavaUtil {
         boolean contains = arr.contains(y);
         return contains;
     }
+    public long generateRandomNumber(int n) {
+        long min = (long) Math.pow(10, n - 1);
+        return ThreadLocalRandom.current().nextLong(min, min * 10);
+    }
+    public static <K, V> Stream<K> keys(Map<K, V> map, V value) {
+        return map.entrySet()
+                .stream()
+                .filter(entry -> value.equals(entry.getValue()))
+                .map(Map.Entry::getKey);
+    }
 
+    public static <K, V> Set<K> getKeys(Map<K, V> map, V value) {
+        Set<K> keys = new HashSet<>();
+        for (Map.Entry<K, V> entry : map.entrySet()) {
+            if (entry.getValue().equals(value)) {
+                keys.add(entry.getKey());
+            }
+        }
+        return keys;
+    }
 
+    public static <K, V> K getKey(Map<K, V> map, V value) {
+        for (Map.Entry<K, V> entry : map.entrySet()) {
+            if (entry.getValue().equals(value)) {
+                return entry.getKey();
+            }
+        }
+        return null;
+    }
 
 
 
