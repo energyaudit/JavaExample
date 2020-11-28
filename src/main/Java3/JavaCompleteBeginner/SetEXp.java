@@ -1,9 +1,9 @@
 package main.Java3.JavaCompleteBeginner;
 
 
-import java.util.HashSet;
-        import java.util.Set;
-        import java.util.TreeSet;
+import java.util.*;
+
+import static main.util.JavaUtil.set2LinkedList;
 
 public class SetEXp {
 
@@ -51,6 +51,16 @@ public class SetEXp {
         if (set1.contains("cat")) {
             System.out.println("Contains cat");
         }
+        ///Why doesn't java.util.Set have get(int index)?Because sets have no ordering.
+        // If you're trying to use sets this way, you should consider using a list instead.This kind of leads to the question when you should use a set and when you should use a list. Usually, the advice goes:
+        //If you need ordered data, use a List
+        //If you need unique data, use a Set
+        //If you need both, use either: a SortedSet (for data ordered by comparator) or an OrderedSet/UniqueList (for data ordered by insertion).
+        // Unfortunately the Java API does not yet have OrderedSet/UniqueList.
+        System.out.println("Created LinkedList is");
+        List<String> lList = new LinkedList<String>(set1);
+        for (String x : lList)
+            System.out.println(x);
 
         /// set2 contains some common elements with set1, and some new
 
@@ -61,6 +71,8 @@ public class SetEXp {
         set2.add("giraffe");
         set2.add("monkey");
         set2.add("ant");
+        //use function set2Linkedlist to convert set to linked list
+        List alist=set2LinkedList(set2);
 
         ////////////// Intersection ///////////////////
 

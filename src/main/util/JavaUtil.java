@@ -122,6 +122,13 @@ public class JavaUtil {
         }
         return null;
     }
+    public static List  set2LinkedList(Set set) {
+        List<String> aList = new LinkedList<String>(set);
+        System.out.println("Set to linked list: ");
+        for (String x : aList){ System.out.println(x);}
+        return aList;
+    }
+
 
 
 
