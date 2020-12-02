@@ -82,7 +82,21 @@ public class callBrowserSetup {
         driver.findElement(By.linkText("51首页")).click();
 
     }
-
+    @Test
+    public void UploadFile() throws Exception {
+        driver=new BrowserSetup().Setup("chrome","windows");
+        String baseUrl = "http://demo.guru99.com/test/upload/";
+        driver.get(baseUrl);
+        WebElement uploadElement = driver.findElement(By.id("uploadfile_0"));
+        // enter the file path onto the file-selection input field
+        String path=System.getProperty("user.dir");
+      String path1=path+"/src/main/resources/source.xlsx";
+        uploadElement.sendKeys(path1);
+        // check the "I accept the terms of service" check box
+        driver.findElement(By.id("terms")).click();
+        // click the "UploadFile" button
+        driver.findElement(By.name("send")).click();
+    }
 
     @Test
     public void CallScrollPage() throws Exception {
