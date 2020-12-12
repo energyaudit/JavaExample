@@ -20,3 +20,5 @@ Clone this repository using a git client as a first step, build project
 - For test use :http://localhost:8080,please install JSON Server:_**npm install -g json-server**_. It’s a great tool to create mock JSON based web services, all it requires is a sample JSON file. It automatically creates GET, POST, PUT, DELETE API endpoints for us. 
 - **json-server --port 8080 --routes routes.json --watch db.json ** 
 - or you can download from my repo: https://github.com/energyaudit/typicodeJsonSeverBilly  then start server by json-server --port 8080 --routes routes.json --watch db.json
+- For mock file server,pls goto https://github.com/betajs/mock-file-server ,
+  _**npm install mock-file-server**_._**node node_modules/mock-file-server/server.js**_

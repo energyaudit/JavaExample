@@ -7,8 +7,6 @@ import java.io.IOException;
 
 public class ReadExcelCallUtil {
     public static void main(String... strings) throws IOException, InvalidFormatException {
-
-
         ReadExcel objExcelFile = new ReadExcel();
         String filePath = "src/main/resources/source.xls";
         objExcelFile.readExcel(filePath);

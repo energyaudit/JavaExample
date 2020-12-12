@@ -111,4 +111,28 @@ public class JavaTuplesUnitTest {
         Object[] array = quartet.toArray();
         assertThat(array.length).isEqualTo(4);
     }
+    @Test
+    public void quintetTest() {
+        Quintet<Integer, String, String, Double, Boolean> quintet
+                = Quintet.with(Integer.valueOf(1),
+                "GeeksforGeeks",
+                "A computer portal",
+                Double.valueOf(20.18),
+                true);
+        //Getting Value
+        System.out.println(quintet.getValue0());
+        System.out.println(quintet.getValue2());
+//Setting Quintet Value
+        Quintet<Integer, String, String, Double,Boolean> otherQuintet
+                = quintet.setAt3(2.018);
+        System.out.println(otherQuintet);
+        //Adding a value can be done with the help of addAtX() method, where X represents the index at which the
+        // value is to be added. This method returns a Tuple of element one more than the called Tuple
+        Sextet<Integer, String, String, Double, Boolean, Boolean> sextet
+                = quintet.addAt5(false);
+        System.out.println(sextet);
+
+    }
+
+
 }

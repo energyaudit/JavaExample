@@ -147,10 +147,38 @@ public void testSlow() {
     }
     //Junit5 @tag sample finished
 
+    @Test
+    public void updateExcelCellValue() {
+        JavaUtil jul=new JavaUtil();
+        Random random = new Random();
+        Integer inputId = random.nextInt(1000000);
+        String value=String.valueOf(inputId);
+        System.out.println(value);
+        jul.setExcelCellValue("src/main/resources/JavaBooks.xls",2,3,0,value);
+    }
+    @Test
+    public void appendExcelCellValue() {
+        JavaUtil jul=new JavaUtil();
+                    Object[][] bookData = {
+                    {"The Passionate Programmer", "Chad Fowler", 16},
+                    {"Software Craftmanship", "Pete McBreen", 26},
+                    {"The Art of Agile Development", "James Shore", 32},
+                    {"Continuous Delivery", "Jez Humble", 41},
+            };
+        jul.appendExcelCellValues("src/main/resources/JavaBooks.xls",bookData,0);
+    }
 
-
-
-
+    @Test
+    public void createNewSheetInExcelTest() {
+        JavaUtil jul=new JavaUtil();
+                    Object[][] bookComments = {
+                    {"Head First Java", "Funny and Exciting"},
+                    {"Effective Java", "Insightful tips and advices"},
+                    {"Clean Code", "Write Readable Code"},
+                    {"Thinking in Java", "Classic"},
+            };
+        jul.createNewSheetInExcel("src/main/resources/JavaBooks.xls",bookComments,0,"Comments");
+    }
 
 
 

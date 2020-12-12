@@ -10,6 +10,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import main.util.*;
+import org.apache.http.HttpStatus;
 import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
 import org.junit.Test;
@@ -43,10 +44,10 @@ public class TestCallUti {
         GetDataJPath gdj = new GetDataJPath();
         String result = gdj.inputpar(puri, "weather[0].main");
 
-        Response resp= RestAssured.get(puri);
-        String data=resp.getBody().asString();
-        JavaUtil jul=new JavaUtil();
-        String wind=jul.getFiledByJpath(data,"weather[0].main");
+        Response resp = RestAssured.get(puri);
+        String data = resp.getBody().asString();
+        JavaUtil jul = new JavaUtil();
+        String wind = jul.getFiledByJpath(data, "weather[0].main");
 //        OutPutResult outR = new OutPutResult();
 //        outR.inputStr("Assert API get data call getDataJpath success");
     }
@@ -72,11 +73,11 @@ public class TestCallUti {
         boolean result = rts.inputpar(puri, 20);
         assertTrue(result);
 
-        int nodeSize=rts.getResponseSizebyUrl(puri,"MRData.CircuitTable.Circuits.circuitId");
-        System.out.println("nodeSize is : "+nodeSize);
-        Response resp= RestAssured.get(puri);
-        int nodeSize1=rts.getResSizebyResponse(resp,"MRData.CircuitTable.Circuits.circuitId");
-        System.out.println("nodeSize1 is : "+nodeSize);
+        int nodeSize = rts.getResponseSizebyUrl(puri, "MRData.CircuitTable.Circuits.circuitId");
+        System.out.println("nodeSize is : " + nodeSize);
+        Response resp = RestAssured.get(puri);
+        int nodeSize1 = rts.getResSizebyResponse(resp, "MRData.CircuitTable.Circuits.circuitId");
+        System.out.println("nodeSize1 is : " + nodeSize);
     }
 
     @Test
@@ -363,6 +364,40 @@ public class TestCallUti {
     }
 
     @Test
+    public void uploadExcelFile() throws IOException {
+        String path = System.getProperty("user.dir");
+        String path1 = path + "/src/main/resources/source.xlsx";
+        File testUploadFile = new File(path1); //Specify your own location and file
+        RestAssured.baseURI = "http://localhost:5000";
+//for running this test ,pls goto https://github.com/betajs/mock-file-server ,
+        //npm install mock-file-server
+        //node node_modules/mock-file-server/server.js
+        Response response = given()
+                .multiPart(testUploadFile)
+                .when().post("/files");
+        System.out.println(response.getStatusCode());
+        System.out.println(response.asString());
+    }
+    @Test
+    public void test_file_uploadRealserver() {
+        String path = System.getProperty("user.dir");
+        String path1 = path + "/src/main/resources/employee.txt";
+        File uploadFile = new File(path1);
+
+        given()
+                .log()
+                .all()
+                .multiPart("file", uploadFile, "multipart/form-data")
+                .when()
+                .post("https://jobportalkarate.herokuapp.com/normal/webapi/upload")
+                .then()
+                .assertThat()
+                .statusCode(HttpStatus.SC_OK);
+
+
+    }
+
+    @Test
     public void deleteByCallDeleteMethod() throws Exception {
         int id = 7150430;
         String puri = "http://localhost:8080/";
@@ -392,7 +427,7 @@ public class TestCallUti {
 
     @Test
     public void putRequestByCallPutMethod() throws Exception {
-           int empid = 1943992775;
+        int empid = 1943992775;
         String puri = "http://localhost:8080/";
         Random random = new Random();
         Integer inputId = random.nextInt(1000000);
@@ -431,6 +466,7 @@ public class TestCallUti {
                 .body("author", Matchers.equalTo("Mahajan"));
 
     }
+
     @Test
     public void patchRequestByMethod() throws Exception {
         int empid = 1943992775;
@@ -442,12 +478,13 @@ public class TestCallUti {
         HashMap requestParams = new HashMap();
         requestParams.put("title", "this is projectdebug.com" + inputId);
         requestParams.put("author", authorName);
-      RestAssuredPatch rapatch= new RestAssuredPatch();
-      String path="posts/" + empid;
-      rapatch.inputpar(puri, requestParams,path);
+        RestAssuredPatch rapatch = new RestAssuredPatch();
+        String path = "posts/" + empid;
+        rapatch.inputpar(puri, requestParams, path);
 
 
     }
+
     @Test
     public void patchtest2() {
         JSONObject request = new JSONObject();
@@ -464,47 +501,33 @@ public class TestCallUti {
                 then().statusCode(200);
 
     }
+
     @Test
     public void callgetJsonPathsByFieldName() throws Exception {
         File jsonFile = new File("src/main/resources/schemaFile.json").getAbsoluteFile();
-        JavaUtil jul=new JavaUtil();
-        String[] strArray= new String[]{"title", "userId"};
-        List<String> paths=jul.getJsonPathsByFieldName("src/main/resources/schemaFile.json",strArray);
+        JavaUtil jul = new JavaUtil();
+        String[] strArray = new String[]{"title", "userId"};
+        List<String> paths = jul.getJsonPathsByFieldName("src/main/resources/schemaFile.json", strArray);
         ReadContext readContext = JsonPath.parse(jsonFile);
         for (String path : paths) {
             System.out.println("Path: " + path);
             System.out.println("Value: " + readContext.read(path));
         }
     }
+
     @Test
     public void callgetJsonPathsFrmJsonByFieldKey() throws Exception {
         ReadJsonFile2Str rj2s = new ReadJsonFile2Str();
         String resultO = rj2s.inputpar("src/main/resources/schemaFile.json");
-        JavaUtil jul=new JavaUtil();
-        String[] strArray= new String[]{"title", "userId"};
-        List<String> paths=jul.getJsonPathsFrmJsonByFieldKey(resultO,strArray);
+        JavaUtil jul = new JavaUtil();
+        String[] strArray = new String[]{"title", "userId"};
+        List<String> paths = jul.getJsonPathsFrmJsonByFieldKey(resultO, strArray);
         ReadContext readContext = JsonPath.parse(resultO);
         for (String path : paths) {
             System.out.println("Path: " + path);
             System.out.println("Value: " + readContext.read(path));
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

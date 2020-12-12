@@ -9,10 +9,15 @@ import io.restassured.RestAssured;
 import io.restassured.config.SSLConfig;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.formula.functions.T;
+import org.apache.poi.ss.usermodel.*;
 import org.openqa.selenium.WebElement;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
@@ -89,14 +94,17 @@ public class JavaUtil {
         boolean contains = arr.contains(y);
         return contains;
     }
+
     public boolean ListStrContains(List<String> arr, String y) {
         boolean contains = arr.contains(y);
         return contains;
     }
+
     public long generateRandomNumber(int n) {
         long min = (long) Math.pow(10, n - 1);
         return ThreadLocalRandom.current().nextLong(min, min * 10);
     }
+
     public static <K, V> Stream<K> keys(Map<K, V> map, V value) {
         return map.entrySet()
                 .stream()
@@ -122,12 +130,118 @@ public class JavaUtil {
         }
         return null;
     }
-    public static List  set2LinkedList(Set set) {
+
+    public static List set2LinkedList(Set set) {
         List<String> aList = new LinkedList<String>(set);
         System.out.println("Set to linked list: ");
-        for (String x : aList){ System.out.println(x);}
+        for (String x : aList) {
+            System.out.println(x);
+        }
         return aList;
     }
+
+    public void setExcelCellValue(String filePath, int row, int col, Integer SheetNumber, String value) {
+        try {
+            FileInputStream inputStream = new FileInputStream(new File(filePath));
+            Workbook workbook = WorkbookFactory.create(inputStream);
+            Sheet sheet = workbook.getSheetAt(SheetNumber);
+            Row sheetrow = sheet.getRow(row);
+            if (sheetrow == null) {
+                sheetrow = sheet.createRow(row);
+            }
+//Update the value of cell
+            Cell cell = sheetrow.getCell(col);
+            if (cell == null) {
+                cell = sheetrow.createCell(col);
+            }
+            cell.setCellValue(value);
+            inputStream.close();
+            FileOutputStream outputStream = new FileOutputStream(filePath);
+            workbook.write(outputStream);
+            workbook.close();
+            outputStream.close();
+
+        } catch (IOException | EncryptedDocumentException
+                | InvalidFormatException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public void appendExcelCellValues(String filePath, Object[][] append, Integer sheetIndex) {
+        try {
+            FileInputStream inputStream = new FileInputStream(new File(filePath));
+            Workbook workbook = WorkbookFactory.create(inputStream);
+            Sheet sheet = workbook.getSheetAt(sheetIndex);
+
+            int rowCount = sheet.getLastRowNum();
+            for (Object[] aBook : append) {
+                Row row = sheet.createRow(++rowCount);
+                int columnCount = 0;
+                Cell cell = row.createCell(columnCount);
+                cell.setCellValue(rowCount);
+
+                for (Object field : aBook) {
+                    cell = row.createCell(++columnCount);
+                    if (field instanceof String) {
+                        cell.setCellValue((String) field);
+                    } else if (field instanceof Integer) {
+                        cell.setCellValue((Integer) field);
+                    }
+                }
+
+            }
+
+            inputStream.close();
+            FileOutputStream outputStream = new FileOutputStream(filePath);
+            workbook.write(outputStream);
+            workbook.close();
+            outputStream.close();
+
+        } catch (IOException | EncryptedDocumentException
+                | InvalidFormatException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public void createNewSheetInExcel(String filePath, Object[][] insert, Integer sheetIndex,String sheetName) {
+        try {
+            FileInputStream inputStream = new FileInputStream(new File(filePath));
+            Workbook workbook = WorkbookFactory.create(inputStream);
+            Random random = new Random();
+            Integer inputId = random.nextInt(1000000);
+            String sheetname = sheetName + inputId;
+            Sheet newSheet = workbook.createSheet(sheetname);
+            int rowCount = 0;
+            for (Object[] aBook : insert) {
+                Row row = newSheet.createRow(++rowCount);
+                int columnCount = 0;
+                for (Object field : aBook) {
+                    Cell cell = row.createCell(++columnCount);
+                    if (field instanceof String) {
+                        cell.setCellValue((String) field);
+                    } else if (field instanceof Integer) {
+                        cell.setCellValue((Integer) field);
+                    }
+                }
+            }
+
+            FileOutputStream outputStream = new FileOutputStream(filePath);
+            workbook.write(outputStream);
+            workbook.close();
+            outputStream.close();
+        } catch (IOException | EncryptedDocumentException
+                | InvalidFormatException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
+
+
+
+
+
+
 
 
 
