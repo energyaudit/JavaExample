@@ -37,6 +37,7 @@ public class StringCharAt {
         String sintern3=sintern1.intern();//returns string from pool, now it will be same as s2
         System.out.println(sintern1==sintern2);//false because reference is different
         System.out.println(sintern2==sintern3);//true because reference is same
+
     }
     }
 

@@ -36,5 +36,16 @@ public class ArrayListEasy {
 
         // List interface ...
         List<String> values = new ArrayList<String>();
+        //if there are duplicated value, indexof will return index of first occurrence,if you want last one use
+        // lastIndexOf() method
+        ArrayList<Integer> al = new ArrayList<Integer>();
+        al.add(90);
+        al.add(15);
+        al.add(20);
+        al.add(90);
+
+        System.out.println("Index of 90: "+al.indexOf(90));
+        System.out.println("Last Index of 19: "+al.lastIndexOf(90));
+
     }
 }

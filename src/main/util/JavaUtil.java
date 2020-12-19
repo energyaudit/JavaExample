@@ -14,6 +14,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.ss.usermodel.*;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -235,7 +236,14 @@ public class JavaUtil {
         }
     }
 
-
+public ArrayList<String> getSelectAllOptions (Select select){
+    List<WebElement> options = select.getOptions();
+    ArrayList<String> allOptions=new ArrayList<String>();
+    for(WebElement option: options){
+        allOptions.add(option.getText());
+    }
+    return allOptions;
+}
 
 
 

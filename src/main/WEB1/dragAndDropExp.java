@@ -23,8 +23,21 @@ public class dragAndDropExp {
 
         //Drag and Drop by Pixel.
         act.dragAndDropBy(From,135, 40).build().perform();
-   //     driver.quit();
 
+//        driver.get("http://demo.guru99.com/test/drag_drop.html");
+
+        //Element which needs to drag.
+        WebElement From1=driver.findElement(By.xpath("//*[@id='credit2']/a"));
+
+        //Element on which need to drop.
+        WebElement To=driver.findElement(By.xpath("//*[@id='bank']/li"));
+
+        //Using Action class for drag and drop.
+        Actions act1=new Actions(driver);
+
+        //Dragged and dropped.
+        act1.dragAndDrop(From1, To).build().perform();
+                driver.quit();
     }
 
 }

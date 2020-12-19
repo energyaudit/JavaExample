@@ -113,7 +113,8 @@ public class DatePicker {
         selectTime.click();
 
         //get list of times
-
+        //Xpath=//input[name=’email’][@placeholder=’Work Email’]we have created the XPath using multiple attributes
+        // for the single HTML tag.
         List<WebElement> allTime = driver.findElements(By.xpath("//div[@data-role='popup'][contains(@style,'display: block')]//ul//li[@role='option']"));
       
         dateTime = dateTime.split(" ")[1]+" "+dateTime.split(" ")[2];

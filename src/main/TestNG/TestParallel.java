@@ -28,10 +28,14 @@ public class TestParallel {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-
-		driver.get("http://www.w3schools.com/");
+	driver.get("http://www.w3schools.com/");
 		driver.findElement(By.xpath("html/body/div[2]/div/a[4]")).click();
+		//Syntax for XPath:
+		//XPath contains the path of the element situated at the web page. Standard syntax for creating XPath is.
+		//Xpath=//tagname[@attribute='value']
+		//  // : Select current node.
+		//  Tagname: Tagname of the particular node.//  @: Select attribute.
+		// Attribute: Attribute name of the node.Value: Value of the attribute.
 		driver.findElement(By.xpath("//*[@id='gsc-i-id1']")).sendKeys(value);
 
 //		driver.quit();

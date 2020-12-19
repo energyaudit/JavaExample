@@ -20,7 +20,8 @@ public class Login {
 	@Given("^User navigates to stackoverflow website$")
 	public void user_navigates_to_stackoverflow_website() throws Throwable {
 //        driver=new BrowserSetup().Setup("firefox","windows");
-		driver=new BrowserSetup().Setup("firefox","mac");
+		driver=new BrowserSetup().Setup("chrome","windows");
+//		driver=new BrowserSetup().Setup("firefox","mac");
 		driver.manage().window().maximize();
 		driver.get("https://stackoverflow.com/");
 		this.driver.close();
@@ -29,6 +30,15 @@ public class Login {
 	@And("^User clicks on the login button on homepage$")
 	public void user_clicks_on_the_login_button_on_homepage() throws Throwable {
 		Thread.sleep(2000);
+	  //XPath Locators	Find different elements on web page
+		//ID	To find the element by ID of the element
+		//Classname	To find the element by Classname of the element
+		//Name	To find the element by name of the element
+		//Link text	To find the element by text of the link
+		//Using Text()
+		//This keyword is used to create expressions for XPath in Selenium when we have a text defined in an HTML
+		// tag and we wish to identify element via text. This comes really handy when the other attribute values
+		// change dynamically with no substantial part of the attribute value that can be used via Starts-with or Contains
 		driver.findElement(By.xpath("//a[text()='Log In']")).click();
 	}
 
@@ -51,6 +61,8 @@ public class Login {
 	@Then("^User should be taken to the successful login page$")
 	public void user_should_be_taken_to_the_successful_login_page() throws Throwable {
 		Thread.sleep(3000);
+		//Contains() is a method used in XPath expression. It is used when the value of any attribute
+		// changes dynamically, for example, login information.
 		WebElement askQuestionButton = driver.findElement(By.xpath("//a[contains(text(), 'Ask Question')]"));
 		Assert.assertEquals(true, askQuestionButton.isDisplayed());
 	}
