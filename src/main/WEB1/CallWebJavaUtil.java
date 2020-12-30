@@ -114,6 +114,20 @@ public class CallWebJavaUtil {
         ArrayList<String> allOtions=jul.getSelectAllOptions(select);
         System.out.println(allOtions);
     }
+    @Test
+    public void PrompAlert() throws Exception {
+        driver=new BrowserSetup().Setup("chrome","windows");
+//        driver=new BrowserSetup().Setup("chrome","mac");
+        driver.get("https://demoqa.com/alerts");
+        driver.manage().window().maximize();
+        // This step will result in an alert on screen
+        WebElement element = driver.findElement(By.id("confirmButton"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", element);
+        Alert confirmationAlert = driver.switchTo().alert();
+        String alertText = confirmationAlert.getText();
+        System.out.println("Alert text is " + alertText);
+        confirmationAlert.accept();
+    }
 
     @After
     public void tearDown() throws Exception {

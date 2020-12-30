@@ -46,6 +46,19 @@ System.out.println(exist);
 //        outR.inputStr("Expect txt exist= "+exist+" "+getbrowser);
     }
     @Test
+    public void xpathAxes() throws Exception {
+        driver=new BrowserSetup().Setup("chrome","windows");
+//        driver=new BrowserSetup().Setup("chrome","mac");
+        //if the text is changed dynamically,so use its parent which neve changed then child :this is called axe to locate
+        driver.get("https://accounts.lambdatest.com/register");
+        driver.manage().window().maximize();
+
+        //Finding the work email filed using the child locator xpath axes
+        driver.findElement(By.xpath("//div[@class='col-sm-12 google-sign-form']/child::input[3]")).sendKeys("sadhvi singh");;
+
+        driver.close();
+    }
+    @Test
     public void dragAndDrop() throws Exception {
         driver=new BrowserSetup().Setup("chrome","windows");
 //        driver=new BrowserSetup().Setup("chrome","mac");
@@ -68,46 +81,32 @@ System.out.println(exist);
         driver=new BrowserSetup().Setup("chrome","windows");
 //        driver=new BrowserSetup().Setup("chrome","mac");
         driver.get("http://demo.guru99.com/test/drag_drop.html");
-
         //Element(BANK) which need to drag.
         WebElement From1=driver.findElement(By.xpath("//*[@id='credit2']/a"));
-
         //Element(DEBIT SIDE) on which need to drop.
         WebElement To1=driver.findElement(By.xpath("//*[@id='bank']/li"));
-
         //Element(SALES) which need to drag.
         WebElement From2=driver.findElement(By.xpath("//*[@id='credit1']/a"));
-
         //Element(CREDIT SIDE) on which need to drop.
         WebElement To2=driver.findElement(By.xpath("//*[@id='loan']/li"));
-
         //Element(500) which need to drag.
         WebElement From3=driver.findElement(By.xpath("//*[@id='fourth']/a"));
-
         //Element(DEBIT SIDE) on which need to drop.
         WebElement To3=driver.findElement(By.xpath("//*[@id='amt7']/li"));
-
         //Element(500) which need to drag.
         WebElement From4=driver.findElement(By.xpath("//*[@id='fourth']/a"));
-
         //Element(CREDIT SIDE) on which need to drop.
         WebElement To4=driver.findElement(By.xpath("//*[@id='amt8']/li"));
-
         //Using Action class for drag and drop.
         Actions act=new Actions(driver);
-
         //BANK drag and drop.
         act.dragAndDrop(From1, To1).build().perform();
-
         //SALES drag and drop.
         act.dragAndDrop(From2, To2).build().perform();
-
         //500 drag and drop debit side.
         act.dragAndDrop(From3, To3).build().perform();
-
         //500 drag and drop credit side.
         act.dragAndDrop(From4, To4).build().perform();
-
         //Verifying the Perfect! message.
         if(driver.findElement(By.xpath("//a[contains(text(),'Perfect')]")).isDisplayed())
         {
