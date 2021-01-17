@@ -4,7 +4,7 @@ This project is used for API/front-end testing of applications. It uses Selenium
 
 ## How to use
 
-Clone this repository using a git client as a first step, build project
+Clone this repository using a git client as a first step,mark src as source root. build project
 
 ### Running Locally UI test
 - All browser-related tests are runnable whatever you laptop operation system mac or windows.  If the test case is web browser-related and your pc  is windows please use the code line :

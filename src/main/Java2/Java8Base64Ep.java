@@ -4,11 +4,14 @@ package src.main.Java2;
  * Created by byang on 2018-06-13.
  */
 
+import main.util.JavaUtil;
+import org.apache.commons.codec.EncoderException;
+
 import java.util.Base64;
         import java.util.UUID;
 
 public class Java8Base64Ep {
-    public static void main(String args[]){
+    public static void main(String args[]) throws EncoderException {
         try {
 
             // Encode using basic encoder
@@ -47,5 +50,11 @@ public class Java8Base64Ep {
         } catch(Exception e) {
             e.printStackTrace();
         }
+
+        String url = "/v1/accounts?offset=1000&limit=1000";
+       JavaUtil jul=new JavaUtil();
+       String encodeUrl=jul.encodeUrl(url);
     }
+
+
 }

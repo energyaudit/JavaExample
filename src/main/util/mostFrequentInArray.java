@@ -60,7 +60,7 @@ public class mostFrequentInArray {
         Integer result=getMostFrequentElement(new Integer[]{4, 5, 8, 7, 4, 7, 6,7});
         System.out.println(result);
         getMostFrequentElement(new Integer[]{1, 2, 7, 5, 3, 6});
-       Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };
+       Character[] charArray = { 'H', 'E', 'L', 'L', 'L','O' };
         Character result1=getMostFrequentElement(charArray);
         System.out.println(result1);
     }

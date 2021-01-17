@@ -16,7 +16,10 @@ class B{//In event handling (or) in a situation where we have to provide referen
 class A4{
     int data=10;
     A4(){//constructor
-        B b=new B(this);// pass the this keyword in the constructor,this is constructor parameter here. It is useful if we have to use one object in multiple classes
+        B b=new B(this);//When should I use “this” in a class?,The this keyword is primarily used in three situations.
+        // Case 2:Using this as an argument passed to another object.pass the this keyword in the constructor here,
+        // this is constructor parameter here.
+        // It is useful if we have to use one object in multiple classes
         b.display();
     }
     public static void main(String args[]){

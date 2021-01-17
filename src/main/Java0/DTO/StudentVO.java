@@ -8,6 +8,11 @@ public class StudentVO {
     private String name;
     private int rollNo;
 
+    /**
+     * Case 1: Using this to disambiguate variable references. In Java setter methods, we commonly pass in an argument with
+     * the same name as the private member variable we are attempting to set. We then assign the argument x to this.x.
+     * This makes it clear that you are assigning the value of the parameter "name" to the instance variable "name
+     */
     StudentVO(String name, int rollNo){
         this.name = name;
         this.rollNo = rollNo;

@@ -8,6 +8,8 @@ import java.util.stream.IntStream;
 
 /**
  * Created by byang on 2018-08-22.
+ * The purpose of the Optional is to provide a type-level solution for representing optional values instead of null
+ * references.
  */
 public class OptionalExp {
     private static List<String> nameList = new ArrayList<String>();

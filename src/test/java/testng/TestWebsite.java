@@ -1,6 +1,6 @@
 package testng;
 
-import main.TestNG.testngBaseClass;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 

@@ -9,6 +9,7 @@ import java.util.stream.IntStream;
 
 /**
  * Created by byang on 2018-06-29.
+ * It is compact and easy form of lambda expression.
  */
 //@FunctionalInterface
 interface MyInterface{
@@ -29,14 +30,12 @@ class Multiplication{
                 "4. Method reference to a constructor – Class::new\nJava8:Instance Method\n");
     }
 
-
     public static void main(String[] args) {
         InstanceM objM = new InstanceM();
         // Method reference using the object of the class
         MyInterface ref = objM::myMethod;//Method reference to an instance method of an object
         // Calling the method of functional interface
         ref.display();
-
 
         BiFunction<Integer, Integer, Integer> product = Multiplication::multiply;
         int pr = product.apply(11, 5);
@@ -46,9 +45,7 @@ class Multiplication{
                 .range(1, 100)
                 .boxed()
                 .collect(Collectors.toCollection(ArrayList::new));//Reference to constructor – Class::new
-
         Optional<Integer> max = integers.stream().reduce(Math::max);
-
         max.ifPresent(System.out::println);
     }
 }

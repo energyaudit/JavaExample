@@ -33,7 +33,7 @@ public class Robot {
         // Use Brain. We don't have an instance of brain
         // until we create one. Instances of brain are
         // always associated with instances of Robot (the
-        // enclosing class).
+        // enclosing class).Brain is inner class.
         Brain brain = new Brain();
         brain.think();
 

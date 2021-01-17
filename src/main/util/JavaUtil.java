@@ -9,6 +9,7 @@ import io.restassured.RestAssured;
 import io.restassured.config.SSLConfig;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.apache.commons.codec.EncoderException;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.formula.functions.T;
@@ -243,6 +244,13 @@ public ArrayList<String> getSelectAllOptions (Select select){
         allOptions.add(option.getText());
     }
     return allOptions;
+}
+
+public String encodeUrl (String url) throws EncoderException {
+    org.apache.commons.codec.net.URLCodec urlS = new org.apache.commons.codec.net.URLCodec();
+    String urlSafe = urlS.encode(url);
+    System.out.println("The encode url is : "+urlSafe);
+    return urlSafe;
 }
 
 

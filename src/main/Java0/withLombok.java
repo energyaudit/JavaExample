@@ -1,4 +1,7 @@
 package main.Java0;
+/**
+ * @Data is a shortcut annotation that combines @Getter, @Setter, @RequiredArgsConstructor, @ToString, and @EqualsAndHashCode.
+ */
 
 import lombok.AccessLevel;
         import lombok.Setter;

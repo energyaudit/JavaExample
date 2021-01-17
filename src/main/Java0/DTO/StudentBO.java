@@ -1,5 +1,7 @@
 package main.Java0.DTO;
 
+import main.Java0.DTO.StudentVO;
+
 import java.util.ArrayList;
 import java.util.List;
 

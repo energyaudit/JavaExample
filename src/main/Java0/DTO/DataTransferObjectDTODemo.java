@@ -1,4 +1,7 @@
-package main.Java0.DTO;
+package src.main.Java0.DTO;
+
+import main.Java0.DTO.StudentBO;
+import main.Java0.DTO.StudentVO;
 
 public class DataTransferObjectDTODemo {
     public static void main(String[] args) {
