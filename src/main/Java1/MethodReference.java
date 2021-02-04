@@ -1,6 +1,7 @@
 package src.main.Java1;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.BiFunction;
@@ -45,7 +46,18 @@ class Multiplication{
                 .range(1, 100)
                 .boxed()
                 .collect(Collectors.toCollection(ArrayList::new));//Reference to constructor – Class::new
+        //we need to perform operations where a stream reduces to single resultant value
         Optional<Integer> max = integers.stream().reduce(Math::max);
         max.ifPresent(System.out::println);
+
+        // Creating list of integers
+        List<Integer> array = Arrays.asList(-2, 0, 4, 6, 8);
+
+        // Finding sum of all elements
+        int sum = array.stream().reduce(0,
+                (element1, element2) -> element1 + element2);
+
+        // Displaying sum of all elements
+        System.out.println("The sum of all elements is " + sum);
     }
 }

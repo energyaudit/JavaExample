@@ -252,7 +252,18 @@ public String encodeUrl (String url) throws EncoderException {
     System.out.println("The encode url is : "+urlSafe);
     return urlSafe;
 }
-
+    public boolean mapContainKey (Map map, String key)  {
+        boolean present=map.containsKey(key);
+        System.out.println("Is the key  present? "
+                + present);
+        return present;
+    }
+    public boolean mapContainValue (Map map, String value)  {
+        boolean present=map.containsValue(value);
+        System.out.println("Is the value present? "
+                + present);
+        return present;
+    }
 
 
 

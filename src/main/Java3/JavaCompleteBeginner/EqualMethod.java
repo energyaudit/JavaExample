@@ -1,5 +1,8 @@
 package main.Java3.JavaCompleteBeginner;
 
+/**
+ * As java docs say, if you override equals() method then you must override hashCode() method.
+ */
 
 class Person {
     private int id;

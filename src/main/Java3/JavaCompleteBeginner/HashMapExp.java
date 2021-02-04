@@ -1,8 +1,11 @@
 package main.Java3.JavaCompleteBeginner;
 
 
+import main.util.JavaUtil;
+
 import java.util.HashMap;
-        import java.util.Map;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class HashMapExp {
 
@@ -27,6 +30,22 @@ public class HashMapExp {
 
             System.out.println(key + ": " + value);
         }
+
+        ////////////////////map contains key
+       Map<String,String> mini=new LinkedHashMap<>();
+        mini.put("5", "Five");
+        mini.put("8", "Eight");
+        mini.put("6", "Six");
+        mini.put("4", "Four");
+        mini.put("2", "Two");
+        JavaUtil jul=new JavaUtil();
+        boolean present=jul.mapContainKey(mini,"5");
+        boolean presentValue=jul.mapContainValue(mini,"Five");
+
+
+
+
+
 
     }
 
