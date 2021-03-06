@@ -126,7 +126,7 @@ public class CallUtilReadJsonFile {
 
 
         CountListFreq clf = new CountListFreq();
-        Map outMp = clf.countFrequencies(list);
+        Map outMp = clf.countArrayListElementFrequencies(list);
         OutPutResult outR = new OutPutResult();
         outR.inputStr(" API test data analysis result success");
     }
@@ -137,7 +137,7 @@ public class CallUtilReadJsonFile {
         ArrayList alst = gjv.inputStr("src/main/TESTRESULT/testout1.txt", "value");
 
         CountListFreq clf = new CountListFreq();
-        Map outMp = clf.countFrequencies(alst);
+        Map outMp = clf.countArrayListElementFrequencies(alst);
         OutPutResult outR = new OutPutResult();
         outR.inputStr(" API test data analysis result success");
     }
@@ -150,7 +150,7 @@ public class CallUtilReadJsonFile {
 
 
         CountListFreq clf = new CountListFreq();
-        Map outMp = clf.countFrequencies(alst);
+        Map outMp = clf.countArrayListElementFrequencies(alst);
         OutPutResult outR = new OutPutResult();
         outR.inputStr(" API test data analysis result success");
     }
@@ -160,7 +160,7 @@ public class CallUtilReadJsonFile {
         GetJsonFileValueByName gjv = new GetJsonFileValueByName();
         ArrayList alst = gjv.inputStr("src/main/TESTRESULT/testout3.txt", "value");
         CountListFreq clf = new CountListFreq();
-        Map outMp = clf.countFrequencies(alst);
+        Map outMp = clf.countArrayListElementFrequencies(alst);
         OutPutResult outR = new OutPutResult();
         outR.inputStr(" API test data analysis result success");
     }

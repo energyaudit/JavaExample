@@ -2,6 +2,7 @@ package src.main.Java1;
 
 /**
  * Created by byang on 4/20/2018.
+ * HashMap doesn't allow duplicate keys but allows duplicate values.
  */
 
 

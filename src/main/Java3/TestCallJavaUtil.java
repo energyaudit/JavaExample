@@ -10,6 +10,8 @@ import org.junit.jupiter.api.Tag;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static main.util.JavaUtil.extractInt;
+import static main.util.JavaUtil.splitStringByWhiteSpace;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 
@@ -105,7 +107,8 @@ JavaUtil jul=new JavaUtil();
         BidiMap<String, String> capitalCountryMap = new DualHashBidiMap<String, String>();
         capitalCountryMap.put("Berlin", "Germany");
         capitalCountryMap.put("Cape Town", "South Africa");
-        capitalCountryMap.put("Pretoria", "South Africa");
+        capitalCountryMap.put("Pretoria", "South Africa");// DualHashBidiMap not allowed dupliated keys,it only
+        System.out.println(capitalCountryMap.getKey("South Africa"));//return the last one then
         assertEquals("Pretoria", capitalCountryMap.getKey("South Africa"));
     }
 
@@ -179,9 +182,18 @@ public void testSlow() {
             };
         jul.createNewSheetInExcel("src/main/resources/JavaBooks.xls",bookComments,0,"Comments");
     }
+    @Test
+    public void extractIntegerFrmStringTest() {
+        String str = "avbkjd1122klj4 543 af";
+        System.out.print(extractInt(str));
+    }
 
-
-
+    @Test
+    public void splitStringByWhiteSpaceTest() {
+        String sSplit1="java string split method by javatpoint";
+        String[] words=splitStringByWhiteSpace(sSplit1);
+        System.out.println("The first words is : "+words[0]);
+    }
 
 
 

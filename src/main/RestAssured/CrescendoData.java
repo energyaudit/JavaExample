@@ -36,7 +36,7 @@ public class CrescendoData  {
             outR.inputStr(" API test data BODY URI1 success result is:"+jsonString+result);
         }
         CountListFreq clf=new CountListFreq();
-        Map outMp=clf.countFrequencies(list);
+        Map outMp=clf.countArrayListElementFrequencies(list);
 
     }
      @Test(priority=1)
@@ -63,7 +63,7 @@ public class CrescendoData  {
             outR.inputStr(" API test data BODY URI1 success result is:"+jsonString+result);
         }
         CountListFreq clf=new CountListFreq();
-        Map outMp=clf.countFrequencies(list);
+        Map outMp=clf.countArrayListElementFrequencies(list);
 
     }
     @Test
@@ -90,7 +90,7 @@ public class CrescendoData  {
             outR.inputStr(" API test data BODY URI1 success result is:"+jsonString+result);
         }
         CountListFreq clf=new CountListFreq();
-        Map outMp=clf.countFrequencies(list);
+        Map outMp=clf.countArrayListElementFrequencies(list);
 
     }
 

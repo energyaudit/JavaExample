@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.*;
 
 public class CountListFreq {
-    public static Map countFrequencies(ArrayList<String> list) {
+    public static Map countArrayListElementFrequencies(ArrayList<String> list) {
         // hashmap to store the frequency of element
         Map<String, Integer> hm = new HashMap<String, Integer>();
 

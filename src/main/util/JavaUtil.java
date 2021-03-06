@@ -264,9 +264,36 @@ public String encodeUrl (String url) throws EncoderException {
                 + present);
         return present;
     }
+ public static String extractInt(String str)
+    {
+        // Replacing every non-digit number
+        // with a space(" ")
+        str = str.replaceAll("[^\\d]", " ");
 
+        // Remove extra spaces from the beginning
+        // and the ending of the string
+        str = str.trim();
 
+        // Replace all the consecutive white
+        // spaces with a single space
+        str = str.replaceAll(" +", " ");
 
+        if (str.equals(""))
+            return "-1";
+
+        return str;
+    }
+
+    public static String[] splitStringByWhiteSpace (String str){
+        String[] words=str.split("\\s");//splits the string based on whitespace, string split() method splits this string against given regular expression and returns a char array.
+//using java foreach loop to print elements of string array
+        System.out.println("splits the string based on whitespace:");
+        for(String w:words) {
+            System.out.println(w);
+           }
+        return words;
+
+    }
 
 
 

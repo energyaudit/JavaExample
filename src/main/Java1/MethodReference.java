@@ -7,6 +7,7 @@ import java.util.Optional;
 import java.util.function.BiFunction;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /**
  * Created by byang on 2018-06-29.
@@ -59,5 +60,17 @@ class Multiplication{
 
         // Displaying sum of all elements
         System.out.println("The sum of all elements is " + sum);
+
+        // Creating an IntStream ,understanding boxed
+        IntStream stream = IntStream.range(3, 8);
+System.out.println("understanding stream boxed");
+        // Creating a Stream of Integers
+        // Using IntStream boxed() to return
+        // a Stream consisting of the elements
+        // of this stream, each boxed to an Integer.
+        Stream<Integer> stream1 = stream.boxed();
+
+        // Displaying the elements
+        stream1.forEach(System.out::println);
     }
 }
