@@ -7,11 +7,15 @@ import org.junit.Assert;
 import org.junit.Test;
 import main.util.OutPutResult;
 import main.util.JsonStr2JsonFile;
+import src.main.util.Str2JsonAppendFile;
+
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.math.BigInteger;
 import java.util.*;
 
+import static main.util.JavaUtil.*;
 import static main.util.hashMap2JsonFile.hashMap2JsonFileMethod;
 
 
@@ -112,7 +116,32 @@ public class CallWriteJson2File {
         JsonStr2JsonFile sjf=new JsonStr2JsonFile();
         sjf.inputStr(inline,"src/main/TESTRESULT/temp1.json");
     }
+    @Test
+    public void TesCallWriteJsonAppendFileStr() {
+        String inline = "{ \"results\":{\"brand\" : \"Mercedes\", \"doors\" : 5," +
+                "  \"owners\" : [\"John\", \"Jack\", \"Jill\"]," +
+                "  \"nestedObject\" : { \"field\" : \"value\" } }}";
+       Str2JsonAppendFile sjf=new Str2JsonAppendFile();
+        sjf.inputStr(inline,"src/main/TESTRESULT/temp1.json");
+    }
+    @Test
+    public void TestCallJsonAppendFileUtil() {
+        String inline = "{ \"results\":{\"brand\" : \"Mercedes\", \"doors\" : 5," +
+                "  \"owners\" : [\"John\", \"Jack\", \"Jill\"]," +
+                "  \"nestedObject\" : { \"field\" : \"value\" } }}";
+        appendJsonStr2File(inline,"src/main/TESTRESULT/temp1.json");
+    }
+    @Test
+    public void TestListDifference() {
+List<Integer> ListA = List.of(0 ,  1 , 2 ,  3 ,  4  ,  5 );
+        List<Integer> ListB = List.of(4 ,  7 , 8 , 9 , 10 , 1 );
+        List<Integer> ListC=listDifference(ListA,ListB);
 
+    }
+    @Test
+    public void TestGetRandomBigInt() {
+        BigInteger bigI=getRandomBigInteger();
+    }
     @Test
     public void TesCallWriteJsonFile1() {
         Random random = new Random();

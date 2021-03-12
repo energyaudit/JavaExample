@@ -17,10 +17,10 @@ import org.apache.poi.ss.usermodel.*;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
+import java.math.BigInteger;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
@@ -292,11 +292,53 @@ public String encodeUrl (String url) throws EncoderException {
             System.out.println(w);
            }
         return words;
-
     }
+    public static void appendJsonStr2File(String JsonStr, String filepath){
+        try {
 
+            FileWriter w = new FileWriter(filepath,true);
+            BufferedWriter out = new BufferedWriter(w);
+            out.write(",");
+            out.newLine();
+            out.write(JsonStr);
+            out.newLine();
+            out.flush();
+            out.close();
 
+        } catch (IOException e) {
+            System.out.println("exception " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+    public static List listDifference (List a, List b)  {
+        List toReturn = new ArrayList(a);
+        toReturn.removeAll(b);
+        System.out.println(toReturn);
+        return toReturn;
+    }
+   public static int getRandomNumberInRange(int min, int max) {
 
+        if (min >= max) {
+            throw new IllegalArgumentException("max must be greater than min");
+        }
+
+        Random r = new Random();
+        return r.nextInt((max - min) + 1) + min;
+    }
+    public static BigInteger getRandomBigInteger() {
+        BigInteger maxLimit = new BigInteger("5000000000000");
+        BigInteger minLimit = new BigInteger("25000000000");
+        BigInteger bigInteger = maxLimit.subtract(minLimit);
+        Random randNum = new Random();
+        int len = maxLimit.bitLength();
+        BigInteger res = new BigInteger(len, randNum);
+        if (res.compareTo(minLimit) < 0)
+            res = res.add(minLimit);
+        if (res.compareTo(bigInteger) >= 0)
+            res = res.mod(bigInteger).add(minLimit);
+        System.out.println("The random BigInteger = "+res);
+        return res;
+    }
 
 
 

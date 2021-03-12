@@ -11,4 +11,25 @@
       "field": "value"
     }
   }
+},
+{
+"results": {
+"brand": "Mercedes",
+"doors": 5,
+"owners": [
+"John",
+"Jack",
+"Jill"
+],
+"nestedObject": {
+"field": "value"
 }
+}
+}
+
+,
+{"results": {"brand": "Mercedes", "doors" : 5, "owners": ["John", "Jack", "Jill"], "nestedObject": {"field": "value"}}}
+,
+{"results": {"brand": "Mercedes", "doors" : 5, "owners": ["John", "Jack", "Jill"], "nestedObject": {"field": "value"}}}
+,
+{ "results":{"brand" : "Mercedes", "doors" : 5,  "owners" : ["John", "Jack", "Jill"],  "nestedObject" : { "field" : "value" } }}

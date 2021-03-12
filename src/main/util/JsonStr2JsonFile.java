@@ -12,7 +12,9 @@ public class JsonStr2JsonFile {
         try {
             FileWriter w = new FileWriter(filepath);
             BufferedWriter out = new BufferedWriter(w);
+            out.newLine();
             out.write(JsonStr);
+            out.newLine();
             out.flush();
             out.close();
         } catch (IOException e) {
