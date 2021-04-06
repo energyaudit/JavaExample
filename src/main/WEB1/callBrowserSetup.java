@@ -112,6 +112,29 @@ public class callBrowserSetup {
     }
 
     @Test
+    public void DeleteInputText() throws Exception {
+        driver=new BrowserSetup().Setup("chrome","windows");
+//        driver=new BrowserSetup().Setup("chrome","mac");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        String url = "https://www.tutorialspoint.com/index.htm";
+        driver.get(url);
+            // identify element
+        WebElement l = driver.findElement(By.id("gsc-i-id1"));
+        // input text
+        l.sendKeys("Selenium");
+        // sending Ctrl+a by Keys.Chord()
+        String s = Keys.chord(Keys.CONTROL, "a");
+        l.sendKeys(s);
+        // sending DELETE key
+        l.sendKeys(Keys.DELETE);
+        Thread.sleep(3000);
+        l.sendKeys("Selenium second round ");
+        l.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+        Thread.sleep(6000);
+    }
+
+    @Test
     public void TestSelectDirectly() throws Exception {
         driver=new BrowserSetup().Setup("chrome","windows");
 //        driver=new BrowserSetup().Setup("chrome","mac");
