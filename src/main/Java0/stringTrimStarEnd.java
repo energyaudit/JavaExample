@@ -5,9 +5,9 @@ package src.main.Java0;
  */
 public class stringTrimStarEnd {
     public static void main(String args[]){//to run this program,this main line is mandatory
-    String s="  Sachin  ";
+    String s="  Sachin  ";//remove the leading and trailing spaces in Java
     System.out.println(s);//  Sachin is the String class object
-    System.out.println(s.trim());//Sachin,cut the space front
+    System.out.println(s.trim());//Sachin,cut the space front and end
 
         String s1="Sachin";
         System.out.println(s1.startsWith("Sa"));//true
