@@ -8,6 +8,9 @@ import java.util.stream.LongStream;
 import java.util.stream.Stream;
 /**
  * Created by byang on 2018-09-17.
+ * You can add to or remove elements from collections. But, you can’t add to or remove elements from streams.
+ * Stream consumes a source, performs operations on it and returns a result. They don’t modify even the
+ * source also.
  */
 public class Java8Stream {
     static int i=0;
@@ -16,6 +19,29 @@ public class Java8Stream {
         return i;}
 
     public static void main(String[] args) {
+/*
+*The main specialty of Java 8 Streams is that you need not to worry about iteration while using streams.
+*  Streams perform iteration internally behind the scene for you. You just have to mention the
+* operations to be performed on a source.
+ */
+        List<String> names1 = new ArrayList<>();
+        names1.add("Charlie");
+        names1.add("Douglas");
+        names1.add("Sundaraman");
+        names1.add("Charlie");
+        names1.add("Yuki");
+
+//External iteration of collections
+
+        for (String name : names1)
+        {
+            System.out.println(name);
+        }
+
+
+//Internal iteration of streams. No for loops
+        names1.stream().map(String::toUpperCase).forEach(System.out::println);
+//Reduce
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
         int sum = numbers.stream()
                 .filter(n -> n % 2  == 1)
@@ -30,7 +56,7 @@ public class Java8Stream {
                 .reduce(0, Integer::sum);
 
         System.out.println(sum1);
-
+//filter
         List<Integer> numbers1 = Arrays.asList(3,7,9,3,1,2,1, 2, 3, 4, 5);//returns a fixed-size list by the specified array
         numbers1.stream()
                 .filter(n -> n % 2  == 1)
@@ -91,7 +117,7 @@ System.out.println("ramdom integers: ");
         }
         System.out.println(alpha); //[a, b, c, d]
         System.out.println(alphaUpper); //[A, B, C, D]
-        // Java 8
+        // Java 8 stream map method
         List<String> collect = alpha.stream().map(String::toUpperCase).collect(Collectors.toList());
         System.out.println(collect); //[A, B, C, D]
 
