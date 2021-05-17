@@ -514,7 +514,16 @@ public class TestCallUti {
             System.out.println("Value: " + readContext.read(path));
         }
     }
+    @Test
+    public void callValidIPAddress() throws Exception {
 
+        JavaUtil jul = new JavaUtil();
+       Boolean valid=jul.isIpAddressValid("255.255.11.135");
+            System.out.println("Is valid IpAddress?: " + valid);
+        valid=jul.isIpAddressValid("255.256.11.135");
+        System.out.println("Is valid IpAddress?: " + valid);
+
+    }
     @Test
     public void callgetJsonPathsFrmJsonByFieldKey() throws Exception {
         ReadJsonFile2Str rj2s = new ReadJsonFile2Str();

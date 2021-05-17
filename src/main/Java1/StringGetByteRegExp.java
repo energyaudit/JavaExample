@@ -7,13 +7,24 @@ import java.util.regex.Pattern;
  * Created by byang on 2/19/2018.
  */
 public class StringGetByteRegExp {
-    public static void main(String args[]){
+    public static void main(String args[]) throws UnsupportedEncodingException {
+       //The java.lang.String.getBytes(String charsetName) method encodes this String into a sequence
+        // of bytes using the named charset, storing the result into a new byte array
         String s1="ABCDEFG";
         byte[] barr=s1.getBytes();
         for(int i=0;i<barr.length;i++){
             System.out.println(barr[i]);
         }
+        // string with numbers and some special characters
+        String str = "!$0123@";
 
+        // byte array with charset
+        byte bval[] = str.getBytes("UTF8");
+
+        // prints the byte array
+        for (int i = 0; i < bval.length; i++) {
+            System.out.println(bval[i]);
+        }
         try { // converting the string into byte using getBytes ( converts into UTF-16 values )
             byte[] b = s1.getBytes("UTF-16");
             // Displaying converted string after conversion into UTF-16

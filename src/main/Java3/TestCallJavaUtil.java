@@ -6,6 +6,9 @@ import org.apache.commons.collections4.BidiMap;
 import org.apache.commons.collections4.bidimap.DualHashBidiMap;
 import org.junit.Test;
 import org.junit.jupiter.api.Tag;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -50,6 +53,18 @@ JavaUtil jul=new JavaUtil();
     public void assertInMultipleValue() {
         assertThat("hello").isIn("hello", "world");
         assertThat(201).isIn(201, 409);
+    }
+
+    @Test
+    public void FluxTest() {
+        Mono<String> nonEmptyMono = Mono.just("Joel");
+        StepVerifier.create(nonEmptyMono).expectNext("Joel").verifyComplete();
+
+        Flux<String> nonEmptyFlux = Flux.just("John", "Mike", "Sarah");
+        StepVerifier.create(nonEmptyFlux).expectNext("John", "Mike", "Sarah").verifyComplete();
+
+        Flux<String> fluxFromIterable = Flux.fromIterable(Arrays.asList("Tom", "Hardy", "Bane"));
+        StepVerifier.create(fluxFromIterable).expectNext("Tom", "Hardy", "Bane").verifyComplete();
     }
     @Test
     public void whenUsingImperativeWayForSingleKey_shouldReturnSingleKey() {
