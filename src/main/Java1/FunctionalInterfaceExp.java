@@ -2,6 +2,10 @@ package src.main.Java1;
 
 /**
  * Created by byang on 2018-07-19.
+ * @FunctionalInterface Annotation
+ * @FunctionalInterface annotation is used to ensure that the functional interface can’t have
+ * more than one abstract method. In case more than one abstract methods are present, the compiler flags an
+ * ‘Unexpected @FunctionalInterface annotation’ message. However, it is not mandatory to use this annotation.
  */
 
 @FunctionalInterface

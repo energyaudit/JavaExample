@@ -37,7 +37,7 @@ public class Java8LambdaForEach {
         System.out.println("Sorting on the basis of name...");
 
         // implementing lambda expression
-        Collections.sort(listL1, (p1, p2) -> {//Lambda compare
+        Collections.sort(listL1, (p1, p2) -> {//Lambda compare,(p1, p2) means take 2 parameters p1,p2
             return p1.name.compareTo(p2.name);
         });
         for(StudentLa student:listL1){

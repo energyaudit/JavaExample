@@ -23,7 +23,7 @@ public class StudentBO {
     }
 
     //retrive list of students from the database
-    public List<StudentVO> getAllStudents() {
+    public List<StudentVO> getAllStudents() {//List of object
         return students;
     }
 
