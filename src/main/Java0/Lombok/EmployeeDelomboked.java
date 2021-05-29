@@ -5,7 +5,7 @@ public final class EmployeeDelomboked {
     private final String name;
     private final int salary;
 
-    public EmployeeDelomboked(String name, int salary) {
+    public EmployeeDelomboked(String name, int salary) {//line 8-11 equal to @AllArgsConstructor
         this.name = name;
         this.salary = salary;
     }

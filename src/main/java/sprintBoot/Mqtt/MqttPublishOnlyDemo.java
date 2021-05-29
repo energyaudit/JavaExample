@@ -1,55 +1,38 @@
-package sprintBoot;
+package sprintBoot.Mqtt;
 
 
 import org.eclipse.paho.client.mqttv3.MqttClient;
-        import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-        import org.eclipse.paho.client.mqttv3.MqttException;
-        import org.eclipse.paho.client.mqttv3.MqttMessage;
-        import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
+public class MqttPublishOnlyDemo {
 
-public class MqttDemo {
     public static void main(String[] args) {
-        String subTopic = "testtopic/#";
-        String pubTopic = "testtopic/1";
-        String content = "Hello World";
+
+        String topic = "MQTT Examples";
+        String content = "Message from MqttPublishSample";
         int qos = 2;
+//        String broker       = "tcp://mqtt.eclipse.org:1883";
         String broker = "tcp://broker.emqx.io:1883";
-        String clientId = "emqx_test";
+        String clientId = "JavaSample";
         MemoryPersistence persistence = new MemoryPersistence();
 
         try {
-            MqttClient client = new MqttClient(broker, clientId, persistence);
-
-            // MQTT connection option
+            MqttClient sampleClient = new MqttClient(broker, clientId, persistence);
             MqttConnectOptions connOpts = new MqttConnectOptions();
-            connOpts.setUserName("emqx_test");
-            connOpts.setPassword("emqx_test_password".toCharArray());
-            // retain session
             connOpts.setCleanSession(true);
-
-            // set callback
-            client.setCallback(new PushCallback());
-
-            // establish a connection
             System.out.println("Connecting to broker: " + broker);
-            client.connect(connOpts);
-
+            sampleClient.connect(connOpts);
             System.out.println("Connected");
             System.out.println("Publishing message: " + content);
-
-            // Subscribe
-            client.subscribe(subTopic);
-
-            // Required parameters for message publishing
             MqttMessage message = new MqttMessage(content.getBytes());
             message.setQos(qos);
-            client.publish(pubTopic, message);
+            sampleClient.publish(topic, message);
             System.out.println("Message published");
-
-            client.disconnect();
+            sampleClient.disconnect();
             System.out.println("Disconnected");
-            client.close();
             System.exit(0);
         } catch (MqttException me) {
             System.out.println("reason " + me.getReasonCode());

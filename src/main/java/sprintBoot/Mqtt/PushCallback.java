@@ -1,4 +1,4 @@
-package sprintBoot;
+package sprintBoot.Mqtt;
 
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
