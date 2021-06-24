@@ -11,6 +11,7 @@ import org.eclipse.paho.client.mqttv3.MqttClient;
 public class MqttDemo {
     public static void main(String[] args) {
         String subTopic = "testtopic/#";
+//        String subTopic = "testtopic/1";
         String pubTopic = "testtopic/1";
         String content = "Hello World";
         int qos = 2;

@@ -212,8 +212,8 @@ public class JavaUtil {
         try {
             FileInputStream inputStream = new FileInputStream(new File(filePath));
             Workbook workbook = WorkbookFactory.create(inputStream);
-            Random random = new Random();
-            Integer inputId = random.nextInt(1000000);
+                Random random = new Random();
+                Integer inputId = random.nextInt(1000000);
             String sheetname = sheetName + inputId;
             Sheet newSheet = workbook.createSheet(sheetname);
             int rowCount = 0;
@@ -328,6 +328,15 @@ public String encodeUrl (String url) throws EncoderException {
         Random r = new Random();
         return r.nextInt((max - min) + 1) + min;
     }
+    public static int getRandomNumberInRange1(int min, int max) {
+        if (min >= max) {
+            throw new IllegalArgumentException("max must be greater than min");
+        }
+        int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
+        return randomNum;
+    }
+
+
     public static BigInteger getRandomBigInteger() {
         BigInteger maxLimit = new BigInteger("5000000000000");
         BigInteger minLimit = new BigInteger("25000000000");
@@ -368,7 +377,10 @@ public String encodeUrl (String url) throws EncoderException {
         }
     }
 
-
+    public static String  byteArrayToStr(byte[] payload) {
+        String s = new String(payload);
+        return s;
+    }
 
 
 }

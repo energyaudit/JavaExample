@@ -4,7 +4,8 @@ import java.util.Date;
 
 /**
  *  If we had 10 different parameters, it would become very difficult to identify what's what in the constructor at a
- *  single glance. To make it worse, some of those values might be optional, which means that we'll need to create a bunch of overloaded constructors to deal with all possible combinations, or we'll have to pass nulls to our constructor (ugly!).
+ *  single glance. To make it worse, some of those values might be optional, which means that we'll need to create a bunch
+ *  of overloaded constructors to deal with all possible combinations, or we'll have to pass nulls to our constructor (ugly!).
  * You might be thinking that we can mitigate the issue by calling a no-arg constructor and then setting up the account
  * via setter methods instead. However, that leaves us open to another issue – what happens if a developer forgets to
  * call a particular setter method? We could end up with an object that is only partially initialized, and again, the

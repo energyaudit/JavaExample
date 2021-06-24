@@ -537,6 +537,26 @@ public class TestCallUti {
             System.out.println("Value: " + readContext.read(path));
         }
     }
+    @Test
+    public void testByteArray2String() throws Exception {
+        String str = "!$0123@";
+        // byte array with charset
+        byte[] c = str.getBytes("UTF-16BE");
+        JavaUtil jul = new JavaUtil();
+        String st=jul.byteArrayToStr(c);
+        System.out.println("ByteArray2String now is "+st);
+        String s1="ABCDEFG";
+        byte[] barr=s1.getBytes();
+        String st1=jul.byteArrayToStr(barr);
+        System.out.println("ByteArray2String now is "+st1);
+    }
+
+
+
+
+
+
+
 
 
 }
