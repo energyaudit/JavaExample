@@ -1,6 +1,10 @@
 package main.Java0;
 
 import com.mongodb.*;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
 
 public class MongoExample {
     public static void main(String[] args) {
@@ -40,6 +44,18 @@ public class MongoExample {
         while (cursor.hasNext()) {
             System.out.println(cursor.next());
         }
+
+
+        MongoDatabase database1 = mongoClient.getDatabase("moviesDB");
+        MongoCollection<Document> collection1 = database1.getCollection("student");
+        BasicDBObject searchQuery1 = new BasicDBObject();
+        searchQuery1.put("name", "Kevin");
+        MongoCursor<Document> cursor1 = collection1.find(searchQuery1).iterator();
+        while (cursor1.hasNext()) {
+            System.out.println(cursor1.next());
+        }
+
+
 
         // delete data
         BasicDBObject deleteQuery = new BasicDBObject();
