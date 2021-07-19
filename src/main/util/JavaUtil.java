@@ -14,6 +14,9 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.ss.usermodel.*;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -381,6 +384,18 @@ public String encodeUrl (String url) throws EncoderException {
         String s = new String(payload);
         return s;
     }
+    public static JSONArray getJSONArrayFromResponse(String APIresponse, String path) throws JSONException {
+        JSONObject JsonArray = new JSONObject(APIresponse);
+        JSONArray JArray = JsonArray.getJSONArray(path);
+        return JArray;
+    }
+
+
+
+
+
+
+
 
 
 }

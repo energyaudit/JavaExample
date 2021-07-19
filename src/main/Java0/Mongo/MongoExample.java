@@ -1,4 +1,4 @@
-package main.Java0;
+package main.Java0.Mongo;
 
 import com.mongodb.*;
 import com.mongodb.client.MongoCollection;
