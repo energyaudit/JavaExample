@@ -11,7 +11,7 @@ public class getResource1 {
         URL url = class1.getResource("getResource1.java");//source file  not have class path
         System.out.println("Value URL = " + url);
      //   URL url2 = class1.getResource("temp.json");
-        URL url2 = class1.getResource("../TESTRESULT/temp.txt"); //src/main/TESTRESULT/temp.txt
+        URL url2 = class1.getResource("main/TESTRESULT/member.txt"); //src/main/TESTRESULT/member.txt
         System.out.println("Value URL = " + url2);
     }
 }

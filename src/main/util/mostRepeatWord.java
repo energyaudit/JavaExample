@@ -62,7 +62,7 @@ public class mostRepeatWord {
     }
 
     public static void main(String[] args) {
-     String file="src/main/TESTRESULT/temp.txt";
+     String file="src/main/TESTRESULT/member.txt";
         mostRepeatWordInFile(file);
 }
 }

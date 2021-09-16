@@ -17,7 +17,7 @@ class MergeResult {
         FileInputStream fin=new FileInputStream("./src/main/TESTRESULT/TestResultl.txt");
         FileInputStream fin2=new FileInputStream("./src/main/TESTRESULT/TestResult2.txt");
         FileInputStream fin3=new FileInputStream("./src/main/TESTRESULT/temp1.txt");
-        FileInputStream fin4=new FileInputStream("./src/main/TESTRESULT/temp.txt");
+        FileInputStream fin4=new FileInputStream("./src/main/TESTRESULT/member.txt");
         FileOutputStream fout=new FileOutputStream("./src/main/TESTRESULT/testout.txt");
 //creating Vector object to all the stream
         Vector v=new Vector();

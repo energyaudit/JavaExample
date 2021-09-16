@@ -35,7 +35,7 @@ public class RTNodeSize {
             vrf=true;
         } catch (Exception e) {
             vrf=false;
-            FileWriter w = new FileWriter("src/main/TESTRESULT/temp.txt",true);
+            FileWriter w = new FileWriter("src/main/TESTRESULT/member.txt",true);
             BufferedWriter out = new BufferedWriter(w);
             out.newLine();
             out.write("Test date and time is:");

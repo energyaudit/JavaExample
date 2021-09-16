@@ -160,7 +160,7 @@
 //   // driver.findElement(By.cssSelector("option[value=\"59\"]")).click();
 //    driver.findElement(By.id("launchbankbtn")).click();
 //   // driver.findElement(By.className("meta_chat")).click();
-//    FileWriter w = new FileWriter("C:\\QA\\TESTRESULT\\temp.txt",true);
+//    FileWriter w = new FileWriter("C:\\QA\\TESTRESULT\\member.txt",true);
 //
 //    BufferedWriter out = new BufferedWriter(w);
 //    out.newLine();

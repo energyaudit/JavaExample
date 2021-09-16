@@ -3,6 +3,8 @@ package main.util;
  * Created by byang on 2016-08-28.
  */
 
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.jayway.jsonpath.EvaluationListener;
 import com.jayway.jsonpath.ReadContext;
 import io.restassured.RestAssured;
@@ -14,6 +16,8 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.ss.usermodel.*;
+import org.javatuples.Quintet;
+import org.javatuples.Triplet;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -23,6 +27,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.io.*;
 import java.math.BigInteger;
+import java.sql.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -388,6 +393,55 @@ public String encodeUrl (String url) throws EncoderException {
         JSONObject JsonArray = new JSONObject(APIresponse);
         JSONArray JArray = JsonArray.getJSONArray(path);
         return JArray;
+    }
+
+    public static Map DB2Map(Map a, String dburl, String user, String pwd, Integer KeyColumn, Integer ValueColumn, String query) throws ClassNotFoundException, SQLException, JsonGenerationException, JsonMappingException, IOException, JSONException {
+        // TODO Auto-generated method stub
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection conn = null;
+        conn = DriverManager.getConnection("jdbc:postgresql://" + dburl, user, pwd);
+        //object of statement class will help to execute queries
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        while (rs.next()) {
+            a.put(rs.getString(KeyColumn), rs.getString(ValueColumn));
+        }
+        conn.close();
+        return a;
+    }
+
+    public static Triplet DB2Triplet(String dburl, String user, String pwd, String query, Integer col1, Integer col2, Integer col3) throws ClassNotFoundException, SQLException, JsonGenerationException, JsonMappingException, IOException, JSONException {
+        // TODO Auto-generated method stub
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection conn = null;
+        conn = DriverManager.getConnection("jdbc:postgresql://" + dburl, user, pwd);
+        //object of statement class will help to execute queries
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        Triplet<String, String, String> triplet = null;
+        if (rs.next()) {
+            triplet
+                    = Triplet.with(rs.getString(col1), rs.getString(col2), rs.getString(col3));
+        }
+        conn.close();
+        return triplet;
+    }
+
+    public static Quintet DB2Quintet(String dburl, String user, String pwd, String query) throws ClassNotFoundException, SQLException, JsonGenerationException, JsonMappingException, IOException, JSONException {
+        // TODO Auto-generated method stub
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection conn = null;
+        conn = DriverManager.getConnection("jdbc:postgresql://" + dburl, user, pwd);
+        //object of statement class will help to execute queries
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        Quintet<String, String, String, String, String> quintet = null;
+        if (rs.next()) {
+            quintet
+                    = Quintet.with(rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+        }
+        conn.close();
+        return quintet;
     }
 
 

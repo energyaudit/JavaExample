@@ -43,7 +43,7 @@ public class CompareTwoTextFile {
     }
     public static void main(String[] args) throws IOException
     {
-       String file1="src/main/TESTRESULT/temp.txt";
+       String file1="src/main/TESTRESULT/member.txt";
        String file2="src/main/TESTRESULT/temp2.txt";
         compareTwoTextFile(file1,file2);
     }

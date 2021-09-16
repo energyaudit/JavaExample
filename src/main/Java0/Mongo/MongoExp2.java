@@ -134,7 +134,7 @@ public class MongoExp2 {
                 System.out.println(cursor8.next());
             }
 
-            collection.drop();
+//            collection.drop();
 
             System.out.println("Done");
 

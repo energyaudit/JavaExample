@@ -21,7 +21,7 @@ public class RunCommandDemo {
 		MongoDatabase db = client.getDatabase("db_demo");
 		MongoCollection collection = db.getCollection("cols_user_details");
 		
-		// execute Commands against MongoDB
+		// execute Commands against MongoDB.https://docs.mongodb.com/manual/reference/command/
 		
 		Document result=db.runCommand(new Document("collStats","cols_user_details"));
 		
@@ -30,7 +30,7 @@ public class RunCommandDemo {
 		
 		
 		GridFSBucket  bucket= GridFSBuckets.create(db, "demo_temp_bucket");
-		bucket.uploadFromStream("LangStats", new FileInputStream(new File("C:/temp/langs.jpeg")));
+		bucket.uploadFromStream("LangStats", new FileInputStream(new File("src/main/resources/IEDriverServer.exe")));
 		
 		
 		

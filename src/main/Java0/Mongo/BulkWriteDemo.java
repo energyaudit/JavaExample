@@ -29,7 +29,7 @@ public class BulkWriteDemo {
 		
 		Document doc_update_original=new Document("username","admin2");
 		Document doc_update_new=new Document("username","admin2mod");
-		Document doc_update_command=new Document("$set",doc_update_new);
+		Document doc_update_command=new Document("$set",doc_update_new);//it not use $set,will changed original data structure
 		
 		Document doc_del=new Document("username","admin3");
 		

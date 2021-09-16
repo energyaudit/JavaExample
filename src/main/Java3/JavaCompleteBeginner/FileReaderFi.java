@@ -11,7 +11,7 @@ import java.io.BufferedReader;
 public class FileReaderFi {
 
     public static void main(String[] args) {
-        String fileName = "src/main/resources/temp.txt";
+        String fileName = "src/main/resources/member.txt";
            File file= new File(fileName);
        // File file = new File("test.txt");
 
