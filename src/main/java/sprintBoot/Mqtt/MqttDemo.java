@@ -15,8 +15,10 @@ public class MqttDemo {
         String pubTopic = "testtopic/1";
         String content = "Hello World";
         int qos = 2;
-//        String broker = "tcp://broker.emqx.io:1883";
-        String broker = "tcp://broker.hivemq.com:1883";
+        String broker = "tcp://18.209.189.206:1883";
+//        String broker = "tcp://broker.hivemq.com:1883";
+
+
 
         String clientId = "emqx_test";
         MemoryPersistence persistence = new MemoryPersistence();

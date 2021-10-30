@@ -5,14 +5,14 @@ package main.Java2;
  */
 
 import java.io.FileOutputStream;
-        import java.io.IOException;
-        import java.io.ObjectOutputStream;
-        import java.io.Serializable;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 
 
-class StudentSer implements Serializable{
+class StudentSer implements Serializable {
     //Serial Version UID.
     private static final long serialVersionUID = 1L;
     String name;
@@ -20,18 +20,17 @@ class StudentSer implements Serializable{
     String rollNo;
 
     //Constructor.
-    StudentSer(String name, String className, String rollNo){
+    StudentSer(String name, String className, String rollNo) {
         this.name = name;
         this.className = className;
         this.rollNo = rollNo;
     }
 }
 
-class TestSe{
+class TestSe {
     //Write serialized object into objectoutputstream.
-    public void objectSerialization(StudentSer stu){
-        try
-        {
+    public void objectSerialization(StudentSer stu) {
+        try {
             //Creating FileOutputStream object.
             FileOutputStream fos =
                     new FileOutputStream("src/main/TESTRESULT/student.ser");
@@ -48,19 +47,17 @@ class TestSe{
 
             System.out.println("Serialized data is saved in " +
                     "src/main/TESTRESULT/student.ser");
-        }catch(IOException e)
-        {
+        } catch (IOException e) {
             System.out.println(e);
         }
     }
 }
 
 
-class TestDse{
+class TestDse {
     //Deserialize a serialize object.
-    public void objectDeSerialization(){
-        try
-        {
+    public void objectDeSerialization() {
+        try {
             StudentSer stu = null;
             //Creating FileOutputStream object.
             FileInputStream fis =
@@ -79,15 +76,14 @@ class TestDse{
             System.out.println("Name = " + stu.name);
             System.out.println("Class Name = " + stu.className);
             System.out.println("RollNo = " + stu.rollNo);
-        }catch(Exception e)
-        {
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
 }
 
 public class serialization {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         //Creating Student object.
         StudentSer stu =
                 new StudentSer("Parmander", "MCA", "MCA/07/27");

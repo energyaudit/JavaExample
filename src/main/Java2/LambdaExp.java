@@ -6,7 +6,12 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 
 /**
- * Hello world!
+ * Why do we need Lambda in Java?A lambda expression is a block of code that can be passed
+ * to execute.It is a common
+ * feature for some programming languages, such as Lisp, Python, Scala, etc. But before Java 8,
+ * we can not do the same in Java. If we want a block of code to be executed, we need to create an
+ * object and pass the object around, such as using the strategy design pattern. From Java 8,
+ * lambda expressions enable us to treat functionality as method argument and pass a block of code around.
  *
  */
 public class LambdaExp
