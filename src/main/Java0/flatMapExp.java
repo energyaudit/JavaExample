@@ -16,7 +16,7 @@ public class flatMapExp {
         String[][] array = new String[][]{{"a", "b"}, {"c", "d"}, {"e", "f"}};
         List<String> collect = Stream.of(array)     // Stream<String[]>
                 .flatMap(Stream::of)                // Stream<String>
-                .filter(x -> !"a".equals(x))        // filter out the a,only !=a staty
+                .filter(x -> !"a".equals(x))        // filter out the a,only !=a stay
                 .collect(Collectors.toList());      // return a List
 
         collect.forEach(System.out::println);

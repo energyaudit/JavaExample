@@ -1,7 +1,9 @@
 package main.Java3.JavaCompleteBeginner;
 
 /**
- * As java docs say, if you override equals() method then you must override hashCode() method.
+ * As java docs say, if you override equals() method then you must override hashCode() method.why need hashcode()?
+ * hashCode in Java helps the program to run faster. For example, comparing two objects by their hashcodes
+ * will give the result 20 times faster than comparing them using the equals() function
  */
 
 class Person {

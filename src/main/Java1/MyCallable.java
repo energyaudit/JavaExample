@@ -25,6 +25,9 @@ public class MyCallable implements Callable<String> {
         List<Future<String>> list = new ArrayList<Future<String>>();
         //Create MyCallable instance
         Callable<String> callable = new MyCallable();
+        //.Future, represents the result of an asynchronous computation. When the asynchronous task is created,
+        // a Java Future object is returned. This Future object functions as a handle to the result
+        // of the asynchronous task
         for(int i=0; i< 100; i++){
             //submit Callable tasks to be executed by thread pool
             Future<String> future = executor.submit(callable);

@@ -41,7 +41,8 @@ public class Java8Stream {
 
 //Internal iteration of streams. No for loops
         names1.stream().map(String::toUpperCase).forEach(System.out::println);
-//Reduce
+//Reduce,The JDK contains many terminal operations (such as average, sum, min, max, and count) that return one value
+// by combining the contents of a stream. These operations are called reduction operations
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
         int sum = numbers.stream()
                 .filter(n -> n % 2  == 1)

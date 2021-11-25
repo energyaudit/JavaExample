@@ -1,15 +1,17 @@
 package src.main.Java0;
+/**
+*Java Duration class is used to measures time in seconds and nanoseconds. It inherits the Object
+ *  class and implements the Comparable interface.
+*/
 
-
-
+import org.joda.time.Interval;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
-
-import org.joda.time.*;
-
+import java.time.*;
 public class CompareDate {
 
     public static void main(String[] args) throws ParseException {
@@ -26,7 +28,7 @@ public class CompareDate {
         System.out.println("date2 : " + sdf.format(date2));
 
         Interval interval = new Interval(date1.getTime(), date2.getTime());
-        Duration period = interval.toDuration();
+        org.joda.time.Duration period = interval.toDuration();
         long Diff=period.getStandardDays();
         System.out.println(Diff);
 
@@ -46,6 +48,11 @@ public class CompareDate {
         if (cal1.equals(cal2)) {
             System.out.println("Date1 is equal Date2");
         }
+
+
+        //Duration example2:
+        Duration d = Duration.between(LocalTime.NOON,LocalTime.MAX);
+        System.out.println(d.get(ChronoUnit.SECONDS));
     }
 
 }
