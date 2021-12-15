@@ -5,13 +5,18 @@ package main.util;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
+import com.jayway.jsonpath.Configuration;
+import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.EvaluationListener;
 import com.jayway.jsonpath.ReadContext;
+import com.jayway.jsonpath.spi.json.JacksonJsonNodeJsonProvider;
+import com.jayway.jsonpath.spi.mapper.JacksonMappingProvider;
 import io.restassured.RestAssured;
 import io.restassured.config.SSLConfig;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.apache.commons.codec.EncoderException;
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.formula.functions.T;
@@ -27,6 +32,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.io.*;
 import java.math.BigInteger;
+import java.nio.charset.StandardCharsets;
 import java.sql.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -38,6 +44,8 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class JavaUtil {
+    public static List<String> sortedList;
+
     public static ArrayList<String> ArrayListStrDescendingSort(ArrayList<String> arrayList) {
         System.out.println("ArrayList Before Sorting:");
         for (String str : arrayList) {
@@ -444,8 +452,42 @@ public String encodeUrl (String url) throws EncoderException {
         return quintet;
     }
 
+public String file2JsonString (String filePath) throws IOException {
+    String exampleRequest = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
 
+    Configuration configuration = Configuration.builder().jsonProvider(new JacksonJsonNodeJsonProvider())
+            .mappingProvider(new JacksonMappingProvider()).build();
+    DocumentContext json = com.jayway.jsonpath.JsonPath.using(configuration).parse(exampleRequest);
+    System.out.println(json.jsonString());
+    return json.jsonString();
+}
+    public int findMiddleOfArray (int array[]) throws IOException {
+        int startIndex = 0, lastIndex = array.length - 1;
+        // Setting the mid index
+        int midIndex = startIndex + (lastIndex-startIndex)/2;
+        System.out.println("The mid index is "+midIndex+" and the element at mid is "+array[midIndex]);
+        return array[midIndex];
+    }
+    public String findMiddleOfArray (String array[]) throws IOException {
+        int startIndex = 0, lastIndex = array.length - 1;
+        // Setting the mid index
+        int midIndex = startIndex + (lastIndex-startIndex)/2;
+        System.out.println("The mid index is "+midIndex+" and the element at mid is "+array[midIndex]);
+        return array[midIndex];
+    }
+    public int MiddleIndexOfArray (String array[]) throws IOException {
+        int startIndex = 0, lastIndex = array.length - 1;
+        int midIndex = startIndex + (lastIndex-startIndex)/2;
+        System.out.println("The mid index is "+midIndex+" and the element at mid is "+array[midIndex]);
+        return midIndex;
+    }
 
+    public static Boolean checkListSorted(List<String> arrayList) {
+        sortedList = arrayList;
+        Collections.sort(arrayList);
+        Boolean equal = sortedList.equals(arrayList);
+        return equal;
+    }
 
 
 

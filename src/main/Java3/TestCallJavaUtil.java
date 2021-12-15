@@ -210,7 +210,14 @@ public void testSlow() {
         System.out.println("The first words is : "+words[0]);
     }
 
+@Test
+    public void verifyListSorted(){
+    JavaUtil javaUtil=new JavaUtil();
+List<String> stringList=Arrays.asList("619e1b7880081a9d91d69dba", "619e1b7880081a9d91d69db7", "619e1b7780081a9d91d69db2", "619e1b7680081a9d91d69daf", "619e1b7680081a9d91d69daa, 619e1b7680081a9d91d69da7", "619e1b7580081a9d91d69da1", "619e1b7580081a9d91d69d9b", "619e1b7580081a9d91d69d90", "619e1b7480081a9d91d69d89");
+    Boolean value=javaUtil.checkListSorted(stringList);
+    System.out.println(value);
 
+}
 
 
 
