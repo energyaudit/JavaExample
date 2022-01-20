@@ -24,8 +24,11 @@ import org.apache.poi.ss.usermodel.*;
 import org.javatuples.Quintet;
 import org.javatuples.Triplet;
 import org.json.JSONArray;
+//import org.json.simple.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -489,6 +492,16 @@ public String file2JsonString (String filePath) throws IOException {
         return equal;
     }
 
+    public JSONArray  parseJsonArrayWithoutPath(String filePath) throws IOException, ParseException {
+        JSONParser parser = new JSONParser();
+       JSONArray countries = (JSONArray) parser.parse(new FileReader(filePath));
+        System.out.println("Array is :");
+        for(Object country : countries)
+        {
+            System.out.println("\t"+country.toString());
+        }
+        return countries;
+    }
 
 
 

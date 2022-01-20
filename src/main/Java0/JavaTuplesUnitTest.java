@@ -11,7 +11,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class JavaTuplesUnitTest {
 
-    @SuppressWarnings("unused")
+    @SuppressWarnings("unused")//@SuppressWarnings,The primary and most important benefit of using
+    // @SuppressWarnings Annotation is that if we stuck because of some known warning,
+    // then this will ignore the warning and move ahead. E.g. – deprecated and unchecked warnings.
     @Test
     public void whenCreatingTuples_thenCreateTuples() {
         Pair<String, Integer> pair = new Pair<String, Integer>("This is a pair", 55);

@@ -18,7 +18,12 @@ public class MongoAuthDemo {
 
 	private static Logger log = Logger.getLogger(MongoAuthDemo.class);
 
-	@SuppressWarnings("resource")
+	@SuppressWarnings("resource")//Use of @SuppressWarnings is to suppress or ignore warnings coming from the
+	// compiler, i.e., the compiler will ignore warnings if any for that piece of code.This annotation is
+	// dangerous because a warning is something potentially wrong with the code. So if we’re getting any
+	// warning, the first approach should be resolving those errors. But if we’re suppressing any warnings,
+	// we have to have some solid reason. The reason should be commented near to the annotation every
+	// time it is used.
 	public static void main(String[] args) {
 
 		// Mongodb initialization parameters.

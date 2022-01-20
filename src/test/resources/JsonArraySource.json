@@ -1,0 +1,64 @@
+[
+  {
+    "id": 48,
+    "node_id": 48,
+    "type": "ROOT",
+    "parent_id": null,
+    "name": "Essar",
+    "level": 1,
+    "count": 4,
+    "children": [
+      {
+        "id": 53,
+        "node_id": 53,
+        "type": "SUBGROUP",
+        "parent_id": 48,
+        "name": "5d91aaNew-Subgroup",
+        "level": 2,
+        "count": 1,
+        "children": [
+          {
+            "id": 49,
+            "node_id": 49,
+            "type": "SITE",
+            "parent_id": 53,
+            "name": "Alpha",
+            "level": 3,
+            "count": -1,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "node_id": 50,
+        "type": "SITE",
+        "parent_id": 48,
+        "name": "Beta",
+        "level": 2,
+        "count": -1,
+        "children": []
+      },
+      {
+        "id": 51,
+        "node_id": 51,
+        "type": "SITE",
+        "parent_id": 48,
+        "name": "Mason Ave",
+        "level": 2,
+        "count": -1,
+        "children": []
+      },
+      {
+        "id": 52,
+        "node_id": 52,
+        "type": "SITE",
+        "parent_id": 48,
+        "name": "Gerald Ave",
+        "level": 2,
+        "count": -1,
+        "children": []
+      }
+    ]
+  }
+]

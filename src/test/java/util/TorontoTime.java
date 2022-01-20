@@ -34,6 +34,8 @@ public class TorontoTime {
         ZoneId.SHORT_IDS.keySet().
                 stream().forEach(
                 zoneKey ->System.out.println(" "+ ZoneId.of( ZoneId.SHORT_IDS.get( zoneKey ) ) +": "+ LocalDateTime.now(ZoneId.of(ZoneId.SHORT_IDS.get(zoneKey))) ) );
-
+//The Difference Between Collection.stream().forEach() and Collection.forEach()
+// If we don't require a stream but only want to iterate over a collection, the first choice should be using forEach
+// directly on the collection.
     }
 }
