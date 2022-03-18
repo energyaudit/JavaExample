@@ -7,10 +7,7 @@ import java.io.File;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-/**
- * This class is used to read XML elements using SAX parser.
- * @author codesjava
- */
+
 public class SAXParserTest {
     public static void main(String[] args){
         try {

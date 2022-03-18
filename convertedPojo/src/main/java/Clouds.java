@@ -33,7 +33,7 @@ public class Clouds {
         this.all = all;
     }
 
-    public Clouds withAll(Integer all) {
+    public src.main.java.Clouds withAll(Integer all) {
         this.all = all;
         return this;
     }
@@ -48,7 +48,7 @@ public class Clouds {
         this.additionalProperties.put(name, value);
     }
 
-    public Clouds withAdditionalProperty(String name, Object value) {
+    public src.main.java.Clouds withAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
         return this;
     }
@@ -56,7 +56,7 @@ public class Clouds {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(Clouds.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append(src.main.java.Clouds.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("all");
         sb.append('=');
         sb.append(((this.all == null)?"<null>":this.all));
@@ -86,10 +86,10 @@ public class Clouds {
         if (other == this) {
             return true;
         }
-        if ((other instanceof Clouds) == false) {
+        if ((other instanceof src.main.java.Clouds) == false) {
             return false;
         }
-        Clouds rhs = ((Clouds) other);
+        src.main.java.Clouds rhs = ((src.main.java.Clouds) other);
         return (((this.all == rhs.all)||((this.all!= null)&&this.all.equals(rhs.all)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
     }
 

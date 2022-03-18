@@ -36,7 +36,7 @@ public class Coord {
         this.lon = lon;
     }
 
-    public Coord withLon(Double lon) {
+    public src.main.java.Coord withLon(Double lon) {
         this.lon = lon;
         return this;
     }
@@ -51,7 +51,7 @@ public class Coord {
         this.lat = lat;
     }
 
-    public Coord withLat(Double lat) {
+    public src.main.java.Coord withLat(Double lat) {
         this.lat = lat;
         return this;
     }
@@ -66,7 +66,7 @@ public class Coord {
         this.additionalProperties.put(name, value);
     }
 
-    public Coord withAdditionalProperty(String name, Object value) {
+    public src.main.java.Coord withAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
         return this;
     }
@@ -74,7 +74,7 @@ public class Coord {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(Coord.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append(src.main.java.Coord.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("lon");
         sb.append('=');
         sb.append(((this.lon == null)?"<null>":this.lon));
@@ -109,10 +109,10 @@ public class Coord {
         if (other == this) {
             return true;
         }
-        if ((other instanceof Coord) == false) {
+        if ((other instanceof src.main.java.Coord) == false) {
             return false;
         }
-        Coord rhs = ((Coord) other);
+        src.main.java.Coord rhs = ((src.main.java.Coord) other);
         return ((((this.lon == rhs.lon)||((this.lon!= null)&&this.lon.equals(rhs.lon)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.lat == rhs.lat)||((this.lat!= null)&&this.lat.equals(rhs.lat))));
     }
 
