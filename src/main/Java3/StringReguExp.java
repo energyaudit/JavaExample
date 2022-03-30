@@ -25,7 +25,18 @@ public class StringReguExp {
 
         System.out.println("by metacharacters ...");
         System.out.println(Pattern.matches("[789]{1}\\d{9}", "8853038949"));//true
-        System.out.println(Pattern.matches("[789]{1}\\d{9}", "3853038949"));//false (starts from 3)
+        System.out.println(Pattern.matches("[789]{1}\\d{9}", "java.util.regex.Matcher"));//false (starts from 3)
+
+        Pattern p = Pattern.compile("t(est)");
+        String candidateString = "This is a test. This is another test.";
+        Matcher matcher1 = p.matcher(candidateString);
+        // Find group number 0 of the first find
+        matcher1.find();
+        String group_0 = matcher1.group(0);
+        String group_1 = matcher1.group(1);
+        System.out.println("Group 0 " + group_0);
+        System.out.println("Group 1 " + group_1);
+        System.out.println(candidateString);
 
 
         Scanner sc=new Scanner(System.in);
