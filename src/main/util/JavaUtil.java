@@ -11,6 +11,11 @@ import com.jayway.jsonpath.EvaluationListener;
 import com.jayway.jsonpath.ReadContext;
 import com.jayway.jsonpath.spi.json.JacksonJsonNodeJsonProvider;
 import com.jayway.jsonpath.spi.mapper.JacksonMappingProvider;
+import com.mongodb.Block;
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.MongoIterable;
 import io.restassured.RestAssured;
 import io.restassured.config.SSLConfig;
 import io.restassured.path.json.JsonPath;
@@ -21,6 +26,7 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.ss.usermodel.*;
+import org.bson.Document;
 import org.javatuples.Quintet;
 import org.javatuples.Triplet;
 import org.json.JSONArray;
@@ -32,6 +38,8 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.math.BigInteger;
@@ -41,12 +49,16 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import static com.mongodb.client.model.Projections.include;
+
 public class JavaUtil {
+    Logger log = LoggerFactory.getLogger(JavaUtil.class);
     public static List<String> sortedList;
 
     public static ArrayList<String> ArrayListStrDescendingSort(ArrayList<String> arrayList) {
@@ -503,7 +515,37 @@ public String file2JsonString (String filePath) throws IOException {
         return countries;
     }
 
+    public MongoIterable<Document> readDataFromMongodb(String dbUrl, String dataBaseName, String collectionName, int limitNum) throws InterruptedException {
+        java.util.logging.Logger mongoLogger = java.util.logging.Logger.getLogger("org.mongodb.driver");
+        mongoLogger.setLevel(Level.SEVERE);
+        Thread.sleep(15000);
+        MongoClient mongoCli = new MongoClient(dbUrl, 27017);
+        MongoDatabase database1 = mongoCli.getDatabase(dataBaseName);
+        MongoCollection<Document> collection1 = database1.getCollection(collectionName);
+        MongoIterable<Document> iter_collection = collection1.find().limit(limitNum);
+        iter_collection.forEach(new Block<Document>() {
+            public void apply(Document doc_content) {
+                log.debug("" + doc_content.toJson());
+            }
+        });
+        return iter_collection;
+    }
 
+    public MongoIterable<Document> readFromMongoField(String dbUrl,String dataBaseName, String collectionName,String field,int limitNum) throws InterruptedException {
+        java.util.logging.Logger mongoLogger = java.util.logging.Logger.getLogger("org.mongodb.driver");
+        mongoLogger.setLevel(Level.SEVERE);
+        Thread.sleep(15000);
+        MongoClient mongoCli = new MongoClient(dbUrl, 27017);
+        MongoDatabase database1 = mongoCli.getDatabase(dataBaseName);
+        MongoCollection<Document> collection1 = database1.getCollection(collectionName);
+        MongoIterable<Document> iter_collection = collection1.find().projection(include(field)).limit(limitNum);
+        iter_collection.forEach(new Block<Document>() {
+            public void apply(Document doc_content) {
+                log.debug("" + doc_content.toJson());
+            }
+        });
+        return iter_collection;
+    }
 
 
 
