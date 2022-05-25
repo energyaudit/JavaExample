@@ -547,6 +547,26 @@ public String file2JsonString (String filePath) throws IOException {
         return iter_collection;
     }
 
+    public MongoIterable<Document> readFromMongo2Field(String dbUrl, String dataBaseName, String collectionName, String field1, String field2,int limitNum) throws InterruptedException {
+        java.util.logging.Logger mongoLogger = java.util.logging.Logger.getLogger("org.mongodb.driver");
+        mongoLogger.setLevel(Level.SEVERE);
+        Thread.sleep(15000);
+        MongoClient mongoCli = new MongoClient(dbUrl, 27017);
+        MongoDatabase database1 = mongoCli.getDatabase(dataBaseName);
+        MongoCollection<Document> collection1 = database1.getCollection(collectionName);
+        MongoIterable<Document> iter_collection = collection1.find().projection(include(field1,field2)).limit(limitNum);
+        iter_collection.forEach(new Block<Document>() {
+            public void apply(Document doc_content) {
+                log.debug("" + doc_content.toJson());
+            }
+        });
+        return iter_collection;
+    }
+
+
+
+
+
 
 
 }

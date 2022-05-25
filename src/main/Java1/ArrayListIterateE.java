@@ -42,6 +42,9 @@ public class ArrayListIterateE  {
         while (crunchifyIterator.hasNext()) {
             System.out.println(crunchifyIterator.next());
         }
+        Iterator<String> crunchifyIterator1 = crunchifyList.iterator();
+        crunchifyIterator1.forEachRemaining((crunchify) -> System.out.println(crunchify));
+
 
         // iterate via "while loop"
         System.out.println("\n==> While Loop Example....");

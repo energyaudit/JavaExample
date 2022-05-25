@@ -34,6 +34,8 @@ public class readWriteImage {
             e.printStackTrace();
         }
 
+
+
         System.out.println("done");
     }
 }
