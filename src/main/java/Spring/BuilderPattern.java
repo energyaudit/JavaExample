@@ -1,7 +1,5 @@
 package Spring;
 
-import java.util.Date;
-
 /**
  *  If we had 10 different parameters, it would become very difficult to identify what's what in the constructor at a
  *  single glance. To make it worse, some of those values might be optional, which means that we'll need to create a bunch
@@ -14,7 +12,7 @@ import java.util.Date;
  * Incorrect object state.
  * This is where the Builder pattern comes into play.
  */
-public class BuilderPattern {
+class gBuilderPattern {
     public static class Builder {
 
         private long accountNumber; //This is important, so we'll pass it to the constructor.
@@ -69,9 +67,9 @@ public class BuilderPattern {
     }
 
     //Fields omitted for brevity.
-    private BuilderPattern() {
-        //Constructor is now private.
-    }
+//    private BuilderPattern() {
+//        //Constructor is now private.
+//    }
 
     //Getters and setters omitted for brevity.
     public static void main(String[] args) {
