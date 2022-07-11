@@ -70,6 +70,7 @@ public class ArrayListExmp{
             System.out.println(st.rollno+" "+st.name+" "+st.age);  }
 
         String sentence="I am Proud";
+        // "\\s" is white space
         List< String> words = Arrays.asList(sentence.split("\\s"));
         Collections.reverse(words);
         System.out.println("Reverse a sentence:"+words);
