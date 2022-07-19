@@ -1,4 +1,4 @@
-package src.main.Java3;
+package main.Java3;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -38,23 +38,43 @@ public class StringReguExp {
         System.out.println("Group 1 " + group_1);
         System.out.println(candidateString);
 
+//boolean find()	Return true if match found in the input sequence.
+//2	boolean find(int start)	Return true if match found in the input sequence by the starting index.
+//        Scanner sc=new Scanner(System.in);
+//        while (true) {
+//            System.out.println("Enter regex pattern:");
+//            Pattern pattern = Pattern.compile(sc.nextLine());
+//            System.out.println("Enter text:");
+//            Matcher matcher = pattern.matcher(sc.nextLine());
+//            boolean found = false;
+//            while (matcher.find()) {
+//                System.out.println("I found the text "+matcher.group()+" starting at index "+
+//                        matcher.start()+" and ending at index "+matcher.end());//Matcher Class − A Matcher object is the engine that interprets the pattern
+//                found = true;//and performs match operations against an input string.
+//            }
+//            if(!found){
+//                System.out.println("No match found.");
+//            }
+//
+//
+//        }
 
-        Scanner sc=new Scanner(System.in);
-        while (true) {
-            System.out.println("Enter regex pattern:");
-            Pattern pattern = Pattern.compile(sc.nextLine());
-            System.out.println("Enter text:");
-            Matcher matcher = pattern.matcher(sc.nextLine());
-            boolean found = false;
-            while (matcher.find()) {
-                System.out.println("I found the text "+matcher.group()+" starting at index "+
-                        matcher.start()+" and ending at index "+matcher.end());//Matcher Class − A Matcher object is the engine that interprets the pattern
-                found = true;//and performs match operations against an input string.
-            }
-            if(!found){
-                System.out.println("No match found.");
-            }
+
+        ////matcher.find(startindex)
+        Pattern p1=Pattern.compile("java");
+        Matcher m=p1.matcher("HellojavaHellojava");
+        int c=0;
+        // finding matching char  BEGIN from character 6
+        while(m.find(6))
+        {
+            c=c+1;
+            System.out.println("Start position of matching String (java) "+m.start());
+            System.out.println("End position of Matching String (java) "+m.end());
+            break;
         }
+        System.out.println(" Number of matches : "+c);
+
+    }
 
 
 
@@ -63,4 +83,4 @@ public class StringReguExp {
 
 
     }
-}
+
