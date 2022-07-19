@@ -23,7 +23,7 @@ class PatternSplit{
 
         String string = "AA";
         Pattern pattern1 = Pattern.compile(string);
-        Matcher matcher = pattern1.matcher(content);
+        Matcher matcher = pattern1.matcher(content);//content is the target to check if any match
 
         while(matcher.find()) {
             System.out.println("Found at: " + matcher.start()

@@ -1,5 +1,8 @@
 package main.TestNG.steps;
 
+
+
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,6 +16,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import WEB1.util.BrowserSetup;
+
+import java.util.List;
+import java.util.Map;
+
 @RunWith(Cucumber.class)
 @CucumberOptions(glue = {"main.TestNG.Login"})
 public class Login {
@@ -73,4 +80,13 @@ public class Login {
 		this.driver.quit();
 		this.driver = null;
 	}
+
+    @And("User enters Credentials to LogIn")
+    public void userEntersCredentialsToLogIn(DataTable usercredentials) {
+		List<Map<String, String>> datas=usercredentials.asMaps(String.class, String.class);
+		for (Map<String, String> data:datas ) {
+			System.out.println(data.get("Username"));
+			System.out.println(data.get("Password"));
+		}
+    }
 }

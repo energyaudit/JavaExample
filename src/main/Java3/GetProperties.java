@@ -19,6 +19,11 @@ public class GetProperties {
             Map.Entry entry = (Map.Entry) itr.next();
             System.out.println(entry.getKey() + " = " + entry.getValue());
         }
+        System.out.println("keySet: "
+                + p.keySet());
+        Object[] obPropArray=p.keySet().toArray();
+        System.out.println("obPropArray: "
+                + obPropArray);
         System.out.println("security manager is: "+System.getSecurityManager());
         System.out.println("This class Maven release version is: "+GetProperties.class.getPackage().getImplementationVersion());
     }

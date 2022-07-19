@@ -40,7 +40,7 @@ public class CallUtilReadJsonFile {
     @Test
     public void CallUtilReadJsonFileFromResource() throws Exception {
         ReadJsonFileResource rj2s = new ReadJsonFileResource();
-        String resultO = rj2s.inputpar("projectname/ent2e.json");
+        String resultO = rj2s.inputpar("projectname/ent2e.json");//java will add src/main/resources automatically
         System.out.println("Before Update " + resultO);
         OutPutResult outR = new OutPutResult();
         outR.inputStr("Read json file from resource folder success");
@@ -49,7 +49,7 @@ public class CallUtilReadJsonFile {
     @Test
     public void givenFileNameAsAbsolutePath_whenUsingClasspath_thenFileData() throws Exception {
         ClassLoader classLoader = getClass().getClassLoader();
-        InputStream inputStream = classLoader.getResourceAsStream("ent1e.json");
+        InputStream inputStream = classLoader.getResourceAsStream("ent1e.json");//java will add src/main/resources automatically
         String text = null;
         try (final Reader reader = new InputStreamReader(inputStream)) {
             text = CharStreams.toString(reader);
@@ -58,7 +58,7 @@ public class CallUtilReadJsonFile {
                 try {
                     inputStream.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    e.printStackTrace();//print out trace for troubleshooting
                 }
             }
         }
