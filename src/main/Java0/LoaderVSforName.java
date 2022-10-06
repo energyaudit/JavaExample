@@ -1,7 +1,9 @@
 package main.Java0;
 
 /**
- * because for same MyExampleClass, Class.forName() is intializing and  printing static block content while ClassLoader.getSystemClassLoader().loadClass() will only load the class and not initialize that’s why not printing anything in console.
+ * because for same MyExampleClass, Class.forName() is intializing and  printing static block content
+ * while ClassLoader.getSystemClassLoader().loadClass() will only load the class and not initialize
+ * that’s why not printing anything in console.
  */
 
 public class LoaderVSforName {
