@@ -4,12 +4,14 @@ import main.util.JavaUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
+
 /**
  * Created by byang on 2/12/2018.
  */
 public class StringBuilderMethods {
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws IOException {
         Logger logger = LoggerFactory.getLogger(StringBuilderMethods.class);
         StringBuilder sb1=new StringBuilder("Hello ");
         sb1.append("Java");//now original string is changed
@@ -22,6 +24,8 @@ public class StringBuilderMethods {
         JavaUtil jul = new JavaUtil();
         String insertString=jul.insertString(sb2.toString(),"{1}",5);
         logger.info("insertStringAtIndex:"+insertString);
+
+        jul.xmlToJson("src/main/resources/complicatedXml.xml");
 
         StringBuilder sb3=new StringBuilder("Hello");
         sb3.replace(1,3,"Java");//The StringBuilder replace() method replaces the given string from the specified beginIndex and endIndex.

@@ -3,6 +3,7 @@ package main.util;
  * Created by byang on 2016-08-28.
  */
 
+import Spring.LoggerFactoryDemo;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.jayway.jsonpath.Configuration;
@@ -16,15 +17,11 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoIterable;
-import io.restassured.RestAssured;
-import io.restassured.config.SSLConfig;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import org.apache.commons.codec.EncoderException;
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.ss.usermodel.*;
 import org.bson.Document;
 import org.javatuples.Quintet;
@@ -33,6 +30,7 @@ import org.json.JSONArray;
 //import org.json.simple.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.XML;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
@@ -45,8 +43,6 @@ import java.io.*;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.sql.*;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;
@@ -58,7 +54,7 @@ import java.util.stream.Stream;
 import static com.mongodb.client.model.Projections.include;
 
 public class JavaUtil {
-    Logger log = LoggerFactory.getLogger(JavaUtil.class);
+    Logger logger = LoggerFactory.getLogger(JavaUtil.class);
     public static List<String> sortedList;
 
     public static ArrayList<String> ArrayListStrDescendingSort(ArrayList<String> arrayList) {
@@ -525,7 +521,7 @@ public String file2JsonString (String filePath) throws IOException {
         MongoIterable<Document> iter_collection = collection1.find().limit(limitNum);
         iter_collection.forEach(new Block<Document>() {
             public void apply(Document doc_content) {
-                log.debug("" + doc_content.toJson());
+                logger.debug("" + doc_content.toJson());
             }
         });
         return iter_collection;
@@ -541,7 +537,7 @@ public String file2JsonString (String filePath) throws IOException {
         MongoIterable<Document> iter_collection = collection1.find().projection(include(field)).limit(limitNum);
         iter_collection.forEach(new Block<Document>() {
             public void apply(Document doc_content) {
-                log.debug("" + doc_content.toJson());
+                logger.debug("" + doc_content.toJson());
             }
         });
         return iter_collection;
@@ -557,7 +553,7 @@ public String file2JsonString (String filePath) throws IOException {
         MongoIterable<Document> iter_collection = collection1.find().projection(include(field1,field2)).limit(limitNum);
         iter_collection.forEach(new Block<Document>() {
             public void apply(Document doc_content) {
-                log.debug("" + doc_content.toJson());
+                logger.debug("" + doc_content.toJson());
             }
         });
         return iter_collection;
@@ -571,6 +567,19 @@ public String file2JsonString (String filePath) throws IOException {
         newString.insert(index + 1, stringToBeInserted);
         return newString.toString();
     }
+    public JSONObject xmlToJson(String filePath) throws IOException {
+        String xmlString = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
+        try {
+            JSONObject json = XML.toJSONObject(xmlString); //
+            String jsonPrettyPrintString = json.toString(4); // json pretty print
+            logger.info("JSONObject "+json);
+            return json;
+        } catch(JSONException je) {
+            System.out.println(je.toString());
+        }
+        return null;
+    }
+
 
 
 
