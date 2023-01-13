@@ -1,10 +1,16 @@
-package src.main.Java0;
+package main.Java0;
+
+import main.util.JavaUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by byang on 2/12/2018.
  */
 public class StringBuilderMethods {
+
     public static void main(String args[]){
+        Logger logger = LoggerFactory.getLogger(StringBuilderMethods.class);
         StringBuilder sb1=new StringBuilder("Hello ");
         sb1.append("Java");//now original string is changed
         System.out.println(sb1);//prints Hello Java
@@ -12,6 +18,10 @@ public class StringBuilderMethods {
         StringBuilder sb2=new StringBuilder("Hello ");
         sb2.insert(1,"Java");//now original string is changed, The StringBuilder insert() method inserts the given string with this string at the given position
         System.out.println(sb2);//prints HJavaello
+
+        JavaUtil jul = new JavaUtil();
+        String insertString=jul.insertString(sb2.toString(),"{1}",5);
+        logger.info("insertStringAtIndex:"+insertString);
 
         StringBuilder sb3=new StringBuilder("Hello");
         sb3.replace(1,3,"Java");//The StringBuilder replace() method replaces the given string from the specified beginIndex and endIndex.

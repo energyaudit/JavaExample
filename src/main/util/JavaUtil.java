@@ -563,10 +563,17 @@ public String file2JsonString (String filePath) throws IOException {
         return iter_collection;
     }
 
+    public String insertString(String originalString, String stringToBeInserted,
+            int index)
+    {
+        StringBuffer newString
+                = new StringBuffer(originalString);
+        newString.insert(index + 1, stringToBeInserted);
+        return newString.toString();
+    }
 
 
 
 
-
-
+//END
 }
