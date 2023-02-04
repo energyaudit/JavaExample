@@ -1,6 +1,7 @@
 package main.Java0;
 
 
+import java.util.*;
 
 /**
  * Created by byang on 1/19/2018.
@@ -67,9 +68,29 @@ public class Switch
                 break;
         }
 
-
-
-
+        List<String> collectionOfNames = Arrays.asList("john", "doe", "anne", "alex");
+        Map<String,Object> response= new HashMap<>();
+        print(collectionOfNames,"False",response);
+        print(collectionOfNames,"True",response);
+    }
+    private static Map<String,Object> print(List<String> PrintNames, String lower,Map<String,Object> response){
+      for(int i=0;i< PrintNames.size();i++){
+          switch (lower){
+              case "True":
+                  System.out.println(PrintNames.get(i).toLowerCase());
+                  response.put(String.valueOf(i),PrintNames.get(i).toLowerCase());
+                  break;
+              case "False":
+                  System.out.println(PrintNames.get(i).toUpperCase());
+                  response.put(String.valueOf(i),PrintNames.get(i).toUpperCase());
+                  break;
+          }
+      }
+      System.out.println(response);
+      return response;
 
     }
+
+
+    //END
 }
