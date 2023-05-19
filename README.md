@@ -2,7 +2,7 @@
 
 This project is used for API/front-end testing of applications. It uses Selenium/RestAssured Framework_ in order to simulate API/front-end tests, as per test specifications.
 And everything about java of solid base understanding you can find in my repo.
-- The structure has a problem in history from the very beginning. So mark src as source root. If mark JavaExample as source root then you need to unmark it.
+- The structure has a problem in history from the very beginning. So mark src as source root to begin use. If mark JavaExample as source root then you need to unmark it.
 ## How to use
 
 Clone this repository using a git client as a first step,mark src as source root. build project
